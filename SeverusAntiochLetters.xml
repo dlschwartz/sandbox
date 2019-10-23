@@ -10,7 +10,13 @@
             <title type="sub">A TEI encoding for HIST630</title>
          </titleStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <authority>Daniel L. Schwartz</authority>
+            <pubPlace>College Station, TX</pubPlace>
+            <date>Fall 2019</date>
+            <availability>
+               <p>This work is licensed under a Creative Commons Attribution 4.0 International
+                  License and may be freely reused with attribution.</p>
+            </availability>
          </publicationStmt>
          <sourceDesc>
             <p>
@@ -38,22 +44,23 @@
             <dateline>
                <date notBefore="0513" notAfter="0518">513-8</date>
             </dateline>
-            <head type="main">Of the same to Eucharius the bishop.</head>
+            <head type="main">Of <persName ref="#sev01">the same</persName> to <persName ref="#euch01">Eucharius</persName> the bishop.</head>
             <head type="sub">(From those during episcopacy, from --- book the 142nd, 143rd letter.)</head>
             <p>
-               The transactions in the Christ-loving, believing city
-               of the Paltians concerning Firminus have come to my
+               The transactions in the Christ-loving, believing <placeName ref="#pal01">city
+               of the Paltians</placeName> concerning <persName ref="#fir01">Firminus</persName> have come to my
                notice, and I have agreed to them. Otherwise you
                would not have written, as may with most probability
                be inferred. It is however impossible to pass sentence
                upon a guilty man before he has had an opportunity
-               of clef ence, having his accusers also face to face as is
+               of defence, having his accusers also face to face as is
                written.<note type="scriptureReference">Acts 25.16</note> 
                Therefore, as form requires, our judgment <pb n="46"/>
+               is that the man who has sinned be sent here, and the
                actual men who are able to convict him, and to confirm
                the transactions regarding him, so that in this way we
                may cause him to be subjected to canonical sentences.
-               For it is written, as your love of God who teach others
+               For it is written, as your love of <persName ref="god01">God</persName> who teach others
                also knows, "The innocent and righteous thou shalt
                not slay, and thou shalt not acquit the wicked."
                <note type="scriptureReference">Exodus 23.7</note>
@@ -64,28 +71,31 @@
             <dateline>
                <date notBefore="0514" notAfter="0518">514-8</date>
             </dateline>
-            <head type="main">Of the same to Cosmas and Polyeuctus and Zeno the presbyters.</head>
+            <head type="main">
+               Of <persName ref="#sev01">the same</persName> to <persName ref="cos01">Cosmas</persName> and 
+               <persName ref="#poly01">Polyeuctus</persName> and <persName ref="#zeno01">Zeno</persName> the presbyters.
+            </head>
             <head type="sub">(From those during episcopacy, from the 3rd book the 354th letter.)</head>
             <p>
                Even in the case of things that are acknowledged
                and manifest we are not justified either by the form of
-               human laws or by the ordinances of the Holy Spirit in
+               human laws or by the ordinances of the <persName ref="#hs01">Holy Spirit</persName> in
                judging on the statement of one side. Wherefore
                neither did we consent to agree to the things that were
-               written by your devoutness ; not because we do not
+               written by your devoutness; not because we do not
                believe you, but to preserve the appearance that befits
                those who have been entrusted with the task of judging
-               such matters.. The right and proper course would
-               have been for your love of God to come as far as here :
-               and then we would have summoned the other side also to
+               such matters. The right and proper course would
+               have been for your love of God to come as far as here:
+               and then we would have summoned <persName ref="#opp01">the other side</persName> also to
                come to us, and the truth would have been determined.
                Or, if they remained away and did not come when
                summoned, then the provisions laid down in the laws
                regarding those who remain away would have been
                plain and would have followed upon the act. For
                our own desire is not to leave the matter unheeded
-               and unsettled. If the saintly Isidore, bishop of <pb n="53"/>
-               the city of the men of Chalcis, had been present, we
+               and unsettled. If the saintly <persName ref="#isi01">Isidore</persName>, bishop of <pb n="53"/>
+               <placeName ref="#pal01">the city of the men of Chalcis</placeName>, had been present, we
                would have yielded to him the duty of giving judgment
                concerning places and persons in his jurisdiction.
                But, as he is absent, it is therefore absolutely necessary

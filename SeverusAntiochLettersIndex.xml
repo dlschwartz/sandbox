@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Index for the Letters of Severus</title>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Daniel L. Schwartz</authority>
+            <pubPlace>College Station, TX</pubPlace>
+            <date>Fall 2019</date>
+            <availability>
+               <p>This work is licensed under a Creative Commons Attribution 4.0 International
+                  License and may be freely reused with attribution.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born Digital</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <listPerson>
+            <person xml:id="sev01">
+               <persName>Severus of <placeName>Antioch</placeName></persName>
+               <idno type="URI">http://syriaca.org/person/51</idno>
+            </person>
+            <person xml:id="euch01">
+               <persName>Eucharius</persName>
+               <persName>Eucharius the bishop</persName>
+               <idno type="URI">http://syriaca.org/person/2536</idno>
+            </person>
+            <person>
+               <persName xml:id="fir01">Firminus</persName>
+               <idno type="URI">http://syriaca.org/person/2537</idno>
+            </person>
+            <person>
+               <persName xml:id="god01">God</persName>
+               <idno type="URI">https://en.wikipedia.org/wiki/God</idno>
+            </person>
+            <person xml:id="cos01">
+               <persName>Cosmas</persName>
+               <idno type="URI">http://syriaca.org/person/2544</idno>
+            </person>
+            <person xml:id="poly01">
+               <persName>Polyeuctus</persName>
+               <idno type="URI">http://syriaca.org/person/2542</idno>
+            </person>
+            <person xml:id="zeno01">
+               <persName>Zeno</persName>
+               <idno type="URI">http://syriaca.org/person/2543</idno>
+            </person>
+            <person xml:id="hs01">
+               <persName>Holy Spirit</persName>
+               <idno type="URI">https://en.wikipedia.org/wiki/Holy_Spirit</idno>
+            </person>
+            <personGrp xml:id="opp01">
+               <persName>The opponents of <persName>Cosmas</persName>, <persName>Polyeuctus</persName>, and <persName>Zeno</persName></persName>
+               <idno type="URI">http://syriaca.org/person/3045</idno>
+            </personGrp>
+            <person xml:id="isi01">
+               <persName>Isidore</persName>
+               <persName>The saintly Isidore, bishop of <placeName>the city of the men of Chalcis</placeName></persName>
+               <idno type="URI">http://syriaca.org/person/2545</idno>
+            </person>
+         </listPerson>
+         <listPlace>
+            <place xml:id="pal01">
+               <placeName>Paltus</placeName>
+               <idno type="URI">http://syriaca.org/place/3052</idno>
+            </place>
+            <place xml:id="chal01">
+               <placeName>Chalcis</placeName>
+               <idno type="URI">http://syriaca.org/place/162</idno>
+            </place>
+         </listPlace>
+      </body>
+  </text>
+</TEI>
