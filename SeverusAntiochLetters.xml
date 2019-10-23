@@ -8,6 +8,10 @@
          <titleStmt>
             <title>Severus of Antioch, Select Letters 1.10 and 1,12</title>
             <title type="sub">A TEI encoding for HIST630</title>
+            <respStmt>
+               <resp>Data entry, TEI-conformant markup, editing</resp>
+               <name xml:id="dls">Daniel L. Schwartz</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Daniel L. Schwartz</authority>
@@ -24,7 +28,7 @@
                <bibl>
                   <author>Severus of Antioch</author>
                   <title>The Sixth Book of the Select Letters of Severus Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
-                  <editor>E. W. Brooks</editor>
+                  <editor xml:id="ewb">E. W. Brooks</editor>
                   <editor role="translator">E. W. Brooks</editor>
                   <pubPlace>London</pubPlace>
                   <publisher>Williams &amp; Norgate</publisher>
@@ -41,7 +45,7 @@
   <text>
       <body>
          <div type="letter" n="1.10">
-            <dateline>
+            <dateline resp="#ewb">
                <date notBefore="0513" notAfter="0518">513-8</date>
             </dateline>
             <head type="main">Of <persName ref="#sev01">the same</persName> to <persName ref="#euch01">Eucharius</persName> the bishop.</head>
@@ -68,7 +72,7 @@
             <trailer>The end.</trailer>
          </div>
          <div>
-            <dateline>
+            <dateline resp="#ewb">
                <date notBefore="0514" notAfter="0518">514-8</date>
             </dateline>
             <head type="main">
