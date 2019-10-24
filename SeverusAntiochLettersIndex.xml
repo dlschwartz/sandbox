@@ -75,7 +75,12 @@
             </place>
             <place xml:id="chal01">
                <placeName>Chalcis</placeName>
-               <idno type="URI">http://syriaca.org/place/162</idno>
+               <placeName source="http://syriaca.org/place/3052">Qenneshrin</placeName>
+               <location type="gps" source="http://syriaca.org/place/3052">
+                  <geo>35.99861 36.99806</geo>
+               </location>
+               <idno type="URI">http://syriaca.org/place/3052</idno>
+               <idno type="URI">http://pleiades.stoa.org/places/668226</idno>
             </place>
          </listPlace>
       </body>
