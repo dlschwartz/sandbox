@@ -28,8 +28,9 @@
                <bibl>
                   <author>Severus of Antioch</author>
                   <title>The Sixth Book of the Select Letters of Severus Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
-                  <editor xml:id="ewb">E. W. Brooks</editor>
+                  <editor role="creator" xml:id="ewb">E. W. Brooks</editor>
                   <editor role="translator">E. W. Brooks</editor>
+                  <editor role="compiler" xml:id="medComp">Anonymous Medieval Compiler</editor>
                   <pubPlace>London</pubPlace>
                   <publisher>Williams &amp; Norgate</publisher>
                   <date when="1904">1904</date>
@@ -48,8 +49,8 @@
             <dateline resp="#ewb">
                <date notBefore="0513" notAfter="0518">513-8</date>
             </dateline>
-            <head type="main">Of <persName ref="#sev01">the same</persName> to <persName ref="#euch01">Eucharius</persName> the bishop.</head>
-            <head type="sub">(From those during episcopacy, from --- book the 142nd, 143rd letter.)</head>
+            <head type="main" resp="#medComp">Of <persName ref="#sev01">the same</persName> to <persName ref="#euch01">Eucharius</persName> the bishop.</head>
+            <head type="sub" resp="#medComp">(From those during episcopacy, from --- book the 142nd, 143rd letter.)</head>
             <p>
                The transactions in the Christ-loving, believing <placeName ref="#pal01">city
                of the Paltians</placeName> concerning <persName ref="#fir01">Firminus</persName> have come to my
@@ -69,17 +70,17 @@
                not slay, and thou shalt not acquit the wicked."
                <note type="scriptureReference">Exodus 23.7</note>
             </p>
-            <trailer>The end.</trailer>
+            <trailer resp="#medComp">The end.</trailer>
          </div>
-         <div>
+         <div type="letter" n="1.12">
             <dateline resp="#ewb">
                <date notBefore="0514" notAfter="0518">514-8</date>
             </dateline>
-            <head type="main">
+            <head type="main" resp="#medComp">
                Of <persName ref="#sev01">the same</persName> to <persName ref="cos01">Cosmas</persName> and 
                <persName ref="#poly01">Polyeuctus</persName> and <persName ref="#zeno01">Zeno</persName> the presbyters.
             </head>
-            <head type="sub">(From those during episcopacy, from the 3rd book the 354th letter.)</head>
+            <head type="sub" resp="#medComp">(From those during episcopacy, from the 3rd book the 354th letter.)</head>
             <p>
                Even in the case of things that are acknowledged
                and manifest we are not justified either by the form of
@@ -106,7 +107,7 @@
                that we should ourselves, as I have said, lay down a
                just conclusion of the questions that have been stirred.
             </p>
-            <trailer>The end.</trailer>
+            <trailer resp="#medComp">The end.</trailer>
          </div>
       </body>
   </text>
