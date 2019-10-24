@@ -17,25 +17,35 @@
   </teiHeader>
   <text>
     <body>
-      <schemaSpec ident="projectNameHere" start="TEI">
+      <schemaSpec ident="SeverusAntiochLetters" start="TEI">
         <desc/>
         <moduleRef key="header"/>
         <moduleRef key="core"/>
         <moduleRef key="tei"/>
         <moduleRef key="textstructure"/>
+        <moduleRef key="namesdates" include="persName placeName"/>
       </schemaSpec>
       
-      <elementSpec ident="persName">
+      <elementSpec ident="persName" module="namesdates" mode="change">
+        <content>
+          <textNode/>
+          <elementRef key="placeName"/>
+        </content>
         <attList>
           <attDef ident="ref">
             <valList type="closed">
               <valItem ident="#sev01">
                 <gloss>Severus of Antioch</gloss>
               </valItem>
+              <valItem ident="#euch01">
+                <gloss></gloss>
+              </valItem>
             </valList>
           </attDef>
         </attList>
       </elementSpec>
+      
+      
       
     </body>
   </text>
