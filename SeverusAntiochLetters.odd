@@ -19,10 +19,10 @@
     <body>
       <schemaSpec ident="SeverusAntiochLetters" start="TEI">
         <desc/>
-        <moduleRef key="header"/>
-        <moduleRef key="core"/>
+        <moduleRef key="header" include="authority availability fileDesc publicationStmt sourceDesc teiHeader titleStmt"/>
+        <moduleRef key="core" include="author bibl biblScope citedRange date editor head name note p pb pubPlace publisher resp respStmt title"/>
         <moduleRef key="tei"/>
-        <moduleRef key="textstructure"/>
+        <moduleRef key="textstructure" include="body dateline div text trailer"/>
         <moduleRef key="namesdates" include="persName placeName"/>
       </schemaSpec>
       
@@ -34,11 +34,53 @@
         <attList>
           <attDef ident="ref">
             <valList type="closed">
+              <valItem ident="#cos01">
+                <gloss>Cosmos</gloss>
+              </valItem>
+              <valItem ident="#euch01">
+                <gloss>Eucharius</gloss>
+              </valItem>
+              <valItem ident="#fir01">
+                <gloss>Firminus</gloss>
+              </valItem>
+              <valItem ident="#god01">
+                <gloss>God</gloss>
+              </valItem>
+              <valItem ident="#hs01">
+                <gloss>The Holy Spirit</gloss>
+              </valItem>
+              <valItem ident="#isi01">
+                <gloss>Isidore</gloss>
+              </valItem>
+              <valItem ident="#opp01">
+                <gloss>Polyeuctus</gloss>
+              </valItem>
+              <valItem ident="#poly01">
+                <gloss>Zeno</gloss>
+              </valItem>
               <valItem ident="#sev01">
                 <gloss>Severus of Antioch</gloss>
               </valItem>
-              <valItem ident="#euch01">
-                <gloss></gloss>
+              <valItem ident="#zeno01">
+                <gloss>Zeno</gloss>
+              </valItem>
+            </valList>
+          </attDef>
+        </attList>
+      </elementSpec>
+      
+      <elementSpec ident="placeName" module="namesdates" mode="change">
+        <content>
+          <textNode/>
+        </content>
+        <attList>
+          <attDef ident="ref">
+            <valList type="closed">
+              <valItem ident="#chal01">
+                <gloss>Chalcis</gloss>
+              </valItem>
+              <valItem ident="#pal01">
+                <gloss>Paltus</gloss>
               </valItem>
             </valList>
           </attDef>
