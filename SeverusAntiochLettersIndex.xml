@@ -34,12 +34,12 @@
                <persName>Eucharius the bishop</persName>
                <idno type="URI">http://syriaca.org/person/2536</idno>
             </person>
-            <person>
-               <persName xml:id="fir01">Firminus</persName>
+            <person xml:id="fir01">
+               <persName>Firminus</persName>
                <idno type="URI">http://syriaca.org/person/2537</idno>
             </person>
-            <person>
-               <persName xml:id="god01">God</persName>
+            <person xml:id="god01">
+               <persName>God</persName>
                <idno type="URI">https://en.wikipedia.org/wiki/God</idno>
             </person>
             <person xml:id="cos01">
