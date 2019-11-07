@@ -96,7 +96,19 @@
               <elementRef key="placeName"/>
             </sequence>
           </content>
-          <constraintSpec ident="pInHeader" scheme="schematron">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <!--<constraintSpec ident="pInHeader" scheme="schematron">
             <constraint>
               <sch:rule context="teiHeader//p">
                 <sch:report test="note">
@@ -104,7 +116,7 @@
                 </sch:report>
               </sch:rule>
             </constraint>
-          </constraintSpec>          
+          </constraintSpec>-->          
         </elementSpec>
         
        
