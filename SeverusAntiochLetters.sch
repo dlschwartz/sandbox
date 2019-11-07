@@ -28,7 +28,7 @@
         
         <sch:rule context="tei:body//tei:persName/@ref">
             <sch:let name="indexDoc" value="doc('https://raw.githubusercontent.com/dlschwartz/sandbox/master/SeverusAntiochLettersIndex.xml')"/>
-            <sch:let name="personIDs" value="$indexDoc//tei:listPerson/tei:person or tei:personGrp/@xml:id"/>
+            <sch:let name="personIDs" value="$indexDoc//tei:listPerson/tei:person/@xml:id"/>
             <sch:let name="personRefValues" value="for $i in $personIDs return concat('#', $i)"/>
             <sch:assert test=". = $personRefValues">
                 Acceptable values: <sch:value-of select="string-join($personRefValues, ', ')"/>
