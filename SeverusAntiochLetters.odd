@@ -96,27 +96,15 @@
               <elementRef key="placeName"/>
             </sequence>
           </content>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          <!--<constraintSpec ident="pInHeader" scheme="schematron">
+          <constraintSpec ident="pInHeader" scheme="schematron">
             <constraint>
-              <sch:rule context="teiHeader//p">
-                <sch:report test="note">
+              <sch:rule context="tei:teiHeader//p">
+                <sch:report test="tei:note">
                   A &lt;p&gt; element in the &lt;teiHeader&gt; may not contain a &lt;note&gt; element.
                 </sch:report>
               </sch:rule>
             </constraint>
-          </constraintSpec>-->          
+          </constraintSpec>
         </elementSpec>
         
        

@@ -12,31 +12,31 @@
             </sch:report>
         </sch:rule>
         
-        <sch:rule context="tei:note/@resp" role="warning">
+        <sch:rule context="tei:note/@resp">
             <sch:assert test=". = '#dls' or . = '#ewb' or . = '#medComp'">
                 Preferred values: #dls, #ewb, #medComp
             </sch:assert>
         </sch:rule>    
         
+              
         
-        
-        
-        <!--<sch:rule context="tei:note/@resp">
+        <sch:rule context="tei:note/@resp">
             <sch:let name="editorIDs" value="//tei:teiHeader//tei:editor/@xml:id"/>
             <sch:let name="IDValues" value="for $i in $editorIDs return concat('#', $i)"/>
             <sch:assert test=". = $IDValues">
                 Acceptable values: <sch:value-of select="string-join($IDValues, ', ')"/>.
             </sch:assert>
-        </sch:rule>-->
+        </sch:rule>
         
-        <!--<sch:rule context="tei:body//tei:persName/@ref">
+        
+        <sch:rule context="tei:body//tei:persName/@ref" role="warning">
             <sch:let name="indexDoc" value="doc('https://raw.githubusercontent.com/dlschwartz/sandbox/master/SeverusAntiochLettersIndex.xml')"/>
             <sch:let name="personIDs" value="$indexDoc//tei:listPerson/tei:person/@xml:id"/>
             <sch:let name="personRefValues" value="for $i in $personIDs return concat('#', $i)"/>
             <sch:assert test=". = $personRefValues">
                 Acceptable values: <sch:value-of select="string-join($personRefValues, ', ')"/>
             </sch:assert>
-        </sch:rule>-->
+        </sch:rule>
         
         
     </sch:pattern>
