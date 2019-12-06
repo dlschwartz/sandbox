@@ -12,7 +12,7 @@
             </sch:report>
         </sch:rule>
         
-        <sch:rule context="tei:note/@resp">
+        <sch:rule context="tei:body/tei:note/@resp">
             <sch:assert test=". = '#dls' or . = '#ewb' or . = '#medComp'">
                 Preferred values: #dls, #ewb, #medComp
             </sch:assert>
