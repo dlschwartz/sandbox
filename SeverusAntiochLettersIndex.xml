@@ -3,7 +3,7 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Index for the Letters of Severus</title>
@@ -21,8 +21,8 @@
             <p>Born Digital</p>
          </sourceDesc>
       </fileDesc>
-  </teiHeader>
-  <text>
+   </teiHeader>
+   <text>
       <body>
          <listPerson>
             <person xml:id="sev01">
@@ -59,12 +59,14 @@
                <idno type="URI">https://en.wikipedia.org/wiki/Holy_Spirit</idno>
             </person>
             <personGrp xml:id="opp01">
-               <persName>The opponents of <persName>Cosmas</persName>, <persName>Polyeuctus</persName>, and <persName>Zeno</persName></persName>
+               <persName>The opponents of <persName>Cosmas</persName>,
+                     <persName>Polyeuctus</persName>, and <persName>Zeno</persName></persName>
                <idno type="URI">http://syriaca.org/person/3045</idno>
             </personGrp>
             <person xml:id="isi01">
                <persName>Isidore</persName>
-               <persName>The saintly Isidore, bishop of <placeName>the city of the men of Chalcis</placeName></persName>
+               <persName>The saintly Isidore, bishop of <placeName>the city of the men of
+                     Chalcis</placeName></persName>
                <idno type="URI">http://syriaca.org/person/2545</idno>
             </person>
          </listPerson>
@@ -84,5 +86,5 @@
             </place>
          </listPlace>
       </body>
-  </text>
+   </text>
 </TEI>

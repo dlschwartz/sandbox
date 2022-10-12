@@ -20,12 +20,14 @@
     <body>
       <schemaSpec ident="SeverusAntiochLetters" start="TEI">
         <desc/>
-        <moduleRef key="header" include="authority availability fileDesc publicationStmt sourceDesc teiHeader titleStmt"/>
-        <moduleRef key="core" include="author bibl biblScope citedRange date editor head name note p pb pubPlace publisher resp respStmt title"/>
+        <moduleRef key="header"
+          include="authority availability fileDesc publicationStmt sourceDesc teiHeader titleStmt"/>
+        <moduleRef key="core"
+          include="author bibl biblScope citedRange date editor head name note p pb pubPlace publisher resp respStmt title"/>
         <moduleRef key="tei"/>
         <moduleRef key="textstructure" include="body dateline div text trailer"/>
         <moduleRef key="namesdates" include="persName placeName"/>
-        
+
         <elementSpec ident="persName" module="namesdates" mode="change">
           <content>
             <textNode/>
@@ -68,7 +70,7 @@
             </attDef>
           </attList>
         </elementSpec>
-        
+
         <elementSpec ident="placeName" module="namesdates" mode="change">
           <content>
             <textNode/>
@@ -86,7 +88,7 @@
             </attDef>
           </attList>
         </elementSpec>
-        
+
         <elementSpec ident="p" module="core" mode="change">
           <content>
             <sequence preserveOrder="false">
@@ -99,16 +101,15 @@
           <constraintSpec ident="pInHeader" scheme="schematron">
             <constraint>
               <sch:rule context="tei:teiHeader//p">
-                <sch:report test="tei:note">
-                  A &lt;p&gt; element in the &lt;teiHeader&gt; may not contain a &lt;note&gt; element.
-                </sch:report>
+                <sch:report test="tei:note"> A &lt;p&gt; element in the &lt;teiHeader&gt; may not
+                  contain a &lt;note&gt; element. </sch:report>
               </sch:rule>
             </constraint>
           </constraintSpec>
         </elementSpec>
-        
-       
-        
+
+
+
       </schemaSpec>
     </body>
   </text>
