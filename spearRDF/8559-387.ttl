@@ -1,0 +1,45 @@
+@prefix swd: <http://syriaca.org/>.
+@prefix swds: <http://spear-prosop/entity/statement/>.
+@prefix swdt: <http://syriaca.org/prop/direct/>.
+@prefix sp: <http://syriaca.org/prop/>.
+@prefix sps: <http://syriaca.org/prop/statement/>.
+@prefix spr: <http://syriaca.org/prop/reference/>.
+@prefix spq: <http://syriaca.org/prop/qualifier/>.
+@prefix swdref: <http://spear-prosop/reference/>.
+@prefix schema: <http://schema.org/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix prov: <http://www.w3.org/ns/prov#>. 
+
+<https://spear-prosop.org/8559-387> schema:description "In 498/9 A. Gr. 810 the hotspring of Abarne stopped for three days."@en ;
+<https://spear-prosop.org/8559-387> rdf:XMLLiteral  "<desc xmlns="http://www.tei-c.org/ns/1.0"> In <choice>
+                                <reg>
+                           <date notBefore="0498-10" notAfter="0499-09" calendar="Gregorian">498/9</date>
+                        </reg>
+                                <orig>
+                           <date when-custom="0810" datingMethod="Seleucid">A. Gr.
+                                        810</date>
+                        </orig>
+                        </choice> 
+                     <placeName ref="http://syriaca.org/place/2785">the hotspring of Abarne</placeName>  stopped for
+                            three days. </desc>" ;
+swd:event8559-387 schema:description "In 498/9 A. Gr. 810 the hotspring of Abarne stopped for three days."@en ;
+swdref:8559-387 spr:part-of-series <https://spear-prosop.org> ;
+swdref:8559-387 spr:part-of-series <https://spear-prosop.org/8559> ;
+swds:8559-387 spr:wasDerivedFrom <https://spear-prosop.org/8559-387> ;
+swdref:8559-387 spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
+swdref:8559-387 spr:reference-bibl <http://syriaca.org/bibl/633> ;
+swdref:8559-387 spr:reference-bibl <urn:cts:syriacLit:nhsl8559.syriacCorpus57:76> ;
+swdref:8559-387 spr:reference-bibl <http://syriaca.org/bibl/657> ;
+swds:8559-387 spq:certainty <incerta> ;
+swd:event8559-387 swdt:event-place swd:place/2785 ;
+swd:event8559-387 sp:event-place swds:8559-387?N121182541 ;
+swds:8559-387?N121182541 sps:event-place swd:place/2785 ;
+swd:event8559-387 swdt:event-keyword swd:keyword/natural-disasters ;
+swd:event8559-387 sp:event-keyword swds:8559-387?1N121182 ;
+swds:8559-387?1N121182 sps:event-keyword swd:keyword/natural-disasters ;
+swd:event8559-387 swdt:not-before "0498-10"^^xsd:gYearMonth ;
+swd:event8559-387 sp:not-before swds:8559-387?N1211notbefore ;
+swds:swds:8559-387?N1211notbefore sps:not-before "0498-10"^^xsd:gYearMonth ;
+swd:event8559-387 swdt:not-after "0499-09"^^xsd:gYearMonth ;
+swd:event8559-387 sp:not-after swds:8559-387?N1211notafter ;
+swds:swds:8559-387?N1211notafter sps:not-after "0499-09"^^xsd:gYearMonth ;

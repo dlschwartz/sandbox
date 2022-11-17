@@ -1,0 +1,28 @@
+@prefix swd: <http://syriaca.org/>.
+@prefix swds: <http://spear-prosop/entity/statement/>.
+@prefix swdt: <http://syriaca.org/prop/direct/>.
+@prefix sp: <http://syriaca.org/prop/>.
+@prefix sps: <http://syriaca.org/prop/statement/>.
+@prefix spr: <http://syriaca.org/prop/reference/>.
+@prefix spq: <http://syriaca.org/prop/qualifier/>.
+@prefix swdref: <http://spear-prosop/reference/>.
+@prefix schema: <http://schema.org/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix prov: <http://www.w3.org/ns/prov#>. 
+
+<https://spear-prosop.org/801-11> schema:description "Mare used to behave with great and measureless arrogance and he was haughty."@en ;
+<https://spear-prosop.org/801-11> rdf:XMLLiteral  "<note xmlns="http://www.tei-c.org/ns/1.0" type="desc">
+                        <persName ref="http://syriaca.org/person/1866">Mare</persName> used to behave with great and measureless
+                                arrogance and he was haughty. </note>" ;
+swdref:801-11 spr:part-of-series <https://spear-prosop.org> ;
+swdref:801-11 spr:part-of-series <https://spear-prosop.org/lives-eastern-saints> ;
+swdref:801-11 spr:part-of-series <https://spear-prosop.org/801> ;
+swds:801-11 spr:wasDerivedFrom <https://spear-prosop.org/801-11> ;
+swdref:801-11 spr:creator <http://syriaca.org/documentation/editors.xml#jmcmanaway> ;
+swdref:801-11 spr:creator <http://syriaca.org/documentation/editors.xml#avawter> ;
+swdref:801-11 spr:reference-bibl <http://syriaca.org/work/801> ;
+swdref:801-11 spr:reference-bibl <http://syriaca.org/bibl/1409> ;
+swds:person/1866 sp:mental-state swds:801-11 ;
+swd:person/1866 swdt:mental-state swd:keyword/pride ;
+swds:801-11 sps:mental-state swd:keyword/pride ;
+swd:801-11 rdfs:label "Mare used to behave with great and measureless arrogance and he was haughty."@en ;

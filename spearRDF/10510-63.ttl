@@ -1,0 +1,29 @@
+@prefix swd: <http://syriaca.org/>.
+@prefix swds: <http://spear-prosop/entity/statement/>.
+@prefix swdt: <http://syriaca.org/prop/direct/>.
+@prefix sp: <http://syriaca.org/prop/>.
+@prefix sps: <http://syriaca.org/prop/statement/>.
+@prefix spr: <http://syriaca.org/prop/reference/>.
+@prefix spq: <http://syriaca.org/prop/qualifier/>.
+@prefix swdref: <http://spear-prosop/reference/>.
+@prefix schema: <http://schema.org/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix prov: <http://www.w3.org/ns/prov#>. 
+
+<https://spear-prosop.org/10510-63> schema:description "Abraham was an archimandrite of theConvent of John Urtayain Amida"@en ;
+<https://spear-prosop.org/10510-63> rdf:XMLLiteral  "<note xmlns="http://www.tei-c.org/ns/1.0" type="desc">
+                        <persName ref="http://syriaca.org/person/3185">Abraham</persName> was an archimandrite of <placeName ref="http://syriaca.org/place/399"> the<placeName ref="http://syriaca.org/place/399">Convent of John
+                                        Urtaya</placeName>in <placeName ref="http://syriaca.org/place/8">Amida</placeName>
+                        </placeName>
+                     </note>" ;
+swdref:10510-63 spr:part-of-series <https://spear-prosop.org> ;
+swdref:10510-63 spr:part-of-series <https://spear-prosop.org/lives-eastern-saints> ;
+swdref:10510-63 spr:part-of-series <https://spear-prosop.org/10510> ;
+swds:10510-63 spr:wasDerivedFrom <https://spear-prosop.org/10510-63> ;
+swdref:10510-63 spr:creator <http://syriaca.org/documentation/editors.xml#ktorabi> ;
+swdref:10510-63 spr:reference-bibl <http://syriaca.org/work/10510> ;
+swdref:10510-63 spr:reference-bibl <http://syriaca.org/bibl/2033> ;
+swd:person/3185 sp:occupation swds:10510-63 ;
+swd:person/3185 swdt:occupation swd:keyword/monastic-heads ;
+swds:10510-63 sps:occupation swd:keyword/monastic-heads ;
+swd:10510-63 rdfs:label "Abraham was an archimandrite of the Convent of John Urtaya in Amida"@en ;

@@ -1,0 +1,29 @@
+@prefix swd: <http://syriaca.org/>.
+@prefix swds: <http://spear-prosop/entity/statement/>.
+@prefix swdt: <http://syriaca.org/prop/direct/>.
+@prefix sp: <http://syriaca.org/prop/>.
+@prefix sps: <http://syriaca.org/prop/statement/>.
+@prefix spr: <http://syriaca.org/prop/reference/>.
+@prefix spq: <http://syriaca.org/prop/qualifier/>.
+@prefix swdref: <http://spear-prosop/reference/>.
+@prefix schema: <http://schema.org/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix prov: <http://www.w3.org/ns/prov#>. 
+
+<https://spear-prosop.org/3042-8> schema:description "Peter the prebyter"@en ;
+<https://spear-prosop.org/3042-8> rdf:XMLLiteral  "<listPerson xmlns="http://www.tei-c.org/ns/1.0">
+                    <person>
+                        <persName ref="http://syriaca.org/person/2409"> Peter the prebyter
+                        </persName>
+                    </person>
+                </listPerson>" ;
+swdref:3042-8 spr:part-of-series <https://spear-prosop.org> ;
+swdref:3042-8 spr:part-of-series <https://spear-prosop.org/letters-severus> ;
+swdref:3042-8 spr:part-of-series <https://spear-prosop.org/3042> ;
+swds:3042-8 spr:wasDerivedFrom <https://spear-prosop.org/3042-8> ;
+swdref:3042-8 spr:creator <http://syriaca.org/documentation/editors.xml#ktorabi> ;
+swdref:3042-8 spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
+swdref:3042-8 spr:reference-bibl <http://syriaca.org/bibl/669> ;
+swds:3042-8 sps:name-variant swd:person/2409 ;
+swd:person/2409 swdt:name-variant "Peter the prebyter"@en ;
+swd:person/2409 sp:name-variant swds:3042-8 ;

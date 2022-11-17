@@ -1,0 +1,54 @@
+@prefix swd: <http://syriaca.org/>.
+@prefix swds: <http://spear-prosop/entity/statement/>.
+@prefix swdt: <http://syriaca.org/prop/direct/>.
+@prefix sp: <http://syriaca.org/prop/>.
+@prefix sps: <http://syriaca.org/prop/statement/>.
+@prefix spr: <http://syriaca.org/prop/reference/>.
+@prefix spq: <http://syriaca.org/prop/qualifier/>.
+@prefix swdref: <http://spear-prosop/reference/>.
+@prefix schema: <http://schema.org/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix prov: <http://www.w3.org/ns/prov#>. 
+
+<https://spear-prosop.org/3018-6> schema:description "Basil wrote a letter to Urbicius on the subject of refraining from communion with heretics."@en ;
+<https://spear-prosop.org/3018-6> rdf:XMLLiteral  "<desc xmlns="http://www.tei-c.org/ns/1.0">
+                            <persName ref="http://syriaca.org/person/376">Basil</persName> wrote a letter to
+                            <persName ref="http://syriaca.org/person/2778">Urbicius</persName> 
+                            on the subject of  refraining from communion with heretics.
+                            <listRelation>
+                                <relation type="person" ref="http://syriaca.org/keyword/sender-of-letter-to" active="http://syriaca.org/person/376" passive="http://syriaca.org/person/2778"></relation>
+                            </listRelation>
+                        </desc>" ;
+swd:event3018-6 schema:description "Basil wrote a letter to Urbicius on the subject of refraining from communion with heretics."@en ;
+swdref:3018-6 spr:part-of-series <https://spear-prosop.org> ;
+swdref:3018-6 spr:part-of-series <https://spear-prosop.org/letters-severus> ;
+swdref:3018-6 spr:part-of-series <https://spear-prosop.org/3018> ;
+swds:3018-6 spr:wasDerivedFrom <https://spear-prosop.org/3018-6> ;
+swdref:3018-6 spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
+swdref:3018-6 spr:reference-bibl <http://syriaca.org/bibl/669> ;
+swd:event3018-6 swdt:event-participant swd:person/376 ;
+swd:event3018-6 sp:event-participant swds:3018-6?N121182321 ;
+swds:3018-6?N121182321 sps:event-participant swd:person/376 ;
+swd:event3018-6 swdt:event-participant swd:person/2778 ;
+swd:event3018-6 sp:event-participant swds:3018-6?N121182341 ;
+swds:3018-6?N121182341 sps:event-participant swd:person/2778 ;
+swd:event3018-6 swdt:event-keyword swd:keyword/letters ;
+swd:event3018-6 sp:event-keyword swds:3018-6?1N121182 ;
+swds:3018-6?1N121182 sps:event-keyword swd:keyword/letters ;
+swd:event3018-6 swdt:event-keyword swd:keyword/communion ;
+swd:event3018-6 sp:event-keyword swds:3018-6?2N121182 ;
+swds:3018-6?2N121182 sps:event-keyword swd:keyword/communion ;
+swd:event3018-6 swdt:event-keyword swd:keyword/heresy ;
+swd:event3018-6 sp:event-keyword swds:3018-6?3N121182 ;
+swds:3018-6?3N121182 sps:event-keyword swd:keyword/heresy ;
+swd:person/376 swdt:sender-of-letter-to swd:person/2778 ;
+swd:person/376 sp:sender-of-letter-to swds:3018-6?N121182362 ;
+swds:3018-6?N121182362 sps:sender-of-letter-to swd:person/2778 ;
+swd: swdt:same-event swd: ;
+swd: sp:same-event swd: ;
+swds:3018-6?N12111232 sps:same-event swd: ;
+swds:3018-6?N12111232 sps:same-event swd: ;
+swd: swdt:same-event swd: ;
+swd: sp:same-event swd: ;
+swds:3018-6?N12111232 sps:same-event swd: ;
+swds:3018-6?N12111232 sps:same-event swd: ;

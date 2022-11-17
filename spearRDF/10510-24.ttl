@@ -1,0 +1,29 @@
+@prefix swd: <http://syriaca.org/>.
+@prefix swds: <http://spear-prosop/entity/statement/>.
+@prefix swdt: <http://syriaca.org/prop/direct/>.
+@prefix sp: <http://syriaca.org/prop/>.
+@prefix sps: <http://syriaca.org/prop/statement/>.
+@prefix spr: <http://syriaca.org/prop/reference/>.
+@prefix spq: <http://syriaca.org/prop/qualifier/>.
+@prefix swdref: <http://spear-prosop/reference/>.
+@prefix schema: <http://schema.org/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix prov: <http://www.w3.org/ns/prov#>. 
+
+<https://spear-prosop.org/10510-24> schema:description "John Urtaya was born in Syria."@en ;
+<https://spear-prosop.org/10510-24> rdf:XMLLiteral  "<note xmlns="http://www.tei-c.org/ns/1.0" type="desc">
+                                <persName ref="http://syriaca.org/person/3218">John Urtaya</persName> was born in 
+                                <placeName ref="http://syriaca.org/place/486">Syria</placeName>.
+                            </note>" ;
+swdref:10510-24 spr:part-of-series <https://spear-prosop.org> ;
+swdref:10510-24 spr:part-of-series <https://spear-prosop.org/lives-eastern-saints> ;
+swdref:10510-24 spr:part-of-series <https://spear-prosop.org/10510> ;
+swds:10510-24 spr:wasDerivedFrom <https://spear-prosop.org/10510-24> ;
+swdref:10510-24 spr:creator <http://syriaca.org/documentation/editors.xml#ktorabi> ;
+swdref:10510-24 spr:reference-bibl <http://syriaca.org/work/10510> ;
+swdref:10510-24 spr:reference-bibl <http://syriaca.org/bibl/2033> ;
+swd:person/3218 sp:birth-date swds:10510-24 ;
+swd:10510-24 rdfs:label "John Urtaya was born in Syria ." ;
+swd:person/3218 swdt:birth-place swds:place/486 ;
+swd:person/3218 sp:birth-place swds:10510-24 ;
+swds:10510-24 sps:birth-place swds:place/486 ;

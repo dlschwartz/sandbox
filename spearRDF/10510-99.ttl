@@ -1,0 +1,41 @@
+@prefix swd: <http://syriaca.org/>.
+@prefix swds: <http://spear-prosop/entity/statement/>.
+@prefix swdt: <http://syriaca.org/prop/direct/>.
+@prefix sp: <http://syriaca.org/prop/>.
+@prefix sps: <http://syriaca.org/prop/statement/>.
+@prefix spr: <http://syriaca.org/prop/reference/>.
+@prefix spq: <http://syriaca.org/prop/qualifier/>.
+@prefix swdref: <http://spear-prosop/reference/>.
+@prefix schema: <http://schema.org/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix prov: <http://www.w3.org/ns/prov#>. 
+
+<https://spear-prosop.org/10510-99> schema:description "Abraham the Shepherd succeeded Abraham IIas head of theConvent of John Urtaya."@en ;
+<https://spear-prosop.org/10510-99> rdf:XMLLiteral  "<desc xmlns="http://www.tei-c.org/ns/1.0">
+                     <persName ref="http://syriaca.org/person/3187">Abraham the
+                                Shepherd</persName> succeeded <persName ref="http://syriaca.org/person/3186">Abraham II</persName>as head of
+                                the<placeName ref="http://syriaca.org/place/399">Convent of John
+                                Urtaya</placeName>. </desc>" ;
+swd:event10510-99 schema:description "Abraham the Shepherd succeeded Abraham IIas head of theConvent of John Urtaya."@en ;
+swdref:10510-99 spr:part-of-series <https://spear-prosop.org> ;
+swdref:10510-99 spr:part-of-series <https://spear-prosop.org/lives-eastern-saints> ;
+swdref:10510-99 spr:part-of-series <https://spear-prosop.org/10510> ;
+swds:10510-99 spr:wasDerivedFrom <https://spear-prosop.org/10510-99> ;
+swdref:10510-99 spr:creator <http://syriaca.org/documentation/editors.xml#ktorabi> ;
+swdref:10510-99 spr:reference-bibl <http://syriaca.org/work/10510> ;
+swdref:10510-99 spr:reference-bibl <http://syriaca.org/bibl/2033> ;
+swd:event10510-99 swdt:event-participant swd:person/3187 ;
+swd:event10510-99 sp:event-participant swds:10510-99?N121182321 ;
+swds:10510-99?N121182321 sps:event-participant swd:person/3187 ;
+swd:event10510-99 swdt:event-participant swd:person/3186 ;
+swd:event10510-99 sp:event-participant swds:10510-99?N121182341 ;
+swds:10510-99?N121182341 sps:event-participant swd:person/3186 ;
+swd:event10510-99 swdt:event-place swd:place/399 ;
+swd:event10510-99 sp:event-place swds:10510-99?N121182361 ;
+swds:10510-99?N121182361 sps:event-place swd:place/399 ;
+swd:event10510-99 swdt:event-keyword swd:keyword/monastic-heads ;
+swd:event10510-99 sp:event-keyword swds:10510-99?1N121182 ;
+swds:10510-99?1N121182 sps:event-keyword swd:keyword/monastic-heads ;
+swd:event10510-99 swdt:event-keyword swd:keyword/succession ;
+swd:event10510-99 sp:event-keyword swds:10510-99?2N121182 ;
+swds:10510-99?2N121182 sps:event-keyword swd:keyword/succession ;

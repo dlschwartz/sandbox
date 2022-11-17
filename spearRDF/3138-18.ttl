@@ -1,0 +1,27 @@
+@prefix swd: <http://syriaca.org/>.
+@prefix swds: <http://spear-prosop/entity/statement/>.
+@prefix swdt: <http://syriaca.org/prop/direct/>.
+@prefix sp: <http://syriaca.org/prop/>.
+@prefix sps: <http://syriaca.org/prop/statement/>.
+@prefix spr: <http://syriaca.org/prop/reference/>.
+@prefix spq: <http://syriaca.org/prop/qualifier/>.
+@prefix swdref: <http://spear-prosop/reference/>.
+@prefix schema: <http://schema.org/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix prov: <http://www.w3.org/ns/prov#>. 
+
+<https://spear-prosop.org/3138-18> schema:description "Anonymous 3759 died sometime between 519-538."@en ;
+<https://spear-prosop.org/3138-18> rdf:XMLLiteral  "<note xmlns="http://www.tei-c.org/ns/1.0" type="desc">
+                                <persName ref="http://syriaca.org/person/3759">Anonymous 3759</persName> died sometime between 519-538. 
+                            </note>" ;
+swdref:3138-18 spr:part-of-series <https://spear-prosop.org> ;
+swdref:3138-18 spr:part-of-series <https://spear-prosop.org/letters-severus> ;
+swdref:3138-18 spr:part-of-series <https://spear-prosop.org/3138> ;
+swds:3138-18 spr:wasDerivedFrom <https://spear-prosop.org/3138-18> ;
+swdref:3138-18 spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
+swdref:3138-18 spr:reference-bibl <http://syriaca.org/bibl/669> ;
+swd:person/3759 swdt:death-date "Between 519-538 Anonymous 3759 died sometime between 519-538." ;
+swd:person/3759 sp:death-date swds:3138-18 ;
+swd:3138-18 swdt:not-before "0519"^^xsd:gYear ;
+swd:3138-18 swdt:not-after "0538"^^xsd:gYear ;
+swd:3138-18 rdfs:label "Anonymous 3759 died sometime between 519-538." ;

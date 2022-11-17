@@ -1,0 +1,33 @@
+@prefix swd: <http://syriaca.org/>.
+@prefix swds: <http://spear-prosop/entity/statement/>.
+@prefix swdt: <http://syriaca.org/prop/direct/>.
+@prefix sp: <http://syriaca.org/prop/>.
+@prefix sps: <http://syriaca.org/prop/statement/>.
+@prefix spr: <http://syriaca.org/prop/reference/>.
+@prefix spq: <http://syriaca.org/prop/qualifier/>.
+@prefix swdref: <http://spear-prosop/reference/>.
+@prefix schema: <http://schema.org/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix prov: <http://www.w3.org/ns/prov#>. 
+
+<https://spear-prosop.org/3008-2> schema:description "Alypius and Anonymous 3775 were married."@en ;
+<https://spear-prosop.org/3008-2> rdf:XMLLiteral  "<desc xmlns="http://www.tei-c.org/ns/1.0">
+                            <persName ref="http://syriaca.org/person/2591">Alypius</persName> 
+                            and 
+                            <persName ref="http://syriaca.org/person/3775">Anonymous 3775</persName>
+                            were married.
+                        </desc>" ;
+swdref:3008-2 spr:part-of-series <https://spear-prosop.org> ;
+swdref:3008-2 spr:part-of-series <https://spear-prosop.org/letters-severus> ;
+swdref:3008-2 spr:part-of-series <https://spear-prosop.org/3008> ;
+swds:3008-2 spr:wasDerivedFrom <https://spear-prosop.org/3008-2> ;
+swdref:3008-2 spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
+swdref:3008-2 spr:reference-bibl <http://syriaca.org/bibl/669> ;
+swd:person/2591 swdt:spouse-of swd:person/3775 ;
+swd:person/2591 sp:spouse-of swd:person/3775 ;
+swds:3008-2?N121182 sps:spouse-of swd:person/3775 ;
+swds:3008-2?N121182 sps:spouse-of swd:person/2591 ;
+swd:person/3775 swdt:spouse-of swd:person/2591 ;
+swd:person/3775 sp:spouse-of swd:person/2591 ;
+swds:3008-2?N121182 sps:spouse-of swd:person/2591 ;
+swds:3008-2?N121182 sps:spouse-of swd:person/3775 ;
