@@ -27,35 +27,48 @@ swds:3013-16 spr:wasDerivedFrom <https://spear-prosop.org/3013-16> ;
 swdref:3013-16 spr:creator <http://syriaca.org/documentation/editors.xml#syoung> ;
 swdref:3013-16 spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
 swdref:3013-16 spr:reference-bibl <http://syriaca.org/bibl/669> ;
+
 swd:event3013-16 swdt:event-participant swd:person/2767 ;
 swd:event3013-16 sp:event-participant swds:3013-16?N121182521 ;
 swds:3013-16?N121182521 sps:event-participant swd:person/2767 ;
+
 swd:event3013-16 swdt:event-participant swd:person/51 ;
 swd:event3013-16 sp:event-participant swds:3013-16?N121182541 ;
 swds:3013-16?N121182541 sps:event-participant swd:person/51 ;
+
 swd:event3013-16 swdt:event-participant swd:person/2669 ;
 swd:event3013-16 sp:event-participant swds:3013-16?N121182561 ;
 swds:3013-16?N121182561 sps:event-participant swd:person/2669 ;
+
 swd:event3013-16 swdt:event-keyword swd:keyword/deacons ;
 swd:event3013-16 sp:event-keyword swds:3013-16?1N121182 ;
 swds:3013-16?1N121182 sps:event-keyword swd:keyword/deacons ;
+
 swd:event3013-16 swdt:event-keyword swd:keyword/monastic-heads ;
 swd:event3013-16 sp:event-keyword swds:3013-16?2N121182 ;
 swds:3013-16?2N121182 sps:event-keyword swd:keyword/monastic-heads ;
+
 swd:event3013-16 swdt:event-keyword swd:keyword/monasticism ;
 swd:event3013-16 sp:event-keyword swds:3013-16?3N121182 ;
 swds:3013-16?3N121182 sps:event-keyword swd:keyword/monasticism ;
+
 swd:event3013-16 swdt:not-before "0489"^^xsd:gYear ;
 swd:event3013-16 sp:not-before swds:3013-16?N1211notbefore ;
 swds:swds:3013-16?N1211notbefore sps:not-before "0489"^^xsd:gYear ;
+
 swd:event3013-16 swdt:not-after "0512"^^xsd:gYear ;
 swd:event3013-16 sp:not-after swds:3013-16?N1211notafter ;
 swds:swds:3013-16?N1211notafter sps:not-after "0512"^^xsd:gYear ;
+
+
+THIS IS WHAT EACH OF THE STATEMENT INSTANCES SHOULD LOOK LIKE:
 swds:3013-16?N121182582 spq:not-before "0489"^^xsd:gYear ;
 swds:3013-16?N121182582 spq:not-after "0512"^^xsd:gYear ;
 swd:person/2767 swdt:professional-relationship swd:person/2669 ;
-swd:person/2767 sp:professional-relationship swd:person/2669 ;
+swd:person/2767 sp:professional-relationship swds:3013-16?N121182582 ;
 swds:3013-16?N121182582 sps:professional-relationship swd:person/2669 ;
+
+
 swds:3013-16?N121182582 sps:professional-relationship swd:person/2767 ;
 swd:person/2767 swdt:professional-relationship swd:person/51 ;
 swd:person/2767 sp:professional-relationship swd:person/51 ;
