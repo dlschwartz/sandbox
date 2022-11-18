@@ -52,3 +52,14 @@ swd: swdt:same-event swd: ;
 swd: sp:same-event swd: ;
 swds:3018-6?N12111232 sps:same-event swd: ;
 swds:3018-6?N12111232 sps:same-event swd: ;
+
+
+LINES 47-54 SHOULD LOOK LIKE:
+
+swd:event3018-6 swdt:same-event swd:event3064-2 ;
+swd:event3018-6 sp:same-event swds:3018-6?N12111232 ;
+swds:3018-6?N12111232 sps:same-event swd:event3064-2 ;
+
+swd:event3064-2 swdt:same-event swd:event3018-6 ;
+swd:event3064-2 sp:same-event swds:3018-6?[NEW UNIQUE STRING] ;
+swds:3018-6?[NEW UNIQUE STRING] sps:same-event swd:event3018-6 ;
