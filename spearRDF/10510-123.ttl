@@ -20,7 +20,9 @@ swds:10510-123 spr:wasDerivedFrom <https://spear-prosop.org/10510-123> ;
 swdref:10510-123 spr:creator <http://syriaca.org/documentation/editors.xml#ktorabi> ;
 swdref:10510-123 spr:reference-bibl <http://syriaca.org/work/10510> ;
 swdref:10510-123 spr:reference-bibl <http://syriaca.org/bibl/2033> ;
+
 swds:person/3676 sp:gender swds:10510-123 ;
 swd:person/3676 swdt:gender swd:keyword/male ;
 swds:10510-123 sps:gender swd:keyword/male ;
+
 swd:10510-123 rdfs:label "Anonymous 3676 was male."@en ;

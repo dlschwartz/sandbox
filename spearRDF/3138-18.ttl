@@ -24,6 +24,8 @@ swdref:3138-18 spr:reference-bibl <http://syriaca.org/bibl/669> ;
 swd:person/3759 swdt:death-date "Between 519-538 Anonymous 3759 died sometime between 519-538." ;
 
 swd:person/3759 sp:death-date swds:3138-18 ;
+
 swd:3138-18 swdt:not-before "0519"^^xsd:gYear ;
 swd:3138-18 swdt:not-after "0538"^^xsd:gYear ;
+
 swd:3138-18 rdfs:label "Anonymous 3759 died sometime between 519-538." ;

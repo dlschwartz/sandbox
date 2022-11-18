@@ -20,6 +20,7 @@ swdref:8559-55 spr:creator <http://syriaca.org/documentation/editors.xml#dschwar
 swdref:8559-55 spr:reference-bibl <http://syriaca.org/bibl/633> ;
 swdref:8559-55 spr:reference-bibl <urn:cts:syriacLit:nhsl8559.syriacCorpus57:4> ;
 swdref:8559-55 spr:reference-bibl <http://syriaca.org/bibl/657> ;
+
 swd:person/2245 swdt:birth-date "3/2 B.C. A. Gr. 309 Jesus was born in 3/2 B.C." ;
 swd:person/2245 sp:birth-date swds:8559-55 ;
 swd:8559-55 swdt:not-before "-0003-10"^^xsd:gYearMonth ;

@@ -24,18 +24,23 @@ swds:10510-99 spr:wasDerivedFrom <https://spear-prosop.org/10510-99> ;
 swdref:10510-99 spr:creator <http://syriaca.org/documentation/editors.xml#ktorabi> ;
 swdref:10510-99 spr:reference-bibl <http://syriaca.org/work/10510> ;
 swdref:10510-99 spr:reference-bibl <http://syriaca.org/bibl/2033> ;
+
 swd:event10510-99 swdt:event-participant swd:person/3187 ;
 swd:event10510-99 sp:event-participant swds:10510-99?N121182321 ;
 swds:10510-99?N121182321 sps:event-participant swd:person/3187 ;
+
 swd:event10510-99 swdt:event-participant swd:person/3186 ;
 swd:event10510-99 sp:event-participant swds:10510-99?N121182341 ;
 swds:10510-99?N121182341 sps:event-participant swd:person/3186 ;
+
 swd:event10510-99 swdt:event-place swd:place/399 ;
 swd:event10510-99 sp:event-place swds:10510-99?N121182361 ;
 swds:10510-99?N121182361 sps:event-place swd:place/399 ;
+
 swd:event10510-99 swdt:event-keyword swd:keyword/monastic-heads ;
 swd:event10510-99 sp:event-keyword swds:10510-99?1N121182 ;
 swds:10510-99?1N121182 sps:event-keyword swd:keyword/monastic-heads ;
+
 swd:event10510-99 swdt:event-keyword swd:keyword/succession ;
 swd:event10510-99 sp:event-keyword swds:10510-99?2N121182 ;
 swds:10510-99?2N121182 sps:event-keyword swd:keyword/succession ;

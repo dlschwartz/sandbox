@@ -21,8 +21,11 @@ swdref:3111-23 spr:part-of-series <https://spear-prosop.org/3111> ;
 swds:3111-23 spr:wasDerivedFrom <https://spear-prosop.org/3111-23> ;
 swdref:3111-23 spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
 swdref:3111-23 spr:reference-bibl <http://syriaca.org/bibl/668> ;
+
 swd:person/2562 sp:death-date swds:3111-23 ;
+
 swd:3111-23 rdfs:label "Epiphanius died in Palestine ." ;
+
 swd:person/2562 swdt:death-place swds:place/149 ;
 swd:person/2562 sp:death-place swds:3111-23 ;
 swds:3111-23 sps:death-place swds:place/149 ;
