@@ -61,7 +61,7 @@ swd:event3013-16 sp:not-after swds:3013-16?N1211notafter ;
 swds:swds:3013-16?N1211notafter sps:not-after "0512"^^xsd:gYear ;
 
 
-THIS IS WHAT EACH OF THE STATEMENT INSTANCES SHOULD LOOK LIKE:
+THIS IS WHAT EACH OF THE STATEMENT INSTANCES BELOW SHOULD LOOK LIKE:
 swds:3013-16?N121182582 spq:not-before "0489"^^xsd:gYear ;
 swds:3013-16?N121182582 spq:not-after "0512"^^xsd:gYear ;
 swd:person/2767 swdt:professional-relationship swd:person/2669 ;
