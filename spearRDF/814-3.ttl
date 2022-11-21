@@ -1,0 +1,36 @@
+@prefix swd: <http://syriaca.org/>.
+@prefix swds: <http://spear-prosop/entity/statement/>.
+@prefix swdt: <http://syriaca.org/prop/direct/>.
+@prefix sp: <http://syriaca.org/prop/>.
+@prefix sps: <http://syriaca.org/prop/statement/>.
+@prefix spr: <http://syriaca.org/prop/reference/>.
+@prefix spq: <http://syriaca.org/prop/qualifier/>.
+@prefix swdref: <http://spear-prosop/reference/>.
+@prefix schema: <http://schema.org/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix prov: <http://www.w3.org/ns/prov#>. 
+
+<https://spear-prosop.org/814-3> schema:description "Addai and Abraham were siblings."@en ;
+<https://spear-prosop.org/814-3> rdf:XMLLiteral  "<desc xmlns="http://www.tei-c.org/ns/1.0">
+                            <persName ref="http://syriaca.org/person/1117">Addai</persName> and <persName ref="http://syriaca.org/person/1548">Abraham</persName> were siblings.
+                        </desc>" ;
+swdref:814-3 spr:part-of-series <https://spear-prosop.org> ;
+swdref:814-3 spr:part-of-series <https://spear-prosop.org/lives-eastern-saints> ;
+swdref:814-3 spr:part-of-series <https://spear-prosop.org/814> ;
+swds:814-3 spr:wasDerivedFrom <https://spear-prosop.org/814-3> ;
+swdref:814-3 spr:creator <http://syriaca.org/documentation/editors.xml#mdoerfler> ;
+swdref:814-3 spr:creator <http://syriaca.org/documentation/editors.xml#jnsaint-laurent> ;
+swdref:814-3 spr:reference-bibl <http://syriaca.org/work/814> ;
+swdref:814-3 spr:reference-bibl <http://syriaca.org/bibl/1409> ;
+swd:person/1117 swdt:sibling-of swd:person/1548 ;
+swd:person/1117 sp:sibling-of swd:person/1548 ;
+swds:814-3?N121182 sps:sibling-of swd:person/1548 ;
+swds:814-3?N121182 sps:sibling-of swd:person/1117 ;
+spq:814-3?N121182 spq:relationshipQualifier swd:maternal-family-relationship ;
+spq:814-3?N121182 spq:relationshipQualifier swd:half-family-relationship ;
+swd:person/1548 swdt:sibling-of swd:person/1117 ;
+swd:person/1548 sp:sibling-of swd:person/1117 ;
+swds:814-3?N121182 sps:sibling-of swd:person/1117 ;
+swds:814-3?N121182 sps:sibling-of swd:person/1548 ;
+spq:814-3?N121182 spq:relationshipQualifier swd:maternal-family-relationship ;
+spq:814-3?N121182 spq:relationshipQualifier swd:half-family-relationship ;

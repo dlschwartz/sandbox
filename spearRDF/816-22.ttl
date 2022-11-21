@@ -1,0 +1,33 @@
+@prefix swd: <http://syriaca.org/>.
+@prefix swds: <http://spear-prosop/entity/statement/>.
+@prefix swdt: <http://syriaca.org/prop/direct/>.
+@prefix sp: <http://syriaca.org/prop/>.
+@prefix sps: <http://syriaca.org/prop/statement/>.
+@prefix spr: <http://syriaca.org/prop/reference/>.
+@prefix spq: <http://syriaca.org/prop/qualifier/>.
+@prefix swdref: <http://spear-prosop/reference/>.
+@prefix schema: <http://schema.org/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix prov: <http://www.w3.org/ns/prov#>. 
+
+<https://spear-prosop.org/816-22> schema:description "John was martyred in Antioch by Ephraim in 529."@en ;
+<https://spear-prosop.org/816-22> rdf:XMLLiteral  "<note xmlns="http://www.tei-c.org/ns/1.0" type="desc">
+                                <persName ref="http://syriaca.org/person/50">John</persName> was martyred in 
+                                <placeName ref="http://syriaca.org/place/10">Antioch</placeName>
+                                by <persName ref="http://syriaca.org/person/2274">Ephraim</persName> in 529.
+                            </note>" ;
+swdref:816-22 spr:part-of-series <https://spear-prosop.org> ;
+swdref:816-22 spr:part-of-series <https://spear-prosop.org/lives-eastern-saints> ;
+swdref:816-22 spr:part-of-series <https://spear-prosop.org/816> ;
+swds:816-22 spr:wasDerivedFrom <https://spear-prosop.org/816-22> ;
+swdref:816-22 spr:creator <http://syriaca.org/documentation/editors.xml#syoung> ;
+swdref:816-22 spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
+swdref:816-22 spr:reference-bibl <http://syriaca.org/work/816> ;
+swdref:816-22 spr:reference-bibl <http://syriaca.org/bibl/2032> ;
+swd:person/50 swdt:death-date "529 Antioch John was martyred in Antioch by Ephraim in 529." ;
+swd:person/50 sp:death-date swds:816-22 ;
+swd:816-22 swdt:not-before "0529"^^xsd:gYear ;
+swd:816-22 rdfs:label "John was martyred in Antioch by Ephraim in 529." ;
+swd:person/50 swdt:death-place swds:place/10 ;
+swd:person/50 sp:death-place swds:816-22 ;
+swds:816-22 sps:death-place swds:place/10 ;
