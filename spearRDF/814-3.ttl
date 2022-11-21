@@ -22,12 +22,14 @@ swdref:814-3 spr:creator <http://syriaca.org/documentation/editors.xml#mdoerfler
 swdref:814-3 spr:creator <http://syriaca.org/documentation/editors.xml#jnsaint-laurent> ;
 swdref:814-3 spr:reference-bibl <http://syriaca.org/work/814> ;
 swdref:814-3 spr:reference-bibl <http://syriaca.org/bibl/1409> ;
+
 swd:person/1117 swdt:sibling-of swd:person/1548 ;
 swd:person/1117 sp:sibling-of swd:person/1548 ;
 swds:814-3?N121182 sps:sibling-of swd:person/1548 ;
 swds:814-3?N121182 sps:sibling-of swd:person/1117 ;
 spq:814-3?N121182 spq:relationshipQualifier swd:maternal-family-relationship ;
 spq:814-3?N121182 spq:relationshipQualifier swd:half-family-relationship ;
+
 swd:person/1548 swdt:sibling-of swd:person/1117 ;
 swd:person/1548 sp:sibling-of swd:person/1117 ;
 swds:814-3?N121182 sps:sibling-of swd:person/1117 ;

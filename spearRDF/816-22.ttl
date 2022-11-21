@@ -24,10 +24,13 @@ swdref:816-22 spr:creator <http://syriaca.org/documentation/editors.xml#syoung> 
 swdref:816-22 spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
 swdref:816-22 spr:reference-bibl <http://syriaca.org/work/816> ;
 swdref:816-22 spr:reference-bibl <http://syriaca.org/bibl/2032> ;
+
 swd:person/50 swdt:death-date "529 Antioch John was martyred in Antioch by Ephraim in 529." ;
 swd:person/50 sp:death-date swds:816-22 ;
 swd:816-22 swdt:not-before "0529"^^xsd:gYear ;
+
 swd:816-22 rdfs:label "John was martyred in Antioch by Ephraim in 529." ;
+
 swd:person/50 swdt:death-place swds:place/10 ;
 swd:person/50 sp:death-place swds:816-22 ;
 swds:816-22 sps:death-place swds:place/10 ;
