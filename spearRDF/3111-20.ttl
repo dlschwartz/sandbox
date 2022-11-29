@@ -31,5 +31,10 @@ swd:3111-20 swdt:not-after "0519"^^xsd:gYear ;
 
 swd:3111-20 rdfs:label "Isaiah resided in Egypt ."@en ;
 
-Correction of line 30 above:
+
+Correction of line 30 and 32 above:
+
 swds:3111-20 spq:not-after "0519"^^xsd:gYear ;
+
+swds:3111-20 rdfs:label "Isaiah resided in Egypt ."@en ;
+
