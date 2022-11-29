@@ -1,0 +1,33 @@
+@prefix swd: <http://syriaca.org/>.
+@prefix swds: <http://spear-prosop/entity/statement/>.
+@prefix swdt: <http://syriaca.org/prop/direct/>.
+@prefix sp: <http://syriaca.org/prop/>.
+@prefix sps: <http://syriaca.org/prop/statement/>.
+@prefix spr: <http://syriaca.org/prop/reference/>.
+@prefix spq: <http://syriaca.org/prop/qualifier/>.
+@prefix swdref: <http://spear-prosop/reference/>.
+@prefix schema: <http://schema.org/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix prov: <http://www.w3.org/ns/prov#>. 
+
+<https://spear-prosop.org/3079-14> schema:description "Anonymi 3736 resided in Beirut."@en ;
+<https://spear-prosop.org/3079-14> rdf:XMLLiteral  "<note xmlns="http://www.tei-c.org/ns/1.0" type="desc">
+                                <persName ref="http://syriaca.org/person/3736">Anonymi 3736</persName>
+                                resided in 
+                                <placeName ref="http://syriaca.org/place/46">Beirut</placeName>. 
+                            </note>" ;
+swdref:3079-14 spr:part-of-series <https://spear-prosop.org> ;
+swdref:3079-14 spr:part-of-series <https://spear-prosop.org/letters-severus> ;
+swdref:3079-14 spr:part-of-series <https://spear-prosop.org/3079> ;
+swds:3079-14 spr:wasDerivedFrom <https://spear-prosop.org/3079-14> ;
+swdref:3079-14 spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
+swdref:3079-14 spr:reference-bibl <http://syriaca.org/bibl/668> ;
+
+swd:person/3736 swdt:residence swd:place/46 ;
+swd:person/3736 sp:residence swds:3079-14 ;
+swds:3079-14 sps:residence swd:place/46 ;
+
+swd:3079-14 rdfs:label "Anonymi 3736 resided in Beirut ."@en ;
+
+Correction to line 30 above:
+swds:3079-14 rdfs:label "Anonymi 3736 resided in Beirut ."@en ;
