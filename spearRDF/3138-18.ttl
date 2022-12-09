@@ -29,3 +29,14 @@ swd:3138-18 swdt:not-before "0519"^^xsd:gYear ;
 swd:3138-18 swdt:not-after "0538"^^xsd:gYear ;
 
 swd:3138-18 rdfs:label "Anonymous 3759 died sometime between 519-538." ;
+
+
+CORRECTIONS TO LINES 24-31
+swd:person/3759 swdt:birth-not-before "0519"^^xsd:gYear ;
+swd:person/3759 sp:birth-not-before swds:3138-18?{unique-string-x} ;
+swds:3138-18?{unique-string-x} sps:birth-not-before "0519"^^xsd:gYear ;
+
+
+swd:person/3759 swdt:birth-not-after "0538"^^xsd:gYear ;
+swd:person/3759 sp:birth-not-after swds:3138-18?{unique-string-y}
+swds:3138-18?{unique-string-y} sps:birth-not-after "0538"^^xsd:gYear ;

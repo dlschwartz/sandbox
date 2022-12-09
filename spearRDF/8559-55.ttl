@@ -25,4 +25,16 @@ swd:person/2245 swdt:birth-date "3/2 B.C. A. Gr. 309 Jesus was born in 3/2 B.C."
 swd:person/2245 sp:birth-date swds:8559-55 ;
 swd:8559-55 swdt:not-before "-0003-10"^^xsd:gYearMonth ;
 swd:8559-55 swdt:not-after "-0002-09"^^xsd:gYearMonth ;
+
 swd:8559-55 rdfs:label "Jesus was born in 3/2 B.C." ;
+
+
+CORRECTIONS TO LINES 24-29
+swd:person/2245 swdt:birth-not-before "-0003-10"^^xsd:gYearMonth ;
+swd:person/2245 sp:birth-not-before swds:8559-55?{unique-string-x} ;
+swds:8559-55?{unique-string-x} sps:birth-not-before "-0003-10"^^xsd:gYearMonth ;
+
+
+swd:person/2245 swdt:birth-not-after "-0002-09"^^xsd:gYearMonth ;
+swd:person/2245 sp:birth-not-after swds:8559-55?{unique-string-y}
+swds:8559-55?{unique-string-y} sps:birth-not-after "-0002-09"^^xsd:gYearMonth ;

@@ -34,3 +34,15 @@ swd:816-22 rdfs:label "John was martyred in Antioch by Ephraim in 529." ;
 swd:person/50 swdt:death-place swds:place/10 ;
 swd:person/50 sp:death-place swds:816-22 ;
 swds:816-22 sps:death-place swds:place/10 ;
+
+
+CORRECTION TO LINES 18-36
+swd:person/3759 swdt:death-date "0529"^^xsd:gYear ;
+swd:person/3759 sp:death-date swds:816-22?{unique-string-x} ;
+swds:816-22?{unique-string-x} sps:death-date "0529"^^xsd:gYear ;
+
+swd:person/50 swdt:death-place swds:place/10 ;
+swd:person/50 sp:death-place swds:816-22?{unique-string-y} ;
+swds:816-22?{unique-string-y} sps:death-place swds:place/10 ;
+
+
