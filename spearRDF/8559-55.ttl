@@ -6,6 +6,7 @@
 @prefix spr: <http://syriaca.org/prop/reference/>.
 @prefix spq: <http://syriaca.org/prop/qualifier/>.
 @prefix swdref: <http://spear-prosop/reference/>. -- DELETE --
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#/>. -- ADD --
 @prefix schema: <http://schema.org/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix prov: <http://www.w3.org/ns/prov#>. 
