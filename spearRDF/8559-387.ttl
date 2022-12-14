@@ -48,3 +48,7 @@ swds:swds:8559-387?N1211notbefore sps:not-before "0498-10"^^xsd:gYearMonth ;
 swd:event8559-387 swdt:not-after "0499-09"^^xsd:gYearMonth ;
 swd:event8559-387 sp:not-after swds:8559-387?N1211notafter ;
 swds:swds:8559-387?N1211notafter sps:not-after "0499-09"^^xsd:gYearMonth ;
+
+
+CORRECTION FOR LINE 34
+<https://spear-prosop.org/8559-387> spq:certainty <incerta> ;
