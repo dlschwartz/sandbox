@@ -5,8 +5,8 @@
 @prefix sps: <http://syriaca.org/prop/statement/>.
 @prefix spr: <http://syriaca.org/prop/reference/>.
 @prefix spq: <http://syriaca.org/prop/qualifier/>.
-@prefix schema: <http://schema.org/>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#/>.
+@prefix schema: <http://schema.org/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix prov: <http://www.w3.org/ns/prov#>. 
 
@@ -22,28 +22,23 @@
 <https://spear-prosop.org/10510-99> spr:creator <http://syriaca.org/documentation/editors.xml#ktorabi> ;
 <https://spear-prosop.org/10510-99> spr:reference-bibl <http://syriaca.org/work/10510> ;
 <https://spear-prosop.org/10510-99> spr:reference-bibl <http://syriaca.org/bibl/2033> ;
-
 swd:event10510-99 swdt:event-participant swd:person/3187 ;
 swd:event10510-99 sp:event-participant swds:10510-99?N121182321 ;
 swds:10510-99?N121182321 sps:event-participant swd:person/3187 ;
 swds:10510-99?N121182321 prov:wasDerivedFrom <https://spear-prosop.org/10510-99> ;
-
 swd:event10510-99 swdt:event-participant swd:person/3186 ;
 swd:event10510-99 sp:event-participant swds:10510-99?N121182341 ;
 swds:10510-99?N121182341 sps:event-participant swd:person/3186 ;
 swds:10510-99?N121182341 prov:wasDerivedFrom <https://spear-prosop.org/10510-99> ;
-
 swd:event10510-99 swdt:event-place swd:place/399 ;
 swd:event10510-99 sp:event-place swds:10510-99?N121182361 ;
 swds:10510-99?N121182361 sps:event-place swd:place/399 ;
 swds:10510-99?N121182361 prov:wasDerivedFrom <https://spear-prosop.org/10510-99> ;
-
 swd:event10510-99 swdt:event-keyword swd:keyword/monastic-heads ;
-swd:event10510-99 sp:event-keyword swds:10510-99?1N121182 ;
-swds:10510-99?1N121182 sps:event-keyword swd:keyword/monastic-heads ;
-swds:10510-99?1N121182 prov:wasDerivedFrom <https://spear-prosop.org/10510-99> ;
-
+swd:event10510-99 sp:event-keyword swds:10510-99?1N1211821 ;
+swds:10510-99?1N1211821 sps:event-keyword swd:keyword/monastic-heads ;
+swds:10510-99?1N1211821 prov:wasDerivedFrom <https://spear-prosop.org/10510-99> ;
 swd:event10510-99 swdt:event-keyword swd:keyword/succession ;
-swd:event10510-99 sp:event-keyword swds:10510-99?2N121182 ;
-swds:10510-99?2N121182 sps:event-keyword swd:keyword/succession ;
-swds:10510-99?2N121182 prov:wasDerivedFrom <https://spear-prosop.org/10510-99> ;
+swd:event10510-99 sp:event-keyword swds:10510-99?2N1211822 ;
+swds:10510-99?2N1211822 sps:event-keyword swd:keyword/succession ;
+swds:10510-99?2N1211822 prov:wasDerivedFrom <https://spear-prosop.org/10510-99> ;

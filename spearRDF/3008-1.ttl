@@ -26,43 +26,33 @@ swdref:3008-1 spr:part-of-series <https://spear-prosop.org/3008> ;
 swds:3008-1 spr:wasDerivedFrom <https://spear-prosop.org/3008-1> ;
 swdref:3008-1 spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
 swdref:3008-1 spr:reference-bibl <http://syriaca.org/bibl/669> ;
-
 swd:event3008-1 swdt:event-participant swd:person/51 ;
 swd:event3008-1 sp:event-participant swds:3008-1?N121182521 ;
 swds:3008-1?N121182521 sps:event-participant swd:person/51 ;
-
 swd:event3008-1 swdt:event-participant swd:person/2591 ;
 swd:event3008-1 sp:event-participant swds:3008-1?N121182541 ;
 swds:3008-1?N121182541 sps:event-participant swd:person/2591 ;
-
 swd:event3008-1 swdt:event-participant swd:person/3775 ;
 swd:event3008-1 sp:event-participant swds:3008-1?N121182561 ;
 swds:3008-1?N121182561 sps:event-participant swd:person/3775 ;
-
 swd:event3008-1 swdt:event-keyword swd:keyword/letters ;
 swd:event3008-1 sp:event-keyword swds:3008-1?1N121182 ;
 swds:3008-1?1N121182 sps:event-keyword swd:keyword/letters ;
-
 swd:event3008-1 swdt:event-keyword swd:keyword/marriage ;
 swd:event3008-1 sp:event-keyword swds:3008-1?2N121182 ;
 swds:3008-1?2N121182 sps:event-keyword swd:keyword/marriage ;
-
 swd:event3008-1 swdt:event-keyword swd:keyword/adultry ;
 swd:event3008-1 sp:event-keyword swds:3008-1?3N121182 ;
 swds:3008-1?3N121182 sps:event-keyword swd:keyword/adultry ;
-
 swd:event3008-1 swdt:event-keyword swd:keyword/modesty ;
 swd:event3008-1 sp:event-keyword swds:3008-1?4N121182 ;
 swds:3008-1?4N121182 sps:event-keyword swd:keyword/modesty ;
-
 swd:event3008-1 swdt:not-before "0490"^^xsd:gYear ;
 swd:event3008-1 sp:not-before swds:3008-1?N1211notbefore ;
 swds:swds:3008-1?N1211notbefore sps:not-before "0490"^^xsd:gYear ;
-
 swd:event3008-1 swdt:not-after "0512"^^xsd:gYear ;
 swd:event3008-1 sp:not-after swds:3008-1?N1211notafter ;
 swds:swds:3008-1?N1211notafter sps:not-after "0512"^^xsd:gYear ;
-
 swds:3008-1?N121182582 spq:not-before "0490"^^xsd:gYear ;
 swds:3008-1?N121182582 spq:not-after "0512"^^xsd:gYear ;
 swd:person/51 swdt:sender-of-letter-to swd:person/2591 ;

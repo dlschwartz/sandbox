@@ -5,7 +5,7 @@
 @prefix sps: <http://syriaca.org/prop/statement/>.
 @prefix spr: <http://syriaca.org/prop/reference/>.
 @prefix spq: <http://syriaca.org/prop/qualifier/>.
-@prefix swdref: <http://spear-prosop/reference/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#/>.
 @prefix schema: <http://schema.org/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix prov: <http://www.w3.org/ns/prov#>. 
@@ -14,16 +14,16 @@
 <https://spear-prosop.org/3116-12> rdf:XMLLiteral  "<note xmlns="http://www.tei-c.org/ns/1.0" type="desc">
                         <persName ref="http://syriaca.org/person/544">
                                     Ignatius </persName> was a martyr. </note>" ;
-swdref:3116-12 spr:part-of-series <https://spear-prosop.org> ;
-swdref:3116-12 spr:part-of-series <https://spear-prosop.org/letters-severus> ;
-swdref:3116-12 spr:part-of-series <https://spear-prosop.org/3116> ;
-swds:3116-12 spr:wasDerivedFrom <https://spear-prosop.org/3116-12> ;
-swdref:3116-12 spr:creator <http://syriaca.org/documentation/editors.xml#ktorabi> ;
-swdref:3116-12 spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
-swdref:3116-12 spr:reference-bibl <http://syriaca.org/bibl/668> ;
-
+<https://spear-prosop.org/3116-12> spr:part-of-series <https://spear-prosop.org> ;
+<https://spear-prosop.org/3116-12> spr:part-of-series <https://spear-prosop.org/letters-severus> ;
+<https://spear-prosop.org/3116-12> spr:part-of-series <https://spear-prosop.org/3116> ;
+swds:3116-12 prov:wasDerivedFrom <https://spear-prosop.org/3116-12> ;
+<https://spear-prosop.org/3116-12> spr:creator <http://syriaca.org/documentation/editors.xml#ktorabi> ;
+<https://spear-prosop.org/3116-12> spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
+<https://spear-prosop.org/3116-12> spr:reference-bibl <http://syriaca.org/bibl/668> ;
 swd:person/544 sp:sanctity swds:3116-12 ;
 swd:person/544 swdt:sanctity swd:keyword/martyrs ;
-swds:3116-12 sps:sanctity swd:keyword/martyrs ;
-
-swd:3116-12 rdfs:label "Ignatius was a martyr."@en ;
+swd:person/544 swdt:sanctity swds:3116-12?N12118241 ;
+swds:3116-12?N12118241 sps:sanctity swd:keyword/martyrs ;
+swds:3116-12?N12118241 prov:wasDerivedFrom <https://spear-prosop.org/3116-12> ;
+swds:3116-12 rdfs:label "Ignatius was a martyr."@en ;

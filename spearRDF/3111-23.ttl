@@ -5,7 +5,7 @@
 @prefix sps: <http://syriaca.org/prop/statement/>.
 @prefix spr: <http://syriaca.org/prop/reference/>.
 @prefix spq: <http://syriaca.org/prop/qualifier/>.
-@prefix swdref: <http://spear-prosop/reference/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#/>.
 @prefix schema: <http://schema.org/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix prov: <http://www.w3.org/ns/prov#>. 
@@ -15,17 +15,13 @@
                                 <persName ref="http://syriaca.org/person/2562">Epiphanius</persName> died in 
                                 <placeName ref="http://syriaca.org/place/149">Palestine</placeName>.
                             </note>" ;
-swdref:3111-23 spr:part-of-series <https://spear-prosop.org> ;
-swdref:3111-23 spr:part-of-series <https://spear-prosop.org/letters-severus> ;
-swdref:3111-23 spr:part-of-series <https://spear-prosop.org/3111> ;
-swds:3111-23 spr:wasDerivedFrom <https://spear-prosop.org/3111-23> ;
-swdref:3111-23 spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
-swdref:3111-23 spr:reference-bibl <http://syriaca.org/bibl/668> ;
-
-swd:person/2562 sp:death-date swds:3111-23 ;
-
-swd:3111-23 rdfs:label "Epiphanius died in Palestine ." ;
-
+<https://spear-prosop.org/3111-23> spr:part-of-series <https://spear-prosop.org> ;
+<https://spear-prosop.org/3111-23> spr:part-of-series <https://spear-prosop.org/letters-severus> ;
+<https://spear-prosop.org/3111-23> spr:part-of-series <https://spear-prosop.org/3111> ;
+<https://spear-prosop.org/3111-23> spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
+<https://spear-prosop.org/3111-23> spr:reference-bibl <http://syriaca.org/bibl/668> ;
+swds:3111-23 rdfs:label "Epiphanius died in Palestine ." ;
 swd:person/2562 swdt:death-place swds:place/149 ;
-swd:person/2562 sp:death-place swds:3111-23 ;
-swds:3111-23 sps:death-place swds:place/149 ;
+swd:person/2562 sp:death-place swds:3111-23?N12118242 ;
+swds:3111-23?N12118242 sps:death-place swds:place/149 ;
+swds:3111-23?N12118242 prov:wasDerivedFrom <https://spear-prosop.org/3111-23> ;

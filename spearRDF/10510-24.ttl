@@ -5,7 +5,7 @@
 @prefix sps: <http://syriaca.org/prop/statement/>.
 @prefix spr: <http://syriaca.org/prop/reference/>.
 @prefix spq: <http://syriaca.org/prop/qualifier/>.
-@prefix swdref: <http://spear-prosop/reference/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#/>.
 @prefix schema: <http://schema.org/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix prov: <http://www.w3.org/ns/prov#>. 
@@ -15,18 +15,14 @@
                                 <persName ref="http://syriaca.org/person/3218">John Urtaya</persName> was born in 
                                 <placeName ref="http://syriaca.org/place/486">Syria</placeName>.
                             </note>" ;
-swdref:10510-24 spr:part-of-series <https://spear-prosop.org> ;
-swdref:10510-24 spr:part-of-series <https://spear-prosop.org/lives-eastern-saints> ;
-swdref:10510-24 spr:part-of-series <https://spear-prosop.org/10510> ;
-swds:10510-24 spr:wasDerivedFrom <https://spear-prosop.org/10510-24> ;
-swdref:10510-24 spr:creator <http://syriaca.org/documentation/editors.xml#ktorabi> ;
-swdref:10510-24 spr:reference-bibl <http://syriaca.org/work/10510> ;
-swdref:10510-24 spr:reference-bibl <http://syriaca.org/bibl/2033> ;
-
-swd:person/3218 sp:birth-date swds:10510-24 ;
-
-swd:10510-24 rdfs:label "John Urtaya was born in Syria ." ;
-
+<https://spear-prosop.org/10510-24> spr:part-of-series <https://spear-prosop.org> ;
+<https://spear-prosop.org/10510-24> spr:part-of-series <https://spear-prosop.org/lives-eastern-saints> ;
+<https://spear-prosop.org/10510-24> spr:part-of-series <https://spear-prosop.org/10510> ;
+<https://spear-prosop.org/10510-24> spr:creator <http://syriaca.org/documentation/editors.xml#ktorabi> ;
+<https://spear-prosop.org/10510-24> spr:reference-bibl <http://syriaca.org/work/10510> ;
+<https://spear-prosop.org/10510-24> spr:reference-bibl <http://syriaca.org/bibl/2033> ;
+swds:10510-24 rdfs:label "John Urtaya was born in Syria ." ;
 swd:person/3218 swdt:birth-place swds:place/486 ;
-swd:person/3218 sp:birth-place swds:10510-24 ;
-swds:10510-24 sps:birth-place swds:place/486 ;
+swd:person/3218 sp:birth-place swds:10510-24?N12118242 ;
+swds:10510-24?N12118242 sps:birth-place swds:place/486 ;
+swds:10510-24?N12118242 prov:wasDerivedFrom <https://spear-prosop.org/10510-24> ;

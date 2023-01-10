@@ -5,8 +5,7 @@
 @prefix sps: <http://syriaca.org/prop/statement/>.
 @prefix spr: <http://syriaca.org/prop/reference/>.
 @prefix spq: <http://syriaca.org/prop/qualifier/>.
-@prefix swdref: <http://spear-prosop/reference/>. -- DELETE --
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#/>. -- ADD --
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#/>.
 @prefix schema: <http://schema.org/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix prov: <http://www.w3.org/ns/prov#>. 
@@ -14,37 +13,18 @@
 <https://spear-prosop.org/8559-55> schema:description "Jesus was born in 3/2 B.C."@en ;
 <https://spear-prosop.org/8559-55> rdf:XMLLiteral  "<note xmlns="http://www.tei-c.org/ns/1.0" type="desc"> 
                         <persName ref="http://syriaca.org/person/2245">Jesus</persName> was born in 3/2 B.C. </note>" ;
-swdref:8559-55 spr:part-of-series <https://spear-prosop.org> ;
-swdref:8559-55 spr:part-of-series <https://spear-prosop.org/8559> ;
-swds:8559-55 spr:wasDerivedFrom <https://spear-prosop.org/8559-55> ;
-swdref:8559-55 spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
-swdref:8559-55 spr:reference-bibl <http://syriaca.org/bibl/633> ;
-swdref:8559-55 spr:reference-bibl <urn:cts:syriacLit:nhsl8559.syriacCorpus57:4> ;
-swdref:8559-55 spr:reference-bibl <http://syriaca.org/bibl/657> ;
-
-swd:person/2245 swdt:birth-date "3/2 B.C. A. Gr. 309 Jesus was born in 3/2 B.C." ;
-swd:person/2245 sp:birth-date swds:8559-55 ;
-swd:8559-55 swdt:not-before "-0003-10"^^xsd:gYearMonth ;
-swd:8559-55 swdt:not-after "-0002-09"^^xsd:gYearMonth ;
-
-swd:8559-55 rdfs:label "Jesus was born in 3/2 B.C." ;
-
-
-CORRECTIONS TO LINES 16-29
-
 <https://spear-prosop.org/8559-55> spr:part-of-series <https://spear-prosop.org> ;
 <https://spear-prosop.org/8559-55> spr:part-of-series <https://spear-prosop.org/8559> ;
 <https://spear-prosop.org/8559-55> spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
 <https://spear-prosop.org/8559-55> spr:reference-bibl <http://syriaca.org/bibl/633> ;
 <https://spear-prosop.org/8559-55> spr:reference-bibl <urn:cts:syriacLit:nhsl8559.syriacCorpus57:4> ;
 <https://spear-prosop.org/8559-55> spr:reference-bibl <http://syriaca.org/bibl/657> ;
-
-swd:person/2245 swdt:birth-not-before "-0003-10"^^xsd:gYearMonth ;
-swd:person/2245 sp:birth-not-before swds:8559-55?{unique-string-x} ;
-swds:8559-55?{unique-string-x} sps:birth-not-before "-0003-10"^^xsd:gYearMonth ;
-swds:8559-55?{unique-string-x} prov:wasDerivedFrom <https://spear-prosop.org/8559-55> ;
-
-swd:person/2245 swdt:birth-not-after "-0002-09"^^xsd:gYearMonth ;
-swd:person/2245 sp:birth-not-after swds:8559-55?{unique-string-y}
-swds:8559-55?{unique-string-y} sps:birth-not-after "-0002-09"^^xsd:gYearMonth ;
-swds:8559-55?{unique-string-y} prov:wasDerivedFrom <https://spear-prosop.org/8559-55> ;
+swd:event8559-55 swdt:birth-not-before "-0003-10"^^xsd:gYearMonth ;
+swd:event8559-55 sp:birth-not-before swds:8559-55?N1211824birthnotbefore ;
+swds:8559-55?N1211824birthnotbefore sps:birth-not-before "-0003-10"^^xsd:gYearMonth ;
+swds:8559-55?N1211824birthnotbefore prov:wasDerivedFrom <https://spear-prosop.org/8559-55> ;
+swd:event8559-55 swdt:birth-not-after "-0002-09"^^xsd:gYearMonth ;
+swd:event8559-55 sp:birth-not-after swds:8559-55?N1211824birthnotafter ;
+swds:8559-55?N1211824birthnotafter sps:birth-not-after "-0002-09"^^xsd:gYearMonth ;
+swds:8559-55?N1211824birthnotafter prov:wasDerivedFrom <https://spear-prosop.org/8559-55> ;
+swds:8559-55 rdfs:label "Jesus was born in 3/2 B.C." ;

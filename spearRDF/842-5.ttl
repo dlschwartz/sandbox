@@ -5,7 +5,7 @@
 @prefix sps: <http://syriaca.org/prop/statement/>.
 @prefix spr: <http://syriaca.org/prop/reference/>.
 @prefix spq: <http://syriaca.org/prop/qualifier/>.
-@prefix swdref: <http://spear-prosop/reference/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#/>.
 @prefix schema: <http://schema.org/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix prov: <http://www.w3.org/ns/prov#>. 
@@ -16,16 +16,20 @@
                                 at the <placeName ref="http://syriaca.org/place/399"> Monastery of
                                     John Urtraya </placeName> in the city of <placeName ref="http://syriaca.org/place/8"> Amida. </placeName>
                      </note>" ;
-swdref:842-5 spr:part-of-series <https://spear-prosop.org> ;
-swdref:842-5 spr:part-of-series <https://spear-prosop.org/lives-eastern-saints> ;
-swdref:842-5 spr:part-of-series <https://spear-prosop.org/842> ;
-swds:842-5 spr:wasDerivedFrom <https://spear-prosop.org/842-5> ;
-swdref:842-5 spr:creator <http://syriaca.org/documentation/editors.xml#jwickes> ;
-swdref:842-5 spr:reference-bibl <http://syriaca.org/work/842> ;
-swdref:842-5 spr:reference-bibl <http://syriaca.org/bibl/2033> ;
+<https://spear-prosop.org/842-5> spr:part-of-series <https://spear-prosop.org> ;
+<https://spear-prosop.org/842-5> spr:part-of-series <https://spear-prosop.org/lives-eastern-saints> ;
+<https://spear-prosop.org/842-5> spr:part-of-series <https://spear-prosop.org/842> ;
+swds:842-5 prov:wasDerivedFrom <https://spear-prosop.org/842-5> ;
+<https://spear-prosop.org/842-5> spr:creator <http://syriaca.org/documentation/editors.xml#jwickes> ;
+<https://spear-prosop.org/842-5> spr:reference-bibl <http://syriaca.org/work/842> ;
+<https://spear-prosop.org/842-5> spr:reference-bibl <http://syriaca.org/bibl/2033> ;
 swd:person/2032 swdt:education swd:keyword/bible ;
-swds:842-5 sps:education swd:keyword/bible ;
+swd:person/2032 sp:education swds:842-5?N12118241 ;
+swds:842-5?N12118241 sps:education swd:keyword/bible ;
+swds:842-5?N12118241 prov:wasDerivedFrom <https://spear-prosop.org/842-5> ;
 swd:person/2032 swdt:education swd:keyword/exegesis ;
-swds:842-5 sps:education swd:keyword/exegesis ;
+swd:person/2032 sp:education swds:842-5?N12118242 ;
+swds:842-5?N12118242 sps:education swd:keyword/exegesis ;
+swds:842-5?N12118242 prov:wasDerivedFrom <https://spear-prosop.org/842-5> ;
 swd:person/2032 sp:education swds:842-5 ;
-swd:842-5 rdfs:label "Kashish studied the reading of the Holy Scriptures at the Monastery of John Urtraya in the city of Amida." ;
+swds:842-5 rdfs:label "Kashish studied the reading of the Holy Scriptures at the Monastery of John Urtraya in the city of Amida." ;

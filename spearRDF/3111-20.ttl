@@ -5,7 +5,7 @@
 @prefix sps: <http://syriaca.org/prop/statement/>.
 @prefix spr: <http://syriaca.org/prop/reference/>.
 @prefix spq: <http://syriaca.org/prop/qualifier/>.
-@prefix swdref: <http://spear-prosop/reference/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#/>.
 @prefix schema: <http://schema.org/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix prov: <http://www.w3.org/ns/prov#>. 
@@ -16,25 +16,15 @@
                                 resided in 
                                 <placeName ref="http://syriaca.org/place/715">Egypt</placeName>. 
                             </note>" ;
-swdref:3111-20 spr:part-of-series <https://spear-prosop.org> ;
-swdref:3111-20 spr:part-of-series <https://spear-prosop.org/letters-severus> ;
-swdref:3111-20 spr:part-of-series <https://spear-prosop.org/3111> ;
-swds:3111-20 spr:wasDerivedFrom <https://spear-prosop.org/3111-20> ;
-swdref:3111-20 spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
-swdref:3111-20 spr:reference-bibl <http://syriaca.org/bibl/668> ;
-
+<https://spear-prosop.org/3111-20> spr:part-of-series <https://spear-prosop.org> ;
+<https://spear-prosop.org/3111-20> spr:part-of-series <https://spear-prosop.org/letters-severus> ;
+<https://spear-prosop.org/3111-20> spr:part-of-series <https://spear-prosop.org/3111> ;
+swds:3111-20 prov:wasDerivedFrom <https://spear-prosop.org/3111-20> ;
+<https://spear-prosop.org/3111-20> spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
+<https://spear-prosop.org/3111-20> spr:reference-bibl <http://syriaca.org/bibl/668> ;
 swd:person/2496 swdt:residence swd:place/715 ;
-swd:person/2496 sp:residence swds:3111-20 ;
-swds:3111-20 sps:residence swd:place/715 ;
-
-swd:3111-20 swdt:not-after "0519"^^xsd:gYear ;
-
-swd:3111-20 rdfs:label "Isaiah resided in Egypt ."@en ;
-
-
-Correction of line 30 and 32 above:
-
+swd:person/2496 sp:residence swds:3111-20?N1211824 ;
+swds:3111-20?N1211824 sps:residence swd:place/715 ;
+swds:3111-20?N1211824 prov:wasDerivedFrom <https://spear-prosop.org/3111-20> ;
 swds:3111-20 spq:not-after "0519"^^xsd:gYear ;
-
 swds:3111-20 rdfs:label "Isaiah resided in Egypt ."@en ;
-

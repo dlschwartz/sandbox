@@ -20,9 +20,7 @@ swdref:3090-8 spr:part-of-series <https://spear-prosop.org/3090> ;
 swds:3090-8 spr:wasDerivedFrom <https://spear-prosop.org/3090-8> ;
 swdref:3090-8 spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
 swdref:3090-8 spr:reference-bibl <http://syriaca.org/bibl/669> ;
-
 swds:person/3784 sp:ethnic-label swds:3090-8 ;
 swd:person/3784 swdt:ethnic-label swd:keyword/ethiopians ;
 swds:3090-8 sps:ethnic-label swd:keyword/ethiopians ;
-
 swd:3090-8 rdfs:label "Anonymous 3784 was Ethiopian." ;
