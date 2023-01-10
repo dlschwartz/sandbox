@@ -22,8 +22,10 @@
 swds:3079-14 prov:wasDerivedFrom <https://spear-prosop.org/3079-14> ;
 <https://spear-prosop.org/3079-14> spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
 <https://spear-prosop.org/3079-14> spr:reference-bibl <http://syriaca.org/bibl/668> ;
+
 swd:person/3736 swdt:residence swd:place/46 ;
 swd:person/3736 sp:residence swds:3079-14?N1211824 ;
 swds:3079-14?N1211824 sps:residence swd:place/46 ;
 swds:3079-14?N1211824 prov:wasDerivedFrom <https://spear-prosop.org/3079-14> ;
+
 swds:3079-14 rdfs:label "Anonymi 3736 resided in Beirut ."@en ;

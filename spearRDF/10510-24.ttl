@@ -21,7 +21,9 @@
 <https://spear-prosop.org/10510-24> spr:creator <http://syriaca.org/documentation/editors.xml#ktorabi> ;
 <https://spear-prosop.org/10510-24> spr:reference-bibl <http://syriaca.org/work/10510> ;
 <https://spear-prosop.org/10510-24> spr:reference-bibl <http://syriaca.org/bibl/2033> ;
+
 swds:10510-24 rdfs:label "John Urtaya was born in Syria ." ;
+
 swd:person/3218 swdt:birth-place swds:place/486 ;
 swd:person/3218 sp:birth-place swds:10510-24?N12118242 ;
 swds:10510-24?N12118242 sps:birth-place swds:place/486 ;

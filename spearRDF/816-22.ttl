@@ -23,11 +23,14 @@
 <https://spear-prosop.org/816-22> spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
 <https://spear-prosop.org/816-22> spr:reference-bibl <http://syriaca.org/work/816> ;
 <https://spear-prosop.org/816-22> spr:reference-bibl <http://syriaca.org/bibl/2032> ;
+
 swd:event816-22 swdt:death-not-before "0529"^^xsd:gYear ;
 swd:event816-22 sp:death-not-before swds:816-22?N1211824deathnotbefore ;
 swds:816-22?N1211824deathnotbefore sps:death-not-before "0529"^^xsd:gYear ;
 swds:816-22?N1211824deathnotbefore prov:wasDerivedFrom <https://spear-prosop.org/816-22> ;
+
 swds:816-22 rdfs:label "John was martyred in Antioch by Ephraim in 529." ;
+
 swd:person/50 swdt:death-place swds:place/10 ;
 swd:person/50 sp:death-place swds:816-22?N12118245 ;
 swds:816-22?N12118245 sps:death-place swds:place/10 ;

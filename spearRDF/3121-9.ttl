@@ -22,9 +22,11 @@
 swds:3121-9 prov:wasDerivedFrom <https://spear-prosop.org/3121-9> ;
 <https://spear-prosop.org/3121-9> spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
 <https://spear-prosop.org/3121-9> spr:reference-bibl <http://syriaca.org/bibl/669> ;
+
 swd:person/2574 swdt:residence swd:place/762 ;
 swd:person/2574 sp:residence swds:3121-9?N1211824 ;
 swds:3121-9?N1211824 sps:residence swd:place/762 ;
 swds:3121-9?N1211824 prov:wasDerivedFrom <https://spear-prosop.org/3121-9> ;
 swds:3121-9 spq:when "0527"^^xsd:gYear ;
+
 swds:3121-9 rdfs:label "Philoxenus of Doliche resided in Marde ."@en ;

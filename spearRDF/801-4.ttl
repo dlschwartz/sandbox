@@ -22,9 +22,11 @@ swdref:801-4 spr:creator <http://syriaca.org/documentation/editors.xml#jmcmanawa
 swdref:801-4 spr:creator <http://syriaca.org/documentation/editors.xml#avawter> ;
 swdref:801-4 spr:reference-bibl <http://syriaca.org/work/801> ;
 swdref:801-4 spr:reference-bibl <http://syriaca.org/bibl/1409> ;
+
 swd:person/1866 sp:occupation swds:801-4 ;
 swd:person/1866 swdt:occupation swd:keyword/monks ;
 swds:801-4 sps:occupation swd:keyword/monks ;
 swd:person/1866 swdt:occupation swd:keyword/rhetors ;
 swds:801-4 sps:occupation swd:keyword/rhetors ;
+
 swd:801-4 rdfs:label "Mare was a monastic, a speaker, teacher, and very well informed on every subject."@en ;

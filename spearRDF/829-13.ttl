@@ -33,26 +33,32 @@
 <https://spear-prosop.org/829-13> spr:creator <http://syriaca.org/documentation/editors.xml#ekowalik> ;
 <https://spear-prosop.org/829-13> spr:reference-bibl <http://syriaca.org/work/829> ;
 <https://spear-prosop.org/829-13> spr:reference-bibl <http://syriaca.org/bibl/2032> ;
+
 swd:event829-13 swdt:event-participant swd:person/1533 ;
 swd:event829-13 sp:event-participant swds:829-13?N121182421 ;
 swds:829-13?N121182421 sps:event-participant swd:person/1533 ;
 swds:829-13?N121182421 prov:wasDerivedFrom <https://spear-prosop.org/829-13> ;
+
 swd:event829-13 swdt:event-participant swd:person/1875 ;
 swd:event829-13 sp:event-participant swds:829-13?N121182481 ;
 swds:829-13?N121182481 sps:event-participant swd:person/1875 ;
 swds:829-13?N121182481 prov:wasDerivedFrom <https://spear-prosop.org/829-13> ;
+
 swd:event829-13 swdt:event-place swd:place/2816 ;
 swd:event829-13 sp:event-place swds:829-13?N121182461 ;
 swds:829-13?N121182461 sps:event-place swd:place/2816 ;
 swds:829-13?N121182461 prov:wasDerivedFrom <https://spear-prosop.org/829-13> ;
+
 swd:event829-13 swdt:event-keyword swd:keyword/death ;
 swd:event829-13 sp:event-keyword swds:829-13?1N1211821 ;
 swds:829-13?1N1211821 sps:event-keyword swd:keyword/death ;
 swds:829-13?1N1211821 prov:wasDerivedFrom <https://spear-prosop.org/829-13> ;
+
 swd:event829-13 swdt:event-keyword swd:keyword/burial ;
 swd:event829-13 sp:event-keyword swds:829-13?2N1211822 ;
 swds:829-13?2N1211822 sps:event-keyword swd:keyword/burial ;
 swds:829-13?2N1211822 prov:wasDerivedFrom <https://spear-prosop.org/829-13> ;
+
 swd:event829-13 swdt:when "0560-10-22"^^xsd:date ;
 swd:event829-13 sp:when swds:829-13?N1211when ;
 swds:829-13?N1211when sps:when "0560-10-22"^^xsd:date ;

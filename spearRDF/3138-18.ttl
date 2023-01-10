@@ -19,12 +19,15 @@
 <https://spear-prosop.org/3138-18> spr:part-of-series <https://spear-prosop.org/3138> ;
 <https://spear-prosop.org/3138-18> spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
 <https://spear-prosop.org/3138-18> spr:reference-bibl <http://syriaca.org/bibl/669> ;
+
 swd:event3138-18 swdt:death-not-before "0519"^^xsd:gYear ;
 swd:event3138-18 sp:death-not-before swds:3138-18?N1211824deathnotbefore ;
 swds:3138-18?N1211824deathnotbefore sps:death-not-before "0519"^^xsd:gYear ;
 swds:3138-18?N1211824deathnotbefore prov:wasDerivedFrom <https://spear-prosop.org/3138-18> ;
+
 swd:event3138-18 swdt:death-not-after "0538"^^xsd:gYear ;
 swd:event3138-18 sp:death-not-after swds:3138-18?N1211824deathnotafter ;
 swds:3138-18?N1211824deathnotafter sps:death-not-after "0538"^^xsd:gYear ;
 swds:3138-18?N1211824deathnotafter prov:wasDerivedFrom <https://spear-prosop.org/3138-18> ;
+
 swds:3138-18 rdfs:label "Anonymous 3759 died sometime between 519-538." ;

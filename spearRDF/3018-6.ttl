@@ -24,34 +24,42 @@
 <https://spear-prosop.org/3018-6> spr:part-of-series <https://spear-prosop.org/3018> ;
 <https://spear-prosop.org/3018-6> spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
 <https://spear-prosop.org/3018-6> spr:reference-bibl <http://syriaca.org/bibl/669> ;
+
 swd:event3018-6 swdt:event-participant swd:person/376 ;
 swd:event3018-6 sp:event-participant swds:3018-6?N121182321 ;
 swds:3018-6?N121182321 sps:event-participant swd:person/376 ;
 swds:3018-6?N121182321 prov:wasDerivedFrom <https://spear-prosop.org/3018-6> ;
+
 swd:event3018-6 swdt:event-participant swd:person/2778 ;
 swd:event3018-6 sp:event-participant swds:3018-6?N121182341 ;
 swds:3018-6?N121182341 sps:event-participant swd:person/2778 ;
 swds:3018-6?N121182341 prov:wasDerivedFrom <https://spear-prosop.org/3018-6> ;
+
 swd:event3018-6 swdt:event-keyword swd:keyword/letters ;
 swd:event3018-6 sp:event-keyword swds:3018-6?1N1211821 ;
 swds:3018-6?1N1211821 sps:event-keyword swd:keyword/letters ;
 swds:3018-6?1N1211821 prov:wasDerivedFrom <https://spear-prosop.org/3018-6> ;
+
 swd:event3018-6 swdt:event-keyword swd:keyword/communion ;
 swd:event3018-6 sp:event-keyword swds:3018-6?2N1211822 ;
 swds:3018-6?2N1211822 sps:event-keyword swd:keyword/communion ;
 swds:3018-6?2N1211822 prov:wasDerivedFrom <https://spear-prosop.org/3018-6> ;
+
 swd:event3018-6 swdt:event-keyword swd:keyword/heresy ;
 swd:event3018-6 sp:event-keyword swds:3018-6?3N1211823 ;
 swds:3018-6?3N1211823 sps:event-keyword swd:keyword/heresy ;
 swds:3018-6?3N1211823 prov:wasDerivedFrom <https://spear-prosop.org/3018-6> ;
+
 swd:person/376 swdt:sender-of-letter-to swd:person/2778 ;
 swd:person/376 swdt:sender-of-letter-to swds:3018-6?N121182362rl11 ;
 swds:3018-6?N121182362rl11 sps:sender-of-letter-to swd:person/2778 ;
 swds:3018-6?N121182362rl11 prov:wasDerivedFrom <https://spear-prosop.org/3018-6> ;
+
 swd:3018-6 swdt:same-event swd:3064-2 ;
 swd:3018-6 swdt:same-event swds:3018-6?N12111232r11 ;
 swds:3018-6?N12111232r11 sps:same-event swd:3064-2 ;
 swds:3018-6?N12111232r11 prov:wasDerivedFrom <https://spear-prosop.org/3018-6> ;
+
 swd:3064-2 swdt:same-event swd:3018-6 ;
 swd:3064-2 swdt:same-event swds:3018-6?N12111232r21 ;
 swds:3018-6?N12111232r21 sps:same-event swd:3018-6 ;

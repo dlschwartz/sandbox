@@ -22,14 +22,17 @@ swds:3036-19 prov:wasDerivedFrom <https://spear-prosop.org/3036-19> ;
 <https://spear-prosop.org/3036-19> spr:creator <http://syriaca.org/documentation/editors.xml#ktorabi> ;
 <https://spear-prosop.org/3036-19> spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
 <https://spear-prosop.org/3036-19> spr:reference-bibl <http://syriaca.org/bibl/668> ;
+
 swd:person/51 swdt:bishop-over-clergy swd:person/2544 ;
 swd:person/51 swdt:bishop-over-clergy swds:3036-19?N121182rl11 ;
 swds:3036-19?N121182rl11 sps:bishop-over-clergy swd:person/2544 ;
 swds:3036-19?N121182rl11 prov:wasDerivedFrom <https://spear-prosop.org/3036-19> ;
+
 swd:person/51 swdt:bishop-over-clergy swd:person/2542 ;
 swd:person/51 swdt:bishop-over-clergy swds:3036-19?N121182rl12 ;
 swds:3036-19?N121182rl12 sps:bishop-over-clergy swd:person/2542 ;
 swds:3036-19?N121182rl12 prov:wasDerivedFrom <https://spear-prosop.org/3036-19> ;
+
 swd:person/51 swdt:bishop-over-clergy swd:person/2543 ;
 swd:person/51 swdt:bishop-over-clergy swds:3036-19?N121182rl13 ;
 swds:3036-19?N121182rl13 sps:bishop-over-clergy swd:person/2543 ;
