@@ -27,13 +27,12 @@ swd:person/1117 swdt:sibling-of swd:person/1548 ;
 swd:person/1117 swdt:sibling-of swds:814-3?N121182r11 ;
 swds:814-3?N121182r11 sps:sibling-of swd:person/1548 ;
 swds:814-3?N121182r11 prov:wasDerivedFrom <https://spear-prosop.org/814-3> ;
-
 spq:814-3?N121182r11 spq:relationshipQualifier swd:maternal-family-relationship ;
 spq:814-3?N121182r11 spq:relationshipQualifier swd:half-family-relationship ;
+
 swd:person/1548 swdt:sibling-of swd:person/1117 ;
 swd:person/1548 swdt:sibling-of swds:814-3?N121182r21 ;
 swds:814-3?N121182r21 sps:sibling-of swd:person/1117 ;
 swds:814-3?N121182r21 prov:wasDerivedFrom <https://spear-prosop.org/814-3> ;
-
 spq:814-3?N121182r21 spq:relationshipQualifier swd:maternal-family-relationship ;
 spq:814-3?N121182r21 spq:relationshipQualifier swd:half-family-relationship ;
