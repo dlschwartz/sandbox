@@ -29,4 +29,14 @@ swd:person/3185 swdt:occupation swd:keyword/monastic-heads ;
 swd:person/3185 swdt:occupation swds:10510-63?N12118241 ;
 swds:10510-63?N12118241 sps:occupation swd:keyword/monastic-heads ;
 swds:10510-63?N12118241 prov:wasDerivedFrom <https://spear-prosop.org/10510-63> ;
+
 swds:10510-63 rdfs:label "Abraham was an archimandrite of the Convent of John Urtaya in Amida"@en ;
+
+CORRECTIONS
+Delete lines 29, and 33
+In lines 27-31 have two different statement instances where we should have one. Replace with
+
+swd:person/3185 swdt:occupation swd:keyword/monastic-heads ;
+swd:person/3185 sp:occupation swds:10510-63 ;
+swds:10510-63 sps:occupation swd:keyword/monastic-heads ;
+swds:10510-63 prov:wasDerivedFrom <https://spear-prosop.org/10510-63> ; [This is the current line 22 actually but it helps me to see these together]

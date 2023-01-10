@@ -33,3 +33,18 @@ swd:801-4 rdfs:label "Mare was a monastic, a speaker, teacher, and very well inf
 
 CORRECTIONS
 Replace “swdref:” with factoid URI
+Delete line 32 as the subject shouldn't exist and we have the schema:description above
+Replace lines 26-30 with the following:
+
+swd:person/1866 swdt:occupation swd:keyword/monks ;
+swd:person/1866 sp:occupation swds:801-4?[UNIQUE STRING X] ;
+swds:801-4?[UNIQUE STRING X] sps:occupation swd:keyword/monks ;
+swds:801-4?[UNIQUE STRING X] prov:wasDerivedFrom <https://spear-prosop.org/801-4> ;
+
+
+
+swd:person/1866 swdt:occupation swd:keyword/rhetors ;
+swd:person/1866 sp:occupation swds:801-4?[UNIQUE STRING Y]
+swds:801-4?[UNIQUE STRING Y] sps:occupation swd:keyword/rhetors ;
+swds:801-4?[UNIQUE STRING Y] prov:wasDerivedFrom <https://spear-prosop.org/801-4> ;
+
