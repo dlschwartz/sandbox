@@ -28,3 +28,12 @@ swds:3069-19?N12118241 sps:socec-status swd:keyword/slaves ;
 swds:3069-19?N12118241 prov:wasDerivedFrom <https://spear-prosop.org/3069-19> ;
 
 swds:3069-19 rdfs:label "Timothy was an enslaved person"@en ;
+
+CORRECTIONS:
+Delete line 31, schema:description above
+Replace lines 24-28 above with
+
+swd:person/2401 swdt:sanctity swd:keyword/slaves ;
+swds:person/2401 sp:sanctity swds:3069-19 ;
+swds:3069-19 sps:sanctity swd:keyword/slaves ;
+swds:3069-19 prov:wasDerivedFrom <https://spear-prosop.org/3069-19> ; [This line appears at 19 but fits logically here.]

@@ -30,3 +30,4 @@ swd:3090-8 rdfs:label "Anonymous 3784 was Ethiopian." ;
 CORRECTIONS
 Replace “swdref:” with factoid URI
 Replace “spr:wasDerivedFrom” with “prov:wasDerivedFrom
+We’re getting an unnecessary rdfs:label. We’ve got a schema:description on the factoid URI.

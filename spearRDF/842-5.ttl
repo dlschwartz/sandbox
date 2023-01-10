@@ -37,3 +37,6 @@ swds:842-5?N12118242 prov:wasDerivedFrom <https://spear-prosop.org/842-5> ;
 swd:person/2032 sp:education swds:842-5 ;
 
 swds:842-5 rdfs:label "Kashish studied the reading of the Holy Scriptures at the Monastery of John Urtraya in the city of Amida." ;
+
+CORRECTIONS
+Delete lines 22 and 37

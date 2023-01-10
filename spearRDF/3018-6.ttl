@@ -64,3 +64,6 @@ swd:3064-2 swdt:same-event swd:3018-6 ;
 swd:3064-2 swdt:same-event swds:3018-6?N12111232r21 ;
 swds:3018-6?N12111232r21 sps:same-event swd:3018-6 ;
 swds:3018-6?N12111232r21 prov:wasDerivedFrom <https://spear-prosop.org/3018-6> ;
+
+CORRECTIONS:
+In lines 58-66, all "swd:" should be "swd:event####-##": either "swd:event3018-6" or "swd:event3064-2"

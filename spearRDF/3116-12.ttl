@@ -29,3 +29,12 @@ swds:3116-12?N12118241 sps:sanctity swd:keyword/martyrs ;
 swds:3116-12?N12118241 prov:wasDerivedFrom <https://spear-prosop.org/3116-12> ;
 
 swds:3116-12 rdfs:label "Ignatius was a martyr."@en ;
+
+CORRECTIONS:
+Delete line 31, schema:description above
+Replace lines 25-29 above with
+
+swd:person/544 swdt:sanctity swd:keyword/martyrs ;
+swds:person/544 sp:sanctity swds:3116-12 ;
+swds:3116-12 sps:sanctity swd:keyword/martyrs ;
+swds:3116-12 prov:wasDerivedFrom <https://spear-prosop.org/3116-12> ; [This line appears at 20 but fits logically here.]

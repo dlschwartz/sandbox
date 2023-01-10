@@ -30,3 +30,12 @@ swds:801-11?N12118241 sps:mental-state swd:keyword/pride ;
 swds:801-11?N12118241 prov:wasDerivedFrom <https://spear-prosop.org/801-11> ;
 
 swd:801-11 rdfs:label "Mare used to behave with great and measureless arrogance and he was haughty."@en ;
+
+CORRECTIONS:
+Delete line 32, schema:description above
+Replace lines 26-30 above with
+
+swd:person/1866 swdt:mental-state swd:keyword/pride ;
+swds:person/1866 sp:mental-state swds:801-11 ;
+swds:801-11 sps:mental-state swd:keyword/pride ;
+swds:801-11 prov:wasDerivedFrom <https://spear-prosop.org/801-11> ; [This line appears at 20 but fits logically here.]

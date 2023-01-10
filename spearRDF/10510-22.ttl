@@ -26,4 +26,14 @@ swd:person/3218 swdt:language-known swd:keyword/urtaye ;
 swd:person/3218 sp:language-known swds:10510-22?N12118241 ;
 swds:10510-22?N12118241 sps:language-known swd:keyword/urtaye ;
 swds:10510-22?N12118241 prov:wasDerivedFrom <https://spear-prosop.org/10510-22> ;
+
 swds:10510-22 rdfs:label "John spoke Urtaye."@en ;
+
+CORRECTIONS:
+Delete line 30, schema:description above
+Replace lines 24-28 above with
+
+swd:person/3218 swdt:language-known swd:keyword/urtaye ;
+swds:person/3218 sp:language-known swds:10510-22 ;
+swds:10510-22 sps:language-known swd:keyword/urtaye ;
+swds:10510-22 prov:wasDerivedFrom <https://spear-prosop.org/10510-22> ; [This line appears at 19 but fits logically here.]

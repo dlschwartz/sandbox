@@ -31,3 +31,8 @@ swds:3111-20?N1211824 prov:wasDerivedFrom <https://spear-prosop.org/3111-20> ;
 swds:3111-20 spq:not-after "0519"^^xsd:gYear ;
 
 swds:3111-20 rdfs:label "Isaiah resided in Egypt ."@en ;
+
+CORRECTIONS
+Delete line 22 and 33
+Statement instance (swdt:) of the date qualifier (spq:) needs to match in the one in the trio of triples 
+    swds:3111-20?N1211824 spq:not-after "0519"^^xsd:gYear ;
