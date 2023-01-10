@@ -39,3 +39,4 @@ swds:816-22?N12118245 prov:wasDerivedFrom <https://spear-prosop.org/816-22> ;
 CORRECTIONS
 At lines 27, 28: "swd:person/50" instead of "swd:event8559-55"
 Delete line 32 as subject shouldn't exist and we have the schema:description above
+The subject/object item for place has a "swds:" prefix where it should have a "swd:" prefix.

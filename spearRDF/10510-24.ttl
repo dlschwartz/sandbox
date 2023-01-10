@@ -28,3 +28,7 @@ swd:person/3218 swdt:birth-place swds:place/486 ;
 swd:person/3218 sp:birth-place swds:10510-24?N12118242 ;
 swds:10510-24?N12118242 sps:birth-place swds:place/486 ;
 swds:10510-24?N12118242 prov:wasDerivedFrom <https://spear-prosop.org/10510-24> ;
+
+CORRECTIONS
+The subject/object item for place has a "swds:" prefix where it should have a "swd:" prefix.
+Delete line 25 as the subject shouldn't exist and we have the schema:description above
