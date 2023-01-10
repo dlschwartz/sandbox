@@ -13,6 +13,7 @@
 <https://spear-prosop.org/10510-65> schema:description "Abraham was from Amida."@en ;
 <https://spear-prosop.org/10510-65> rdf:XMLLiteral  "<note xmlns="http://www.tei-c.org/ns/1.0" type="desc">
                         <persName ref="http://syriaca.org/person/3185">Abraham</persName> was from <placeName ref="http://syriaca.org/place/2737">Amida</placeName>.</note>" ;
+                        
 swdref:10510-65 spr:part-of-series <https://spear-prosop.org> ;
 swdref:10510-65 spr:part-of-series <https://spear-prosop.org/lives-eastern-saints> ;
 swdref:10510-65 spr:part-of-series <https://spear-prosop.org/10510> ;
@@ -24,4 +25,10 @@ swdref:10510-65 spr:reference-bibl <http://syriaca.org/bibl/2033> ;
 swd:person/3185 swdt:citizenship swd:place/8 ;
 swd:person/3185 sp:citizenship swds:10510-65 ;
 swds:10510-65 sps:citizenship swd:place/8 ;
+
 swd:10510-65 rdfs:label "Abraham was from Amida ." ;
+
+CORRECTIONS:
+Replace "swdref:10510-65" with factoid URI "<https://spear-prosop.org/10510-65>"
+Delete line 29 we have the schema:description above
+ 
