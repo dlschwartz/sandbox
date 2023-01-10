@@ -22,3 +22,11 @@ swdref:3021-3 spr:part-of-series <https://spear-prosop.org/3021> ;
 swds:3021-3 spr:wasDerivedFrom <https://spear-prosop.org/3021-3> ;
 swdref:3021-3 spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
 swdref:3021-3 spr:reference-bibl <http://syriaca.org/bibl/669> ;
+
+CORRECTIONS
+Replace “swdref:” with factoid URI
+Add the following lines:
+
+swd:person/564 swdt:birth-place swd:place/1473 ;
+swd:person/564 sp:birth-place swdt:3021-3 ;
+swdt:3021-3 sps:birth-place swd:place/1473 ;

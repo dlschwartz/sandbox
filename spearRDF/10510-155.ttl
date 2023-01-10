@@ -30,4 +30,4 @@ swds:10510-155?N12118242 prov:wasDerivedFrom <https://spear-prosop.org/10510-155
 
 CORRECTIONS
 The subject/object item for place has a "swds:" prefix where it should have a "swd:" prefix.
-Delete line 24 as subject shouldn't exist and we have the schema:description above
+Delete line 24 as the subject shouldn't exist and we have the schema:description above
