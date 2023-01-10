@@ -31,3 +31,6 @@ swds:3138-18?N1211824deathnotafter sps:death-not-after "0538"^^xsd:gYear ;
 swds:3138-18?N1211824deathnotafter prov:wasDerivedFrom <https://spear-prosop.org/3138-18> ;
 
 swds:3138-18 rdfs:label "Anonymous 3759 died sometime between 519-538." ;
+
+CORRECTIONS
+At lines 23, 24 and 28, 29: "swd:3138-18" instead of "swd:event3138-18"

@@ -31,3 +31,6 @@ swds:8559-55?N1211824birthnotafter sps:birth-not-after "-0002-09"^^xsd:gYearMont
 swds:8559-55?N1211824birthnotafter prov:wasDerivedFrom <https://spear-prosop.org/8559-55> ;
 
 swds:8559-55 rdfs:label "Jesus was born in 3/2 B.C." ;
+
+CORRECTIONS
+At lines 23, 24 and 28, 29: "swd:8559-55" instead of "swd:event8559-55"
