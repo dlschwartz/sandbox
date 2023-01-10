@@ -31,3 +31,4 @@ swd:person/3216 sp:name-variant swds:842-24 ;
 
 CORRECTIONS
 Replace “swdref:” with factoid URI
+Replace “spr:wasDerivedFrom” with “prov:wasDerivedFrom

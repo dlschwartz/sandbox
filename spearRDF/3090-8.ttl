@@ -29,3 +29,4 @@ swd:3090-8 rdfs:label "Anonymous 3784 was Ethiopian." ;
 
 CORRECTIONS
 Replace “swdref:” with factoid URI
+Replace “spr:wasDerivedFrom” with “prov:wasDerivedFrom
