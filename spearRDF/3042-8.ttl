@@ -28,3 +28,6 @@ swdref:3042-8 spr:reference-bibl <http://syriaca.org/bibl/669> ;
 swds:3042-8 sps:name-variant swd:person/2409 ;
 swd:person/2409 swdt:name-variant "Peter the prebyter"@en ;
 swd:person/2409 sp:name-variant swds:3042-8 ;
+
+CORRECTIONS
+Replace “swdref:” with factoid URI

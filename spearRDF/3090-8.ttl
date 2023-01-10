@@ -26,3 +26,6 @@ swd:person/3784 swdt:ethnic-label swd:keyword/ethiopians ;
 swds:3090-8 sps:ethnic-label swd:keyword/ethiopians ;
 
 swd:3090-8 rdfs:label "Anonymous 3784 was Ethiopian." ;
+
+CORRECTIONS
+Replace “swdref:” with factoid URI

@@ -30,3 +30,4 @@ Add the following lines:
 swd:person/564 swdt:birth-place swd:place/1473 ;
 swd:person/564 sp:birth-place swdt:3021-3 ;
 swdt:3021-3 sps:birth-place swd:place/1473 ;
+

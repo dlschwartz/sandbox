@@ -30,3 +30,6 @@ swd:person/1866 swdt:occupation swd:keyword/rhetors ;
 swds:801-4 sps:occupation swd:keyword/rhetors ;
 
 swd:801-4 rdfs:label "Mare was a monastic, a speaker, teacher, and very well informed on every subject."@en ;
+
+CORRECTIONS
+Replace “swdref:” with factoid URI

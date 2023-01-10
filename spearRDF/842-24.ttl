@@ -28,3 +28,6 @@ swdref:842-24 spr:reference-bibl <http://syriaca.org/bibl/2033> ;
 swds:842-24 sps:name-variant swd:person/3216 ;
 swd:person/3216 swdt:name-variant "Isidore, the martyr"@en ;
 swd:person/3216 sp:name-variant swds:842-24 ;
+
+CORRECTIONS
+Replace “swdref:” with factoid URI
