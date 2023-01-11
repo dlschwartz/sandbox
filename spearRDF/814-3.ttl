@@ -36,3 +36,6 @@ swds:814-3?N121182r21 sps:sibling-of swd:person/1117 ;
 swds:814-3?N121182r21 prov:wasDerivedFrom <https://spear-prosop.org/814-3> ;
 spq:814-3?N121182r21 spq:relationshipQualifier swd:maternal-family-relationship ;
 spq:814-3?N121182r21 spq:relationshipQualifier swd:half-family-relationship ;
+
+CORRECTIONS
+Delete line 20

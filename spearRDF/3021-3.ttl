@@ -25,7 +25,7 @@ swdref:3021-3 spr:reference-bibl <http://syriaca.org/bibl/669> ;
 
 CORRECTIONS
 Replace “swdref:” with factoid URI
-Replace “spr:wasDerivedFrom” with “prov:wasDerivedFrom"
+Delete line 22
 Add the following lines:
 
 swd:person/564 swdt:birth-place swd:place/1473 ;

@@ -31,6 +31,7 @@ swds:3116-12?N12118241 prov:wasDerivedFrom <https://spear-prosop.org/3116-12> ;
 swds:3116-12 rdfs:label "Ignatius was a martyr."@en ;
 
 CORRECTIONS:
+Delete line 20 (see below)
 Delete line 31, schema:description above
 Replace lines 25-29 above with
 

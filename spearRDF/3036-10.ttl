@@ -38,3 +38,6 @@ swd:person/51 swdt:sender-of-letter-to swd:person/2544 ;
 swd:person/51 swdt:sender-of-letter-to swds:3036-10?N121182rl13 ;
 swds:3036-10?N121182rl13 sps:sender-of-letter-to swd:person/2544 ;
 swds:3036-10?N121182rl13 prov:wasDerivedFrom <https://spear-prosop.org/3036-10> ;
+
+CORRECTIONS:
+Delete line 22

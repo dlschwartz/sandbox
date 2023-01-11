@@ -29,6 +29,8 @@ swds:3042-8 sps:name-variant swd:person/2409 ;
 swd:person/2409 swdt:name-variant "Peter the prebyter"@en ;
 swd:person/2409 sp:name-variant swds:3042-8 ;
 
+
 CORRECTIONS
 Replace “swdref:” with factoid URI
-Replace “spr:wasDerivedFrom” with “prov:wasDerivedFrom"
+Delete line 23, at line 31 add: swds:3042-8 prov:wasDerivedFrom <https://spear-prosop.org/3042-8> ;
+

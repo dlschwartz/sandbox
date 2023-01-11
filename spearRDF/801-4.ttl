@@ -33,6 +33,7 @@ swd:801-4 rdfs:label "Mare was a monastic, a speaker, teacher, and very well inf
 
 CORRECTIONS
 Replace “swdref:” with factoid URI
+Delete line 20
 Delete line 32 as the subject shouldn't exist and we have the schema:description above
 Replace lines 26-30 with the following:
 

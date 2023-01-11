@@ -30,6 +30,7 @@ swds:10510-123?N12118241 prov:wasDerivedFrom <https://spear-prosop.org/10510-123
 swds:10510-123 rdfs:label "Anonymous 3676 was male."@en ;
 
 CORRECTIONS:
+Delete line 19 (see below)
 Delete line 30, schema:description above
 Replace lines 24-28 above with
 

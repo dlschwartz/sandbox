@@ -71,4 +71,5 @@ swds:3008-1?N121182582 sps:sender-of-letter-to swd:person/2591 ;
 
 CORRECTIONS:
 Replace "swdref:3008-1" with factoid URI "<https://spear-prosop.org/3008-1>"
-Each statement instance trio needs a prov:wasDerived from
+Delete line 26
+Each statement instance trio needs a prov:wasDerivedFrom as in 3013-16

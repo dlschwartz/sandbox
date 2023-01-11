@@ -37,3 +37,6 @@ swd:person/51 swdt:bishop-over-clergy swd:person/2543 ;
 swd:person/51 swdt:bishop-over-clergy swds:3036-19?N121182rl13 ;
 swds:3036-19?N121182rl13 sps:bishop-over-clergy swd:person/2543 ;
 swds:3036-19?N121182rl13 prov:wasDerivedFrom <https://spear-prosop.org/3036-19> ;
+
+CORRECTIONS
+Delete line 21

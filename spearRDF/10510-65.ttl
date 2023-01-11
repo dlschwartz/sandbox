@@ -30,6 +30,6 @@ swd:10510-65 rdfs:label "Abraham was from Amida ." ;
 
 CORRECTIONS:
 Replace "swdref:10510-65" with factoid URI "<https://spear-prosop.org/10510-65>"
-Replace “spr:wasDerivedFrom” with “prov:wasDerivedFrom
+Delete line 20, add at line 28: swds:10510-65 prov:wasDerivedFrom <https://spear-prosop.org/10510-65> ;
 Delete line 29 we have the schema:description above
  

@@ -34,5 +34,5 @@ swds:3111-20 rdfs:label "Isaiah resided in Egypt ."@en ;
 
 CORRECTIONS
 Delete line 22 and 33
-Statement instance (swdt:) of the date qualifier (spq:) needs to match in the one in the trio of triples 
+Statement instance (swdt:) of the date qualifier (spq:) at line 31 needs to match in the one in the trio of triples, lines 27-29 
     swds:3111-20?N1211824 spq:not-after "0519"^^xsd:gYear ;
