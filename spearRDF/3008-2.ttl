@@ -34,5 +34,7 @@ swd:person/3775 swdt:spouse-of swds:3008-2?N121182r21 ;
 swds:3008-2?N121182r21 sps:spouse-of swd:person/2591 ;
 swds:3008-2?N121182r21 prov:wasDerivedFrom <https://spear-prosop.org/3008-2> ;
 
-CORRECTIONS
-Delete line 23
+CORRECTION
+l. 28 = swd:person/2591 sp:spouse-of swds:3008-2?N121182r11 ;
+
+l. 33 = swd:person/3775 sp:spouse-of swds:3008-2?N121182r21 ;

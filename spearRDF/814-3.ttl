@@ -38,4 +38,13 @@ spq:814-3?N121182r21 spq:relationshipQualifier swd:maternal-family-relationship 
 spq:814-3?N121182r21 spq:relationshipQualifier swd:half-family-relationship ;
 
 CORRECTIONS
-Delete line 20
+Property (sp:) has prefix swdt:
+Statement instance (swdt:) has prefix spq: with qualifier relationship
+
+l. 27 = swd:person/1117 sp:sibling-of swds:814-3?N121182r11 ;
+l. 30 = swds:814-3?N121182r11 spq:relationshipQualifier swd:maternal-family-relationship ;
+l. 31 = swds:814-3?N121182r11 spq:relationshipQualifier swd:half-family-relationship ;
+
+l. 34 = swd:person/1548 sp:sibling-of swds:814-3?N121182r21 ;
+l. 37 = swds:814-3?N121182r21 spq:relationshipQualifier swd:maternal-family-relationship ;
+l. 38 = swds:814-3?N121182r21 spq:relationshipQualifier swd:half-family-relationship ;

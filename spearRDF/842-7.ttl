@@ -24,6 +24,7 @@ swds:842-7 prov:wasDerivedFrom <https://spear-prosop.org/842-7> ;
 <https://spear-prosop.org/842-7> spr:reference-bibl <http://syriaca.org/bibl/2033> ;
 
 swd:person/2032 sp:physical-trait swds:842-7 ;
+
 swd:person/2032 swdt:physical-trait swd:keyword/dress ;
 swd:person/2032 swdt:physical-trait swds:842-7?N12118241 ;
 swds:842-7?N12118241 sps:physical-trait swd:keyword/dress ;
@@ -36,17 +37,7 @@ swds:842-7?N12118242 prov:wasDerivedFrom <https://spear-prosop.org/842-7> ;
 
 swds:842-7 rdfs:label "Kashish changed the monastic habit for lay attire, dressed as a poor, ordinary man and grew his hear out in the lay fashion."@en ;
 
-CORRECTIONS:
-Delete line 37, schema:description above
-Delete line 21, we need two "prov:" one with each statement instance
-Replace lines 26-35 above with
+CORRECTION
+l. 29 = swd:person/2032 sp:physical-trait swds:842-7?N12118241 ;
 
-swd:person/2032 swdt:physical-trait swd:keyword/dress ;
-swd:person/2032 sp:physical-trait swds:842-7?N12118241 ;
-swds:842-7?N12118241 sps:physical-trait swd:keyword/dress ;
-swds:842-7?N12118241 prov:wasDerivedFrom <https://spear-prosop.org/842-7> ;
-
-swd:person/2032 swdt:physical-trait swd:keyword/poor ;
-swd:person/2032 sp:physical-trait swds:842-7?N12118242 ;
-swds:842-7?N12118242 sps:physical-trait swd:keyword/poor ;
-swds:842-7?N12118242 prov:wasDerivedFrom <https://spear-prosop.org/842-7> ;
+l. 34 = swd:person/2032 sp:physical-trait swds:842-7?N12118242 ;

@@ -20,6 +20,7 @@
 <https://spear-prosop.org/10510-208> spr:reference-bibl <http://syriaca.org/work/10510> ;
 <https://spear-prosop.org/10510-208> spr:reference-bibl <http://syriaca.org/bibl/2033> ;
 
+
 swd:event10510-208 swdt:death-when "0539"^^xsd:gYear ;
 swd:event10510-208 sp:death-when swds:10510-208?N1211824deathwhen ;
 swds:10510-208?N1211824deathwhen sps:death-when "0539"^^xsd:gYear ;
@@ -27,6 +28,5 @@ swds:10510-208?N1211824deathwhen prov:wasDerivedFrom <https://spear-prosop.org/1
 
 swds:10510-208 rdfs:label "Mar Samuel died in 539." ;
 
-CORRECTIONS
-At lines 23, 24: "swd:person/3251" instead of "swd:event10510-208"
-Delete line 28 as we have the schema:description above
+CORRECTION
+Replace swd:event10510-208 with swd:person/3251
