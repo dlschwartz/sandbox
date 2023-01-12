@@ -23,6 +23,8 @@
 <https://spear-prosop.org/10510-99> spr:reference-bibl <http://syriaca.org/work/10510> ;
 <https://spear-prosop.org/10510-99> spr:reference-bibl <http://syriaca.org/bibl/2033> ;
 
+swds:event10510-99 rdfs:label "Event 10510-99"@en ;
+
 swd:event10510-99 swdt:event-participant swd:person/3187 ;
 swd:event10510-99 sp:event-participant swds:10510-99?N121182321 ;
 swds:10510-99?N121182321 sps:event-participant swd:person/3187 ;

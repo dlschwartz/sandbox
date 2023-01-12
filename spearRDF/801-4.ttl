@@ -5,7 +5,7 @@
 @prefix sps: <http://syriaca.org/prop/statement/>.
 @prefix spr: <http://syriaca.org/prop/reference/>.
 @prefix spq: <http://syriaca.org/prop/qualifier/>.
-@prefix swdref: <http://spear-prosop/reference/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#/>.
 @prefix schema: <http://schema.org/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix prov: <http://www.w3.org/ns/prov#>. 
@@ -14,38 +14,20 @@
 <https://spear-prosop.org/801-4> rdf:XMLLiteral  "<note xmlns="http://www.tei-c.org/ns/1.0" type="desc">
                         <persName ref="http://syriaca.org/person/1866">Mare</persName> was a monastic, a speaker, teacher, and very
                                 well informed on every subject. </note>" ;
-swdref:801-4 spr:part-of-series <https://spear-prosop.org> ;
-swdref:801-4 spr:part-of-series <https://spear-prosop.org/lives-eastern-saints> ;
-swdref:801-4 spr:part-of-series <https://spear-prosop.org/801> ;
-swds:801-4 spr:wasDerivedFrom <https://spear-prosop.org/801-4> ;
-swdref:801-4 spr:creator <http://syriaca.org/documentation/editors.xml#jmcmanaway> ;
-swdref:801-4 spr:creator <http://syriaca.org/documentation/editors.xml#avawter> ;
-swdref:801-4 spr:reference-bibl <http://syriaca.org/work/801> ;
-swdref:801-4 spr:reference-bibl <http://syriaca.org/bibl/1409> ;
-
-swd:person/1866 sp:occupation swds:801-4 ;
-swd:person/1866 swdt:occupation swd:keyword/monks ;
-swds:801-4 sps:occupation swd:keyword/monks ;
-swd:person/1866 swdt:occupation swd:keyword/rhetors ;
-swds:801-4 sps:occupation swd:keyword/rhetors ;
-
-swd:801-4 rdfs:label "Mare was a monastic, a speaker, teacher, and very well informed on every subject."@en ;
-
-CORRECTIONS
-Replace “swdref:” with factoid URI
-Delete line 20
-Delete line 32 as the subject shouldn't exist and we have the schema:description above
-Replace lines 26-30 with the following:
+<https://spear-prosop.org/801-4> spr:part-of-series <https://spear-prosop.org> ;
+<https://spear-prosop.org/801-4> spr:part-of-series <https://spear-prosop.org/lives-eastern-saints> ;
+<https://spear-prosop.org/801-4> spr:part-of-series <https://spear-prosop.org/801> ;
+<https://spear-prosop.org/801-4> spr:creator <http://syriaca.org/documentation/editors.xml#jmcmanaway> ;
+<https://spear-prosop.org/801-4> spr:creator <http://syriaca.org/documentation/editors.xml#avawter> ;
+<https://spear-prosop.org/801-4> spr:reference-bibl <http://syriaca.org/work/801> ;
+<https://spear-prosop.org/801-4> spr:reference-bibl <http://syriaca.org/bibl/1409> ;
 
 swd:person/1866 swdt:occupation swd:keyword/monks ;
-swd:person/1866 sp:occupation swds:801-4?[UNIQUE STRING X] ;
-swds:801-4?[UNIQUE STRING X] sps:occupation swd:keyword/monks ;
-swds:801-4?[UNIQUE STRING X] prov:wasDerivedFrom <https://spear-prosop.org/801-4> ;
-
-
+swds:person/1866 swdt:occupation swds:801-4?N12118241 ;
+swds:801-4?N12118241 sps:occupation swd:keyword/monks ;
+swds:801-4?N12118241 prov:wasDerivedFrom <https://spear-prosop.org/801-4> ;
 
 swd:person/1866 swdt:occupation swd:keyword/rhetors ;
-swd:person/1866 sp:occupation swds:801-4?[UNIQUE STRING Y]
-swds:801-4?[UNIQUE STRING Y] sps:occupation swd:keyword/rhetors ;
-swds:801-4?[UNIQUE STRING Y] prov:wasDerivedFrom <https://spear-prosop.org/801-4> ;
-
+swds:person/1866 swdt:occupation swds:801-4?N12118242 ;
+swds:801-4?N12118242 sps:occupation swd:keyword/rhetors ;
+swds:801-4?N12118242 prov:wasDerivedFrom <https://spear-prosop.org/801-4> ;

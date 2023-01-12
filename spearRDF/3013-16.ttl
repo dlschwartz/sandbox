@@ -26,6 +26,8 @@
 <https://spear-prosop.org/3013-16> spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
 <https://spear-prosop.org/3013-16> spr:reference-bibl <http://syriaca.org/bibl/669> ;
 
+swds:event3013-16 rdfs:label "Event 3013-16"@en ;
+
 swd:event3013-16 swdt:event-participant swd:person/2767 ;
 swd:event3013-16 sp:event-participant swds:3013-16?N121182521 ;
 swds:3013-16?N121182521 sps:event-participant swd:person/2767 ;
@@ -69,41 +71,41 @@ swds:3013-16?N1211notafter prov:wasDerivedFrom <https://spear-prosop.org/3013-16
 swds:3013-16?N121182582r11 spq:not-before "0489"^^xsd:gYear ;
 swds:3013-16?N121182582r11 spq:not-after "0512"^^xsd:gYear ;
 swd:person/2767 swdt:professional-relationship swd:person/2669 ;
-swd:person/2767 swdt:professional-relationship swds:3013-16?N121182582r11 ;
+swd:person/2767 sp:professional-relationship swds:3013-16?N121182582r11 ;
 swds:3013-16?N121182582r11 sps:professional-relationship swd:person/2669 ;
 swds:3013-16?N121182582r11 prov:wasDerivedFrom <https://spear-prosop.org/3013-16> ;
 
 swds:3013-16?N121182582r12 spq:not-before "0489"^^xsd:gYear ;
 swds:3013-16?N121182582r12 spq:not-after "0512"^^xsd:gYear ;
 swd:person/2767 swdt:professional-relationship swd:person/51 ;
-swd:person/2767 swdt:professional-relationship swds:3013-16?N121182582r12 ;
+swd:person/2767 sp:professional-relationship swds:3013-16?N121182582r12 ;
 swds:3013-16?N121182582r12 sps:professional-relationship swd:person/51 ;
 swds:3013-16?N121182582r12 prov:wasDerivedFrom <https://spear-prosop.org/3013-16> ;
 
 swds:3013-16?N121182582r21 spq:not-before "0489"^^xsd:gYear ;
 swds:3013-16?N121182582r21 spq:not-after "0512"^^xsd:gYear ;
 swd:person/2669 swdt:professional-relationship swd:person/2767 ;
-swd:person/2669 swdt:professional-relationship swds:3013-16?N121182582r21 ;
+swd:person/2669 sp:professional-relationship swds:3013-16?N121182582r21 ;
 swds:3013-16?N121182582r21 sps:professional-relationship swd:person/2767 ;
 swds:3013-16?N121182582r21 prov:wasDerivedFrom <https://spear-prosop.org/3013-16> ;
 
 swds:3013-16?N121182582r22 spq:not-before "0489"^^xsd:gYear ;
 swds:3013-16?N121182582r22 spq:not-after "0512"^^xsd:gYear ;
 swd:person/2669 swdt:professional-relationship swd:person/51 ;
-swd:person/2669 swdt:professional-relationship swds:3013-16?N121182582r22 ;
+swd:person/2669 sp:professional-relationship swds:3013-16?N121182582r22 ;
 swds:3013-16?N121182582r22 sps:professional-relationship swd:person/51 ;
 swds:3013-16?N121182582r22 prov:wasDerivedFrom <https://spear-prosop.org/3013-16> ;
 
 swds:3013-16?N121182582r31 spq:not-before "0489"^^xsd:gYear ;
 swds:3013-16?N121182582r31 spq:not-after "0512"^^xsd:gYear ;
 swd:person/51 swdt:professional-relationship swd:person/2767 ;
-swd:person/51 swdt:professional-relationship swds:3013-16?N121182582r31 ;
+swd:person/51 sp:professional-relationship swds:3013-16?N121182582r31 ;
 swds:3013-16?N121182582r31 sps:professional-relationship swd:person/2767 ;
 swds:3013-16?N121182582r31 prov:wasDerivedFrom <https://spear-prosop.org/3013-16> ;
 
 swds:3013-16?N121182582r32 spq:not-before "0489"^^xsd:gYear ;
 swds:3013-16?N121182582r32 spq:not-after "0512"^^xsd:gYear ;
 swd:person/51 swdt:professional-relationship swd:person/2669 ;
-swd:person/51 swdt:professional-relationship swds:3013-16?N121182582r32 ;
+swd:person/51 sp:professional-relationship swds:3013-16?N121182582r32 ;
 swds:3013-16?N121182582r32 sps:professional-relationship swd:person/2669 ;
 swds:3013-16?N121182582r32 prov:wasDerivedFrom <https://spear-prosop.org/3013-16> ;

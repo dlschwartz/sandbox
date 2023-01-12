@@ -22,13 +22,12 @@
 <https://spear-prosop.org/10510-24> spr:reference-bibl <http://syriaca.org/work/10510> ;
 <https://spear-prosop.org/10510-24> spr:reference-bibl <http://syriaca.org/bibl/2033> ;
 
-swds:10510-24 rdfs:label "John Urtaya was born in Syria ." ;
-
 swd:person/3218 swdt:birth-place swds:place/486 ;
-swd:person/3218 sp:birth-place swds:10510-24?N12118242 ;
-swds:10510-24?N12118242 sps:birth-place swds:place/486 ;
+swds:person/3218 sp:birth-place swds:10510-24?N12118242 ;
+swds:10510-24?N12118242 sps:birth-place swd:place/486 ;
 swds:10510-24?N12118242 prov:wasDerivedFrom <https://spear-prosop.org/10510-24> ;
 
-CORRECTIONS
-The subject/object item for place has a "swds:" prefix where it should have a "swd:" prefix.
-Delete line 25 as the subject shouldn't exist and we have the schema:description above
+swd:person/3218 swdt:birth-place swds:place/486 ;
+swds:person/3218 sp:birth-place swds:10510-24?N121182445 ;
+swds:10510-24?N121182445 sps:birth-place swd:place/486 ;
+swds:10510-24?N121182445 prov:wasDerivedFrom <https://spear-prosop.org/10510-24> ;

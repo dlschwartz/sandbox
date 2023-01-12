@@ -5,7 +5,7 @@
 @prefix sps: <http://syriaca.org/prop/statement/>.
 @prefix spr: <http://syriaca.org/prop/reference/>.
 @prefix spq: <http://syriaca.org/prop/qualifier/>.
-@prefix swdref: <http://spear-prosop/reference/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#/>.
 @prefix schema: <http://schema.org/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix prov: <http://www.w3.org/ns/prov#>. 
@@ -16,20 +16,18 @@
                                 was born in
                                 <placeName ref="http://syriaca.org/place/1473">Pelusium</placeName>. 
                             </note>" ;
-swdref:3021-3 spr:part-of-series <https://spear-prosop.org> ;
-swdref:3021-3 spr:part-of-series <https://spear-prosop.org/letters-severus> ;
-swdref:3021-3 spr:part-of-series <https://spear-prosop.org/3021> ;
-swds:3021-3 spr:wasDerivedFrom <https://spear-prosop.org/3021-3> ;
-swdref:3021-3 spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
-swdref:3021-3 spr:reference-bibl <http://syriaca.org/bibl/669> ;
+<https://spear-prosop.org/3021-3> spr:part-of-series <https://spear-prosop.org> ;
+<https://spear-prosop.org/3021-3> spr:part-of-series <https://spear-prosop.org/letters-severus> ;
+<https://spear-prosop.org/3021-3> spr:part-of-series <https://spear-prosop.org/3021> ;
+<https://spear-prosop.org/3021-3> spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
+<https://spear-prosop.org/3021-3> spr:reference-bibl <http://syriaca.org/bibl/669> ;
 
-CORRECTIONS
-Replace “swdref:” with factoid URI
-Delete line 22
-Add the following lines:
+swd:person/564 swdt:birth-place swds:place/1473 ;
+swds:person/564 sp:birth-place swds:3021-3?N12118242 ;
+swds:3021-3?N12118242 sps:birth-place swd:place/1473 ;
+swds:3021-3?N12118242 prov:wasDerivedFrom <https://spear-prosop.org/3021-3> ;
 
-swd:person/564 swdt:birth-place swd:place/1473 ;
-swd:person/564 sp:birth-place swdt:3021-3 ;
-swdt:3021-3 sps:birth-place swd:place/1473 ;
-swdt:3021-3 prov:wasDerivedFrom <https://spear-prosop.org/3021-3> ;
-
+swd:person/564 swdt:birth-place swds:place/1473 ;
+swds:person/564 sp:birth-place swds:3021-3?N121182445 ;
+swds:3021-3?N121182445 sps:birth-place swd:place/1473 ;
+swds:3021-3?N121182445 prov:wasDerivedFrom <https://spear-prosop.org/3021-3> ;

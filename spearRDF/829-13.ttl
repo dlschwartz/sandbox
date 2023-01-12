@@ -34,6 +34,8 @@
 <https://spear-prosop.org/829-13> spr:reference-bibl <http://syriaca.org/work/829> ;
 <https://spear-prosop.org/829-13> spr:reference-bibl <http://syriaca.org/bibl/2032> ;
 
+swds:event829-13 rdfs:label "Event 829-13"@en ;
+
 swd:event829-13 swdt:event-participant swd:person/1533 ;
 swd:event829-13 sp:event-participant swds:829-13?N121182421 ;
 swds:829-13?N121182421 sps:event-participant swd:person/1533 ;

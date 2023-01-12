@@ -5,7 +5,7 @@
 @prefix sps: <http://syriaca.org/prop/statement/>.
 @prefix spr: <http://syriaca.org/prop/reference/>.
 @prefix spq: <http://syriaca.org/prop/qualifier/>.
-@prefix swdref: <http://spear-prosop/reference/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#/>.
 @prefix schema: <http://schema.org/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix prov: <http://www.w3.org/ns/prov#>. 
@@ -19,57 +19,62 @@
                                 <relation type="person" ref="http://syriaca.org/keyword/sender-of-letter-to" active="http://syriaca.org/person/51" passive="http://syriaca.org/person/2591" notBefore="0490" notAfter="0512"></relation>
                             </listRelation>
                         </desc>" ;
-swd:event3008-1 schema:description "Severus wrote a letter to Alypius on the subject of him unlawfully dismissing his wife."@en ;
-swdref:3008-1 spr:part-of-series <https://spear-prosop.org> ;
-swdref:3008-1 spr:part-of-series <https://spear-prosop.org/letters-severus> ;
-swdref:3008-1 spr:part-of-series <https://spear-prosop.org/3008> ;
-swds:3008-1 spr:wasDerivedFrom <https://spear-prosop.org/3008-1> ;
-swdref:3008-1 spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
-swdref:3008-1 spr:reference-bibl <http://syriaca.org/bibl/669> ;
+<https://spear-prosop.org/3008-1> spr:part-of-series <https://spear-prosop.org> ;
+<https://spear-prosop.org/3008-1> spr:part-of-series <https://spear-prosop.org/letters-severus> ;
+<https://spear-prosop.org/3008-1> spr:part-of-series <https://spear-prosop.org/3008> ;
+<https://spear-prosop.org/3008-1> spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
+<https://spear-prosop.org/3008-1> spr:reference-bibl <http://syriaca.org/bibl/669> ;
+
+swds:event3008-1 rdfs:label "Event 3008-1"@en ;
 
 swd:event3008-1 swdt:event-participant swd:person/51 ;
 swd:event3008-1 sp:event-participant swds:3008-1?N121182521 ;
 swds:3008-1?N121182521 sps:event-participant swd:person/51 ;
+swds:3008-1?N121182521 prov:wasDerivedFrom <https://spear-prosop.org/3008-1> ;
 
 swd:event3008-1 swdt:event-participant swd:person/2591 ;
 swd:event3008-1 sp:event-participant swds:3008-1?N121182541 ;
 swds:3008-1?N121182541 sps:event-participant swd:person/2591 ;
+swds:3008-1?N121182541 prov:wasDerivedFrom <https://spear-prosop.org/3008-1> ;
 
 swd:event3008-1 swdt:event-participant swd:person/3775 ;
 swd:event3008-1 sp:event-participant swds:3008-1?N121182561 ;
 swds:3008-1?N121182561 sps:event-participant swd:person/3775 ;
+swds:3008-1?N121182561 prov:wasDerivedFrom <https://spear-prosop.org/3008-1> ;
 
 swd:event3008-1 swdt:event-keyword swd:keyword/letters ;
-swd:event3008-1 sp:event-keyword swds:3008-1?1N121182 ;
-swds:3008-1?1N121182 sps:event-keyword swd:keyword/letters ;
+swd:event3008-1 sp:event-keyword swds:3008-1?1N1211821 ;
+swds:3008-1?1N1211821 sps:event-keyword swd:keyword/letters ;
+swds:3008-1?1N1211821 prov:wasDerivedFrom <https://spear-prosop.org/3008-1> ;
 
 swd:event3008-1 swdt:event-keyword swd:keyword/marriage ;
-swd:event3008-1 sp:event-keyword swds:3008-1?2N121182 ;
-swds:3008-1?2N121182 sps:event-keyword swd:keyword/marriage ;
+swd:event3008-1 sp:event-keyword swds:3008-1?2N1211822 ;
+swds:3008-1?2N1211822 sps:event-keyword swd:keyword/marriage ;
+swds:3008-1?2N1211822 prov:wasDerivedFrom <https://spear-prosop.org/3008-1> ;
 
 swd:event3008-1 swdt:event-keyword swd:keyword/adultry ;
-swd:event3008-1 sp:event-keyword swds:3008-1?3N121182 ;
-swds:3008-1?3N121182 sps:event-keyword swd:keyword/adultry ;
+swd:event3008-1 sp:event-keyword swds:3008-1?3N1211823 ;
+swds:3008-1?3N1211823 sps:event-keyword swd:keyword/adultry ;
+swds:3008-1?3N1211823 prov:wasDerivedFrom <https://spear-prosop.org/3008-1> ;
 
 swd:event3008-1 swdt:event-keyword swd:keyword/modesty ;
-swd:event3008-1 sp:event-keyword swds:3008-1?4N121182 ;
-swds:3008-1?4N121182 sps:event-keyword swd:keyword/modesty ;
+swd:event3008-1 sp:event-keyword swds:3008-1?4N1211824 ;
+swds:3008-1?4N1211824 sps:event-keyword swd:keyword/modesty ;
+swds:3008-1?4N1211824 prov:wasDerivedFrom <https://spear-prosop.org/3008-1> ;
 
 swd:event3008-1 swdt:not-before "0490"^^xsd:gYear ;
 swd:event3008-1 sp:not-before swds:3008-1?N1211notbefore ;
-swds:swds:3008-1?N1211notbefore sps:not-before "0490"^^xsd:gYear ;
+swds:3008-1?N1211notbefore sps:not-before "0490"^^xsd:gYear ;
+swds:3008-1?N1211notbefore prov:wasDerivedFrom <https://spear-prosop.org/3008-1> ;
 
 swd:event3008-1 swdt:not-after "0512"^^xsd:gYear ;
 swd:event3008-1 sp:not-after swds:3008-1?N1211notafter ;
-swds:swds:3008-1?N1211notafter sps:not-after "0512"^^xsd:gYear ;
+swds:3008-1?N1211notafter sps:not-after "0512"^^xsd:gYear ;
+swds:3008-1?N1211notafter prov:wasDerivedFrom <https://spear-prosop.org/3008-1> ;
 
-swds:3008-1?N121182582 spq:not-before "0490"^^xsd:gYear ;
-swds:3008-1?N121182582 spq:not-after "0512"^^xsd:gYear ;
+swds:3008-1?N121182582rl11 spq:not-before "0490"^^xsd:gYear ;
+swds:3008-1?N121182582rl11 spq:not-after "0512"^^xsd:gYear ;
 swd:person/51 swdt:sender-of-letter-to swd:person/2591 ;
-swd:person/51 sp:sender-of-letter-to swds:3008-1?N121182582 ;
-swds:3008-1?N121182582 sps:sender-of-letter-to swd:person/2591 ;
-
-CORRECTIONS:
-Replace "swdref:3008-1" with factoid URI "<https://spear-prosop.org/3008-1>"
-Delete line 26
-Each statement instance trio needs a prov:wasDerivedFrom as in 3013-16
+swd:person/51 sp:sender-of-letter-to swds:3008-1?N121182582rl11 ;
+swds:3008-1?N121182582rl11 sps:sender-of-letter-to swd:person/2591 ;
+swds:3008-1?N121182582rl11 prov:wasDerivedFrom <https://spear-prosop.org/3008-1> ;

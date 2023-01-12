@@ -21,13 +21,12 @@
 <https://spear-prosop.org/10510-155> spr:reference-bibl <http://syriaca.org/work/10510> ;
 <https://spear-prosop.org/10510-155> spr:reference-bibl <http://syriaca.org/bibl/2033> ;
 
-swds:10510-155 rdfs:label "Symy was born in Arzun ." ;
-
 swd:person/3263 swdt:birth-place swds:place/724 ;
-swd:person/3263 sp:birth-place swds:10510-155?N12118242 ;
-swds:10510-155?N12118242 sps:birth-place swds:place/724 ;
+swds:person/3263 sp:birth-place swds:10510-155?N12118242 ;
+swds:10510-155?N12118242 sps:birth-place swd:place/724 ;
 swds:10510-155?N12118242 prov:wasDerivedFrom <https://spear-prosop.org/10510-155> ;
 
-CORRECTIONS
-The subject/object item for place has a "swds:" prefix where it should have a "swd:" prefix.
-Delete line 24 as the subject shouldn't exist and we have the schema:description above
+swd:person/3263 swdt:birth-place swds:place/724 ;
+swds:person/3263 sp:birth-place swds:10510-155?N121182445 ;
+swds:10510-155?N121182445 sps:birth-place swd:place/724 ;
+swds:10510-155?N121182445 prov:wasDerivedFrom <https://spear-prosop.org/10510-155> ;

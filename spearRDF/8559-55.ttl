@@ -18,19 +18,14 @@
 <https://spear-prosop.org/8559-55> spr:creator <http://syriaca.org/documentation/editors.xml#dschwartz> ;
 <https://spear-prosop.org/8559-55> spr:reference-bibl <http://syriaca.org/bibl/633> ;
 <https://spear-prosop.org/8559-55> spr:reference-bibl <urn:cts:syriacLit:nhsl8559.syriacCorpus57:4> ;
-<https://spear-prosop.org/8559-55> spr:reference-bibl <http://syriaca.org/bibl/657> ;
+<https://spear-prosop.org/8559-55> spr:reference-bibl <http://syriaca.org/bibl/657> ; 
 
-swd:event8559-55 swdt:birth-not-before "-0003-10"^^xsd:gYearMonth ;
-swd:event8559-55 sp:birth-not-before swds:8559-55?N1211824birthnotbefore ;
+swd:person/2245 swdt:birth-not-before "-0003-10"^^xsd:gYearMonth ;
+swd:person/2245 sp:birth-not-before swds:8559-55?N1211824birthnotbefore ;
 swds:8559-55?N1211824birthnotbefore sps:birth-not-before "-0003-10"^^xsd:gYearMonth ;
-swds:8559-55?N1211824birthnotbefore prov:wasDerivedFrom <https://spear-prosop.org/8559-55> ;
+swds:8559-55?N1211824birthnotbefore prov:wasDerivedFrom <https://spear-prosop.org/person/2245> ;
 
-swd:event8559-55 swdt:birth-not-after "-0002-09"^^xsd:gYearMonth ;
-swd:event8559-55 sp:birth-not-after swds:8559-55?N1211824birthnotafter ;
+swd:person/2245 swdt:birth-not-after "-0002-09"^^xsd:gYearMonth ;
+swd:person/2245 sp:birth-not-after swds:8559-55?N1211824birthnotafter ;
 swds:8559-55?N1211824birthnotafter sps:birth-not-after "-0002-09"^^xsd:gYearMonth ;
-swds:8559-55?N1211824birthnotafter prov:wasDerivedFrom <https://spear-prosop.org/8559-55> ;
-
-swds:8559-55 rdfs:label "Jesus was born in 3/2 B.C." ;
-
-CORRECTION
-Replace swd:event8559-55 with swd:person/2245
+swds:8559-55?N1211824birthnotafter prov:wasDerivedFrom <https://spear-prosop.org/person/2245> ;

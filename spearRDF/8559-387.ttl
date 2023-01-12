@@ -28,7 +28,10 @@
 <https://spear-prosop.org/8559-387> spr:reference-bibl <http://syriaca.org/bibl/633> ;
 <https://spear-prosop.org/8559-387> spr:reference-bibl <urn:cts:syriacLit:nhsl8559.syriacCorpus57:76> ;
 <https://spear-prosop.org/8559-387> spr:reference-bibl <http://syriaca.org/bibl/657> ;
+
 <https://spear-prosop.org/8559-387> spq:certainty <incerta> ;
+
+swds:event8559-387 rdfs:label "Event 8559-387"@en ;
 
 swd:event8559-387 swdt:event-place swd:place/2785 ;
 swd:event8559-387 sp:event-place swds:8559-387?N121182541 ;

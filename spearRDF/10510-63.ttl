@@ -19,25 +19,11 @@
 <https://spear-prosop.org/10510-63> spr:part-of-series <https://spear-prosop.org> ;
 <https://spear-prosop.org/10510-63> spr:part-of-series <https://spear-prosop.org/lives-eastern-saints> ;
 <https://spear-prosop.org/10510-63> spr:part-of-series <https://spear-prosop.org/10510> ;
-swds:10510-63 prov:wasDerivedFrom <https://spear-prosop.org/10510-63> ;
 <https://spear-prosop.org/10510-63> spr:creator <http://syriaca.org/documentation/editors.xml#ktorabi> ;
 <https://spear-prosop.org/10510-63> spr:reference-bibl <http://syriaca.org/work/10510> ;
 <https://spear-prosop.org/10510-63> spr:reference-bibl <http://syriaca.org/bibl/2033> ;
 
-swd:person/3185 sp:occupation swds:10510-63 ;
 swd:person/3185 swdt:occupation swd:keyword/monastic-heads ;
-swd:person/3185 swdt:occupation swds:10510-63?N12118241 ;
+swds:person/3185 swdt:occupation swds:10510-63?N12118241 ;
 swds:10510-63?N12118241 sps:occupation swd:keyword/monastic-heads ;
 swds:10510-63?N12118241 prov:wasDerivedFrom <https://spear-prosop.org/10510-63> ;
-
-swds:10510-63 rdfs:label "Abraham was an archimandrite of the Convent of John Urtaya in Amida"@en ;
-
-CORRECTIONS
-Delete line 22 (see below)
-Delete lines 29, and 33
-In lines 27-31 have two different statement instances where we should have one. Replace with
-
-swd:person/3185 swdt:occupation swd:keyword/monastic-heads ;
-swd:person/3185 sp:occupation swds:10510-63 ;
-swds:10510-63 sps:occupation swd:keyword/monastic-heads ;
-swds:10510-63 prov:wasDerivedFrom <https://spear-prosop.org/10510-63> ; [This is the current line 22 actually but it fits logically here]
