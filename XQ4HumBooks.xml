@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<books>
+    <book n="1">
+        <title>Primo Levi: The Matter of Life</title>
+        <author>Berel Lang</author>
+        <date year="2013">2013</date>
+        <publisher>
+            <city>New Haven</city>
+            <press>Yale University Press</press>
+        </publisher>
+    </book>
+    <book n="2">
+        <title>Hacking the Academy</title>
+        <author>Daniel J. Cohen, et alt.</author>
+        <date year="2013">2013</date>
+        <publisher>
+            <city>Ann Arbor</city>
+            <press>University of Michigan Press</press>
+        </publisher>
+    </book>
+    <book n="3">
+        <title>Teaching History Historian in the Digital Age</title>
+        <author>T. Millis Kelly</author>
+        <date year="2013">2013</date>
+        <publisher>
+            <city>Ann Arbor</city>
+            <press>University of Michigan Press</press>
+        </publisher>
+    </book>
+    <book n="4">
+        <title>Exploring Big Historical Data</title>
+        <author>Shawn Graham, et alt.</author>
+        <date year="2016">2016</date>
+        <publisher>
+            <city>London</city>
+            <press>Imperial College Press</press>
+        </publisher>
+    </book>
+    <book n="5">
+        <title>Technology and the Historian</title>
+        <author>Adam Crymble</author>
+        <date year="2021">2021</date>
+        <publisher>
+            <city>Urbana</city>
+            <press>University of Illinois Press</press>
+        </publisher>
+    </book>
+<!-- This is a list of books! -->
+</books>
