@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2023-04-20T18:12:13Z. .
+Schema generated from ODD source 2023-04-20T20:17:23Z. .
 TEI Edition: Version 4.5.0. Last updated on
         25th October 2022, revision 3e98e619e
 TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.5.0/
@@ -2287,20 +2287,43 @@ Suggested values include: 1] volume (volume); 2] issue; 3] page (page); 4] line;
    <define name="head">
       <element name="head">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(heading) contains any type of heading, for example the title of a section, or the heading of a list, glossary, manuscript description, etc. [4.2.1. Headings and Trailers]</a:documentation>
-         <zeroOrMore>
-            <choice>
-               <text/>
-               <ref name="model.gLike"/>
-               <ref name="model.phrase"/>
-               <ref name="model.inter"/>
-               <ref name="model.lLike"/>
-               <ref name="model.global"/>
-            </choice>
-         </zeroOrMore>
-         <ref name="att.global.attributes"/>
-         <ref name="att.typed.attributes"/>
+         <interleave>
+            <zeroOrMore>
+               <ref name="persName"/>
+            </zeroOrMore>
+            <text/>
+         </interleave>
+         <ref name="att.global.attribute.xmlid"/>
+         <ref name="att.global.attribute.n"/>
+         <ref name="att.global.attribute.xmllang"/>
+         <ref name="att.global.attribute.xmlbase"/>
+         <ref name="att.global.attribute.xmlspace"/>
+         <ref name="att.global.rendition.attribute.rend"/>
+         <ref name="att.global.rendition.attribute.style"/>
+         <ref name="att.global.rendition.attribute.rendition"/>
+         <ref name="att.global.responsibility.attribute.cert"/>
+         <ref name="att.global.source.attribute.source"/>
+         <ref name="att.typed.attribute.subtype"/>
          <ref name="att.placement.attributes"/>
          <ref name="att.written.attributes"/>
+         <attribute name="resp">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <choice>
+               <value>compiler</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The 6th century compiler of this letter collection.</a:documentation>
+               <value>editor</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The modern editor responsible for this edition of the letters.</a:documentation>
+            </choice>
+         </attribute>
+         <attribute name="type">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <choice>
+               <value>main</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The main heading of a letter.</a:documentation>
+               <value>sub</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The subheading of a letter.</a:documentation>
+            </choice>
+         </attribute>
          <empty/>
       </element>
    </define>
@@ -3516,7 +3539,32 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
    <define name="persName">
       <element name="persName">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(personal name) contains a proper noun or proper-noun phrase referring to a person, possibly including one or more of the person's forenames, surnames, honorifics, added names, etc. [13.2.1. Personal Names]</a:documentation>
-         <ref name="macro.phraseSeq"/>
+         <choice>
+            <group>
+               <ref name="forename"/>
+               <ref name="surname"/>
+            </group>
+            <text/>
+         </choice>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SeverusLetters-persName-ref-on-persName-constraint-rule-9">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      context="tei:text//tei:persName/@ref">
+               <sch:let name="standoff"
+                        value="doc('https://raw.githubusercontent.com/dlschwartz/sandbox/master/HIST630SampleProject/Standoff.xml')"/>
+               <sch:let name="personIDs" value="$standoff//tei:listPerson/tei:person/@xml:id"/>
+               <sch:let name="personRefValues"
+                        value="for $i in $personIDs return concat('#', $i)"/>
+               <sch:let name="error" value="."/>
+               <sch:assert test=". = $personRefValues">
+                  <sch:value-of select="$error"/> is not an identified person in the standoff markup for 
+                  Severus' Letters. Acceptable values: <sch:value-of select="string-join($personRefValues, ', ')"/>.
+                </sch:assert>
+            </sch:rule>
+         </pattern>
          <ref name="att.global.attributes"/>
          <ref name="att.datable.attributes"/>
          <ref name="att.editLike.attributes"/>
@@ -3548,7 +3596,26 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
    <define name="placeName">
       <element name="placeName">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(place name) contains an absolute or relative place name. [13.2.3. Place Names]</a:documentation>
-         <ref name="macro.phraseSeq"/>
+         <text/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SeverusLetters-placeName-ref-on-placeName-constraint-rule-10">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      context="tei:text//tei:placeName/@ref">
+               <sch:let name="standoff"
+                        value="doc('https://raw.githubusercontent.com/dlschwartz/sandbox/master/HIST630SampleProject/Standoff.xml')"/>
+               <sch:let name="placeIDs" value="$standoff//tei:listPlace/tei:place/@xml:id"/>
+               <sch:let name="placeRefValues"
+                        value="for $i in $placeIDs return concat('#', $i)"/>
+               <sch:let name="error" value="."/>
+               <sch:assert test=". = $placeRefValues">
+                  <sch:value-of select="$error"/> is not an identified person in the standoff markup for 
+                  Severus' Letters. Acceptable values: <sch:value-of select="string-join($placeRefValues, ', ')"/>.
+                </sch:assert>
+            </sch:rule>
+         </pattern>
          <ref name="att.datable.attributes"/>
          <ref name="att.editLike.attributes"/>
          <ref name="att.global.attributes"/>
