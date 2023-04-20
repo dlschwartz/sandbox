@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ODD Customization for Severus of Antioch, Letters</title>
+        <principal>Daniel L. Schwartz</principal>
+        <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L.
+          Schwartz</editor>
+        <respStmt>
+          <resp>XML created by</resp>
+          <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L.
+            Schwartz</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Daniel L. Schwartz</authority>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/">
+            <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+            <p>https://creativecommons.org/licenses/by/4.0/</p>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Born Digital</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <schemaSpec ident="oddex1" start="TEI">
+        <moduleRef key="header"/>
+        <moduleRef key="core"/>
+        <moduleRef key="tei"/>
+        <moduleRef key="msdescription" include="origDate"/>
+        <moduleRef key="textstructure"/>
+        <moduleRef key="namesdates" include="forename persName placeName surname"/>
+      </schemaSpec>
+      
+      <elementSpec ident="head" module="core" mode="change">
+        <content>
+          <sequence preserveOrder="false">
+            <elementRef key="persName" minOccurs="0" maxOccurs="unbounded"/>
+            <textNode/>
+          </sequence>
+        </content>
+        
+        <attList>
+          <attDef ident="type" mode="change" usage="req">
+            <datatype>
+              <dataRef key="data.enumerated"/>
+            </datatype>
+            <valList type="closed">
+              <valItem ident="main">
+                <desc>The main heading of a letter.</desc>
+              </valItem>
+              <valItem ident="sub">
+                <desc>The subheading of a letter.</desc>
+              </valItem>
+            </valList>
+          </attDef>
+          
+          <attDef ident="resp" mode="change" usage="req">
+            <datatype>
+              <dataRef key="data.enumerated"/>
+            </datatype>
+            <valList type="closed">
+              <valItem ident="compiler">
+                <desc>The 6th century compiler of this letter collection.</desc>
+              </valItem>
+              <valItem ident="editor">
+                <desc>The modern editor responsible for this edition of the letters.</desc>
+              </valItem>
+            </valList>
+          </attDef>
+        </attList>
+        
+      </elementSpec>
+      
+      <elementSpec ident="persName" module="namesdates" mode="change">
+        
+        
+        
+      </elementSpec>
+      
+      
+    </body>
+  </text>
+</TEI>
