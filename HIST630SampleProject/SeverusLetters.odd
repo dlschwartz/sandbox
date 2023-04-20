@@ -29,12 +29,12 @@
   </teiHeader>
   <text>
     <body>
-      <schemaSpec ident="oddex1" start="TEI">
-        <moduleRef key="header" include="authority availability change correspAction correspDesc creation distributor edition editionStmt editorialDecl encodingDesc extent idno licence principal profileDesc publicationStmt revisionDesc sourceDesc sponsor teiHeader titleStmt "/>
-        <moduleRef key="core" include="author biblScope biblStruct date editor head imprint monogr name p pb publisher resp respStmt title"/>
+      <schemaSpec ident="SeverusLetters" start="TEI">
+        <moduleRef key="header" include="authority availability change correspAction correspDesc creation distributor edition editionStmt editorialDecl encodingDesc extent fileDesc idno licence principal profileDesc publicationStmt revisionDesc sourceDesc sponsor teiHeader titleStmt "/>
+        <moduleRef key="core" include="author biblScope biblStruct date editor head imprint monogr name p pb publisher pubPlace resp respStmt title"/>
         <moduleRef key="tei"/>
         <moduleRef key="msdescription" include="origDate"/>
-        <moduleRef key="textstructure" include="body div text trailer"/>
+        <moduleRef key="textstructure" include="body div TEI text trailer"/>
         <moduleRef key="namesdates" include="forename persName placeName surname"/>
       </schemaSpec>
       
