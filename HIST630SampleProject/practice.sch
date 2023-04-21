@@ -4,6 +4,7 @@
     <sch:ns uri="http://www.tei-c.org/ns/1.0" prefix="tei"/>
     
     <sch:pattern>
+        
         <sch:rule context="tei:text//tei:persName/@ref">
             <sch:let name="standoff"
                 value="doc('https://raw.githubusercontent.com/dlschwartz/sandbox/master/HIST630SampleProject/Standoff.xml')"/>

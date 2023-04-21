@@ -11,7 +11,13 @@ declare function local:transform($nodes as node()*) {
             case text() return $node
             case element (tei:TEI) return 
                 <html xmlns="http://www.w3.org/1999/xhtml">{local:transform($node/node())}</html>
-            case element (tei:teiHeader) return <head>{local:transform($node/node())}</head>
+            case element (tei:teiHeader) return 
+                <head>
+                    {local:transform($node/node())}
+                    <link rel="stylesheet" href="../CSS/SeverusLetters.css"/>
+                    <meta charset="UTF-8"/>
+                    <meta name="viewport" content="width=device-width" initial-scale="1.0"/>
+                </head>
             case element (tei:fileDesc) return <title>{local:transform($node/tei:titleStmt/tei:title[1]/node())}</title>
             case element (tei:text) return <body>{local:transform($node/node())}</body>
             case element (tei:body) return <div>{local:transform($node/tei:div/node())}</div>
