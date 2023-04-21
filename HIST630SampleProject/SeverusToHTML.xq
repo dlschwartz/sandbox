@@ -1,0 +1,30 @@
+xquery version "3.1";
+
+declare namespace tei = "http://www.tei-c.org/ns/1.0";
+
+declare variable $doc := tei:TEI;
+
+declare function local:transform($nodes as node()*) {
+    for $node in $nodes
+    return
+        typeswitch ($node)
+            case text() return $node
+            case element (tei:TEI) return 
+                <html xmlns="http://www.w3.org/1999/xhtml">{local:transform($node/node())}</html>
+            case element (tei:teiHeader) return <head>{local:transform($node/node())}</head>
+            case element (tei:fileDesc) return <title>{local:transform($node/tei:titleStmt/tei:title[1]/node())}</title>
+            case element (tei:text) return <body>{local:transform($node/node())}</body>
+            case element (tei:body) return <div>{local:transform($node/tei:div/node())}</div>
+            case element (tei:head) return <h1>{local:transform($node/node())}</h1>
+            (:case element (tei:head) return <h2>{local:transform($node[@type='sub']/node())}</h2>:)
+            case element (tei:p) return <p>{local:transform($node/node())}</p>
+            case element (tei:persName) return 
+                <a href="{concat("./Standoff.xhtml", $node/@ref)}">{local:transform($node/node())}</a>
+            case element (tei:placeName) return 
+                <a href="{concat("./Standoff.xhtml", $node/@ref)}">{local:transform($node/node())}</a>            
+            case element (tei:trailer) return <p>{ local:transform($node/node()) }</p>
+            
+            default return ()
+};
+
+local:transform($doc)

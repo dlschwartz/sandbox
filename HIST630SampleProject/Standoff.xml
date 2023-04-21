@@ -6,7 +6,7 @@
   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Standoff Markup for Severus, Letters, 1-35</title>
+            <title>Standoff Markup for Severus, Letters</title>
             <principal>Daniel L. Schwartz</principal>
             <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L.
                Schwartz</editor>
@@ -88,9 +88,11 @@
             </place>
             <place xml:id="place2653" type="monastery">
                <placeName>The Monastery of Majuma</placeName>
+               <desc>A monastery in the area of Majuma</desc>
             </place>
             <place xml:id="place2626" type="church">
                <placeName>Anthedon</placeName>
+               <desc>The church in the settlement of Anthedon</desc>
             </place>
          </listPlace>
       </body>
