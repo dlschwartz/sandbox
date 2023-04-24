@@ -22,7 +22,6 @@ declare function local:transform($nodes as node()*) {
             case element (tei:text) return <body>{local:transform($node/node())}</body>
             case element (tei:body) return <div>{local:transform($node/tei:div/node())}</div>
             case element (tei:head) return <h1>{local:transform($node/node())}</h1>
-            (:case element (tei:head) return <h2>{local:transform($node[@type='sub']/node())}</h2>:)
             case element (tei:p) return <p>{local:transform($node/node())}</p>
             case element (tei:persName) return 
                 <a href="{concat("./Standoff.xhtml", $node/@ref)}">{local:transform($node/node())}</a>
