@@ -22,8 +22,8 @@ declare function local:transform($nodes as node()*) {
             case element (tei:text) return <body>{local:transform($node/tei:body/node())}</body>
             case element (tei:listPerson) return <div><h1>Persons</h1>{local:transform($node/node())}</div>
             case element (tei:listPlace) return <div><h1>Places</h1>{local:transform($node/node())}</div>
-            case element (tei:person) return <div><h2><a href="{concat("#", $node/@xml:id)}">{local:transform($node/tei:persName/node())}</a></h2>{local:transform($node/node())}</div>
-            case element (tei:place) return <div><h2><a href="{concat("#", $node/@xml:id)}">{local:transform($node/tei:placeName/node())}</a></h2>{local:transform($node/node())}</div>
+            case element (tei:person) return <div><h2 class="namedEntity"><a href="{concat("#", $node/@xml:id)}">{local:transform($node/tei:persName/node())}</a></h2>{local:transform($node/node())}</div>
+            case element (tei:place) return <div><h2 class="namedEntity"><a href="{concat("#", $node/@xml:id)}">{local:transform($node/tei:placeName/node())}</a></h2>{local:transform($node/node())}</div>
             (:case element (tei:persName) return 
                 <a href="{$node/@ref}">{local:transform($node/node())}</a>
             case element (tei:placeName) return 

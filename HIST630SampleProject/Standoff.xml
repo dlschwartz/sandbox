@@ -1,129 +1,100 @@
-<?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml">
-   
-   <head>
-      
-      <title>Standoff Markup for Severus, Letters</title>
-      
-      <link rel="stylesheet" href="../CSS/SeverusLetters.css"></link>
-      <meta charset="UTF-8"></meta>
-      <meta name="viewport" content="width=device-width" initial-scale="1.0"></meta>
-   </head>
-   
-   <body>
-      
-      <div>
-         <h1>Persons</h1>
-         
-         <div>
-            <h2><a href="#person51">Severus of Antioch</a></h2>
-            
-            
-            <p>Gender: Male</p>
-            
-            <p>Death date: 8 February 538</p>
-            
-            <p>Occupation: Patriarch of Antioch</p>
-         </div>
-         
-         <div>
-            <h2><a href="#person680">Peter the Iberian</a></h2>
-            
-            
-            <p>Gender: Male</p>
-            
-            <p>Death date: 491</p>
-            
-            <p>Occupation: Bishop of Maiuma</p>
-         </div>
-         
-         <div>
-            <h2><a href="#person2245">Jesus of Nazareth</a></h2>
-            
-            
-            <p>Gender: Male</p>
-         </div>
-         
-         <div>
-            <h2><a href="#person2400">John</a></h2>
-            
-            
-            <p>Gender: Male</p>
-            
-            <p>Floruit: First 1/4 of the 6th century</p>
-            
-            <p>Occupation: Slave</p>
-         </div>
-         
-         <div>
-            <h2><a href="#person2401">Timothy</a></h2>
-            
-            
-            <p>Gender: Male</p>
-            
-            <p>Floruit: Mid-5th century</p>
-            
-            <p>Occupation: Priest</p>
-            
-            <p>Occupation: Monk</p>
-         </div>
-         
-         <div>
-            <h2><a href="#person2402">Eustathios</a></h2>
-            
-            
-            <p>Gender: Male</p>
-            
-            <p>Floruit: First 1/4 of the 6th century</p>
-            
-            <p>Occupation: Priest</p>
-         </div>
-         
-         <div>
-            <h2><a href="#person2403">Genesios</a></h2>
-            
-            
-            <p>Gender: Male</p>
-            
-            <p>Floruit: First 1/4 of the 6th century</p>
-         </div>
-         
-         <div>
-            <h2><a href="#person2540">Theodore</a></h2>
-            
-            
-            <p>Gender: Male</p>
-            
-            <p>Floruit: First 1/4 of the 6th century</p>
-            
-            <p>Occupation: Priest</p>
-            
-            <p>Occupation: Archimandrite</p>
-         </div>
-      </div>
-      
-      <div>
-         <h1>Places</h1>
-         
-         <div>
-            <h2><a href="#place2674">Iberia</a></h2>
-            
-            
-            <p>Description: A region in the southern Caucasus</p>
-         </div>
-         
-         <div>
-            <h2><a href="#place2653">The Monastery of Majuma</a></h2>
-            
-            
-            <p>Description: A monastery in the area of Majuma</p>
-         </div>
-         
-         <div>
-            <h2><a href="#place2626">Anthedon</a></h2>
-            
-            
-            <p>Description: The church in the settlement of Anthedon</p>
-         </div>
-      </div>
-   </body>
-</html>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Standoff Markup for Severus, Letters</title>
+            <principal>Daniel L. Schwartz</principal>
+            <editor role="editor" ref="http://syriaca.org/person.xml#dschwartz">Daniel L.
+               Schwartz</editor>
+            <respStmt>
+               <resp>XML created by</resp>
+               <name type="person" ref="http://syriaca.org/person.xml#dschwartz">Daniel L.
+                  Schwartz</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Daniel L. Schwartz</authority>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">
+                  <p>Creative Commons — Attribution 4.0 International — CC BY 4.0</p>
+                  <p>https://creativecommons.org/licenses/by/4.0/</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born Digital</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPerson>
+            <person xml:id="person51">
+               <persName>Severus of Antioch</persName>
+               <gender>Male</gender>
+               <death when="0538-02-08">8 February 538</death>
+               <occupation>Patriarch of Antioch</occupation>
+            </person>
+            <person xml:id="person680">
+               <persName>Peter the Iberian</persName>
+               <gender>Male</gender>
+               <death when="0491">491</death>
+               <occupation>Bishop of Maiuma</occupation>
+            </person>
+            <person xml:id="person2245">
+               <persName>Jesus of Nazareth</persName>
+               <gender>Male</gender>
+            </person>
+            <person xml:id="person2400">
+               <persName>John</persName>
+               <gender>Male</gender>
+               <floruit>First 1/4 of the 6th century</floruit>
+               <occupation>Slave</occupation>
+            </person>
+            <person xml:id="person2401">
+               <persName>Timothy</persName>
+               <gender>Male</gender>
+               <floruit>Mid-5th century</floruit>
+               <occupation>Priest</occupation>
+               <occupation>Monk</occupation>
+            </person>
+            <person xml:id="person2402">
+               <persName>Eustathios</persName>
+               <gender>Male</gender>
+               <floruit>First 1/4 of the 6th century</floruit>
+               <occupation>Priest</occupation>
+            </person>
+            <person xml:id="person2403">
+               <persName>Genesios</persName>
+               <gender>Male</gender>
+               <floruit>First 1/4 of the 6th century</floruit>
+            </person>
+            <person xml:id="person2540">
+               <persName>Theodore</persName>
+               <gender>Male</gender>
+               <floruit>First 1/4 of the 6th century</floruit>
+               <occupation>Priest</occupation>
+               <occupation>Archimandrite</occupation>
+            </person>
+         </listPerson>
+         <listPlace>
+            <place xml:id="place2674" type="region">
+               <placeName>Iberia</placeName>
+               <desc>A region in the southern Caucasus</desc>
+            </place>
+            <place xml:id="place2653" type="monastery">
+               <placeName>The Monastery of Majuma</placeName>
+               <desc>A monastery in the area of Majuma</desc>
+            </place>
+            <place xml:id="place2626" type="church">
+               <placeName>Anthedon</placeName>
+               <desc>The church in the settlement of Anthedon</desc>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>
