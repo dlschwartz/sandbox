@@ -21,7 +21,9 @@ declare function local:transform($nodes as node()*) {
             case element (tei:fileDesc) return <title>{local:transform($node/tei:titleStmt/tei:title[1]/node())}</title>
             case element (tei:text) return <body>{local:transform($node/node())}</body>
             case element (tei:body) return <div>{local:transform($node/tei:div/node())}</div>
-            case element (tei:head) return <h1>{local:transform($node/node())}</h1>
+            case element (tei:head) return 
+                if ($node/@type eq "main") then <h1>{local:transform($node/node())}</h1>
+                else <h2>{local:transform($node/node())}</h2>
             case element (tei:p) return <p>{local:transform($node/node())}</p>
             case element (tei:persName) return 
                 <a href="{concat("./Standoff.xhtml", $node/@ref)}">{local:transform($node/node())}</a>
