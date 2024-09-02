@@ -1051,7 +1051,6 @@
 	<skos:hasTopConcept rdf:resource="http://syriaca.org/taxonomy/disciplines"/>
 	<skos:hasTopConcept rdf:resource="http://syriaca.org/taxonomy/culture"/>
 	<skos:hasTopConcept rdf:resource="http://syriaca.org/taxonomy/systems-of-thought"/>
-	<skos:hasTopConcept rdf:resource="http://syriaca.org/taxonomy/dynasties"/>
 	<skos:hasTopConcept rdf:resource="http://syriaca.org/taxonomy/society"/>
 	<skos:prefLabel xml:lang="en">syriac-taxonomy</skos:prefLabel>
 </rdf:Description>
@@ -1283,6 +1282,7 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Freed Slave of</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/extended-household-of"/>
+	<skos:related rdf:resource="http://syriaca.org/taxonomy/freed-persons"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/slave-of">
@@ -1731,6 +1731,7 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Commune Together</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/religious-relationship"/>
+	<skos:related rdf:resource="http://syriaca.org/taxonomy/communion"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/confessor-for">
@@ -1926,16 +1927,16 @@
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/relationships-collection">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
-	<skos:prefLabel xml:lang="en">relationships-collection</skos:prefLabel>
-	<skos:member rdf:resource="http://syriaca.org/taxonomy/link"/>
+	<skos:prefLabel xml:lang="en">Relationships Collection</skos:prefLabel>
 	<skos:member rdf:resource="http://syriaca.org/taxonomy/directed-relations-collection"/>
 	<skos:member rdf:resource="http://syriaca.org/taxonomy/mutual-relations-collection"/>
+	<skos:member rdf:resource="http://syriaca.org/taxonomy/qualifier-relationship-collection"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/directed-relations-collection">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
 	<skos:scopeNote xml:lang="en">Collects the relationships that will take @active and @passive attributes when used in the TEI.</skos:scopeNote>
-	<skos:prefLabel xml:lang="en">directed-relations-collection</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Directed Relations Collection</skos:prefLabel>
 	<skos:member rdf:resource="http://syriaca.org/taxonomy/student-of"/>
 	<skos:member rdf:resource="http://syriaca.org/taxonomy/destruction"/>
 	<skos:member rdf:resource="http://syriaca.org/taxonomy/has-relation-to-place"/>
@@ -1992,7 +1993,7 @@
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/mutual-relations-collection">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
 	<skos:scopeNote xml:lang="en">Collects the relationships that will take a @mutual attribute when used in the TEI.</skos:scopeNote>
-	<skos:prefLabel xml:lang="en">mutual-relations-collection</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Mutual Relations Collection</skos:prefLabel>
 	<skos:member rdf:resource="http://syriaca.org/taxonomy/intellectual-relationship"/>
 	<skos:member rdf:resource="http://syriaca.org/taxonomy/co-located"/>
 	<skos:member rdf:resource="http://syriaca.org/taxonomy/not-to-be-confused-with"/>
@@ -2105,7 +2106,7 @@
 	<skos:prefLabel xml:lang="en">Beings</skos:prefLabel>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/animals"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/spiritual-beings"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/People"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/people"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/animals">
@@ -2232,6 +2233,7 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Widows</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/family-roles"/>
+	<skos:related rdf:resource="http://syriaca.org/taxonomy/widows-of-the-church"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/angels">
@@ -2269,7 +2271,6 @@
 	<skos:prefLabel xml:lang="en">Occupations</skos:prefLabel>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/actors"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/architects"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/archivists"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/artisans"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/astrologers"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/astronomers"/>
@@ -2323,6 +2324,14 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/teachers"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/moneychangers"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/chancellors"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/brigand-chasers"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/cellarer"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/shepherds"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/poets"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/vicarii"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/nurses"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/guardians"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/actors">
@@ -2343,7 +2352,14 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Archivists</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/occupations"/>
+	<skos:altLabel xml:lang="en">Chartularies</skos:altLabel>
+	<skos:altLabel xml:lang="la">Chartularii</skos:altLabel>
+	<skos:altLabel xml:lang="en">Scrinarii</skos:altLabel>
+	<skos:altLabel xml:lang="la">Curatores tabularum</skos:altLabel>
+	<skos:hiddenLabel xml:lang="en">Chartulary</skos:hiddenLabel>
+	<skos:hiddenLabel xml:lang="en">Chartularius</skos:hiddenLabel>
+	<skos:hiddenLabel xml:lang="en">Scrinarius</skos:hiddenLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/artisans">
@@ -2614,6 +2630,8 @@
 	<skos:prefLabel xml:lang="en">Priests</skos:prefLabel>
 	<skos:altLabel xml:lang="en">Presbyters</skos:altLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/clergy"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/periodeutai"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/ekklesiekdikoi"/>
 	<skos:related rdf:resource="http://syriaca.org/taxonomy/priesthood"/>
 </rdf:Description>
 
@@ -2673,6 +2691,7 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Philosophers</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/occupations"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/sophists"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/physicians">
@@ -2680,6 +2699,7 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Physicians</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/occupations"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/archiatroi"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/shipbuilders">
@@ -2716,6 +2736,7 @@
 	<skos:prefLabel xml:lang="en">Porters</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/occupations"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/porters-minor-clergy"/>
+	<skos:related rdf:resource="http://syriaca.org/taxonomy/chancellors"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/potters">
@@ -2759,6 +2780,7 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Widows of the Church</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/religious-vocations-christian"/>
+	<skos:related rdf:resource="http://syriaca.org/taxonomy/widows"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/virgins-of-the-church">
@@ -2780,6 +2802,7 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/coenobites"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/anchorites"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/dendrites"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/nuns-as-monks"/>
 	<skos:related rdf:resource="http://syriaca.org/taxonomy/bnai-qyama"/>
 </rdf:Description>
 
@@ -2814,6 +2837,7 @@
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/clergy"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/patriarchs"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/metropolitans"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/chorepiscopoi"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/religious-vocations-christian">
@@ -2830,6 +2854,8 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/bnai-qyama"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/apostles"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/Missionaries"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/ecclesiastical-administrators"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/synkelloi"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/spinners">
@@ -2953,7 +2979,7 @@
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/place-type-collection">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
 	<skos:scopeNote xml:lang="en">The place type values used in The Syriac Gazetteer.</skos:scopeNote>
-	<skos:prefLabel xml:lang="en">place-type-collection</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Place Types Collection</skos:prefLabel>
 	<skos:member rdf:resource="http://syriaca.org/taxonomy/composite"/>
 	<skos:member rdf:resource="http://syriaca.org/taxonomy/fortification"/>
 	<skos:member rdf:resource="http://syriaca.org/taxonomy/island"/>
@@ -3293,38 +3319,14 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Ethnicity</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/People"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/arabs"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/assyrians"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/avars"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/chaldeans"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/copts"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/ghassanids"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/goths"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/huns"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/indians"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/jews"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/khazars"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/kurds"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/lakhmids"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/macedonians"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/mongols"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/nabateans"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/ninevites"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/persians"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/sabians"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/slavs"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/sogdians"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/turks"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/uighurs"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/armenians"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/society"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/arabs">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Arabs</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 	<skos:related rdf:resource="http://syriaca.org/taxonomy/syriac-influence-arabs"/>
 </rdf:Description>
 
@@ -3332,28 +3334,28 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Assyrians</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/avars">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Avars</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/chaldeans">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Chaldeans</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/copts">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Copts</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 	<skos:related rdf:resource="http://syriaca.org/taxonomy/coptic-christians"/>
 </rdf:Description>
 
@@ -3361,28 +3363,28 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Ghassanids</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/goths">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Goths</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/huns">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Huns</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/indians">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Indians</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 	<skos:related rdf:resource="http://syriaca.org/taxonomy/syriac-influence-india"/>
 </rdf:Description>
 
@@ -3390,8 +3392,8 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Jews</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/religious-communities"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/karaites"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/rabbanite"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/sadducees"/>
@@ -3402,7 +3404,7 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Khazars</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 	<skos:related rdf:resource="http://syriaca.org/taxonomy/syriac-influence-central-asia"/>
 </rdf:Description>
 
@@ -3410,7 +3412,7 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Kurds</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 	<skos:related rdf:resource="http://syriaca.org/taxonomy/syriac-influence-kurds"/>
 </rdf:Description>
 
@@ -3418,21 +3420,21 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Lakhmids</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/macedonians">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Macedonians</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/mongols">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Mongols</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 	<skos:related rdf:resource="http://syriaca.org/taxonomy/syriac-influence-central-asia"/>
 </rdf:Description>
 
@@ -3440,21 +3442,21 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Nabateans</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/ninevites">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Ninevites</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/persians">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Persians</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 	<skos:related rdf:resource="http://syriaca.org/taxonomy/syriac-influence-persia"/>
 </rdf:Description>
 
@@ -3462,14 +3464,14 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Sabians</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/slavs">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Slavs</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 	<skos:related rdf:resource="http://syriaca.org/taxonomy/syriac-influence-slavs"/>
 </rdf:Description>
 
@@ -3477,7 +3479,7 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Sogdians</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 	<skos:related rdf:resource="http://syriaca.org/taxonomy/syriac-influence-central-asia"/>
 </rdf:Description>
 
@@ -3485,14 +3487,14 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Turks</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/uighurs">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Uighurs</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/primary-sources">
@@ -5832,6 +5834,7 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Deacons</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/clergy"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/archdeacons"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/maronites">
@@ -5931,6 +5934,9 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/wisdom"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/anathema"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/tradition"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/communion"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/religious-conflict"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/pastoral-care"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/christianity">
@@ -6002,10 +6008,11 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Gender</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/People"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/people"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/men"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/women"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/eunuchs"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/nuns-as-monks"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/rabbinic-judaism">
@@ -6076,7 +6083,6 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/biblical-events"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/genocide"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/accession"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/war"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/omens"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/persecution"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/exile"/>
@@ -6084,6 +6090,11 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/deposition-of-clergy"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/healing"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/travel"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/migration"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/arson"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/probation"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/rebuke"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/insults"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/church-councils">
@@ -6107,6 +6118,8 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/council-of-486"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/council-of-554"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/council-of-576"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/council-of-carthage-251"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/council-of-laodicea-364"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/council-of-420">
@@ -6233,6 +6246,7 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/armenian"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/akkadian-language"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/neo-aramaic"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/urtaye-language"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/arabic-language">
@@ -6871,6 +6885,7 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/madrasas"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/mosques"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/monasteries"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/hermitages"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/monasteries">
@@ -7035,7 +7050,6 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/mythology"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/novels"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/parables"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/polemic"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/questions-and-answers"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/rhetoric"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/riddles"/>
@@ -7068,6 +7082,7 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/onomastica"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/scholia"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/turgama"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/polemic-genre"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/concordance">
@@ -7088,6 +7103,7 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/memre"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/didactic-poetry"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/soghitha"/>
+	<skos:related rdf:resource="http://syriaca.org/taxonomy/poets"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/dialogue-poems">
@@ -7173,7 +7189,7 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:scopeNote xml:lang="en">A genre used to describe works that deal with a broad range of topics.</skos:scopeNote>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
-	<skos:prefLabel xml:lang="en">General</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">General (genre)</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/genres"/>
 </rdf:Description>
 
@@ -7266,13 +7282,6 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Parables</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/genres"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://syriaca.org/taxonomy/polemic">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
-	<skos:prefLabel xml:lang="en">Polemic</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/genres"/>
 </rdf:Description>
 
@@ -7521,6 +7530,7 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/hearts"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/wombs"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/tears"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/hair"/>
 	<skos:related rdf:resource="http://syriaca.org/taxonomy/bodies"/>
 </rdf:Description>
 
@@ -7901,6 +7911,7 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/salt"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/wine"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/oil"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/spices"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/pearls">
@@ -7963,6 +7974,9 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/illness"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/visions"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/apostasy"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/adultery"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/betrothal"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/suicide"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/anointing">
@@ -8104,9 +8118,11 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Eucharist</skos:prefLabel>
 	<skos:altLabel xml:lang="en">Lord's Supper</skos:altLabel>
-	<skos:altLabel xml:lang="en">Communion</skos:altLabel>
+	<skos:altLabel xml:lang="en">Communion Meal</skos:altLabel>
+	<skos:altLabel xml:lang="en">Communion Rite</skos:altLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/rites"/>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/liturgy"/>
+	<skos:related rdf:resource="http://syriaca.org/taxonomy/communion"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/extreme-unction">
@@ -8386,18 +8402,9 @@
 	<skos:prefLabel xml:lang="en">Military Occupations</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/occupations"/>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/military"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/magister-militum"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/mercenaries"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/officers"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/soldiers"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://syriaca.org/taxonomy/magister-militum">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
-	<skos:prefLabel xml:lang="en">Magistri Militum</skos:prefLabel>
-	<skos:hiddenLabel xml:lang="en">Magister Militum</skos:hiddenLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/military-occupations"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/patriarchates">
@@ -8618,6 +8625,7 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/poor"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/middle-social-group"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/elites"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/freed-persons"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/popular-religion">
@@ -8671,6 +8679,8 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/martyrdom"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/spiritual-or-ascetic-disciplines"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/divination"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/worship"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/child-dedication"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/wandering">
@@ -9683,8 +9693,11 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Economy</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/society"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/property"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/slavery"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/trade"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/agriculture"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/labor"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/culture">
@@ -9824,6 +9837,7 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/apocalypticism"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/scepticism"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/theosophia"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/chalcedonianism"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/arianism">
@@ -10092,8 +10106,8 @@
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/dynasties">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
-	<skos:topConceptOf rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Dynasties</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/society"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/parthians"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/sassanians"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/abbasids"/>
@@ -10334,6 +10348,12 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/commandments"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/decalogue"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/misogyny"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/pride"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/greed"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/usury"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/blasphemy"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/embezzlement"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/oppression"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/repentance">
@@ -10349,6 +10369,7 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Virginity</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/religious-practices"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/sexuality"/>
 	<skos:related rdf:resource="http://syriaca.org/taxonomy/celibacy"/>
 	<skos:related rdf:resource="http://syriaca.org/taxonomy/singleness"/>
 </rdf:Description>
@@ -10484,6 +10505,7 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Sin</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethics"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/theological-concepts"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/incest">
@@ -10675,7 +10697,7 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Armenians</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
 	<skos:related rdf:resource="http://syriaca.org/taxonomy/armenian-christians"/>
 </rdf:Description>
 
@@ -10717,10 +10739,10 @@
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/nature">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used for philosophical and theological discussions of the nature of a being, human or divine.</skos:scopeNote>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Nature</skos:prefLabel>
-	<skos:altLabel xml:lang="en">Ecology</skos:altLabel>
-	<skos:altLabel xml:lang="en">Natural World</skos:altLabel>
+	<skos:editorialNote xml:lang="en">Ensure that this concept is consistent with the usage of this keyword in CBSS. We might need a separate concept for "natural world"</skos:editorialNote>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/theological-concepts"/>
 </rdf:Description>
 
@@ -10741,6 +10763,7 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/heaven"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/hell"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/elements"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/sin"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/afterlife"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/antichrist"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/c_4547ec93"/>
@@ -10759,7 +10782,6 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/will"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/free-will"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/faith"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/heterdoxy"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/orthodoxy"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/gods-name"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/soul"/>
@@ -10779,6 +10801,12 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/paradise"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/transitus-mariae"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/trisagion"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/salvation"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/demon-possession"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/foreknowledge"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/affective-piety"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/divine-judgment"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/heterodoxy"/>
 	<skos:related rdf:resource="http://syriaca.org/taxonomy/theology"/>
 </rdf:Description>
 
@@ -10802,14 +10830,6 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Faith</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/theological-concepts"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://syriaca.org/taxonomy/heterdoxy">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
-	<skos:prefLabel xml:lang="en">Heterdoxy</skos:prefLabel>
-	<skos:altLabel xml:lang="en">Heresy</skos:altLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/theological-concepts"/>
 </rdf:Description>
 
@@ -10883,6 +10903,7 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Demons</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/spiritual-beings"/>
+	<skos:related rdf:resource="http://syriaca.org/taxonomy/demon-possession"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/accession">
@@ -10898,23 +10919,30 @@
 	<skos:topConceptOf rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Society</skos:prefLabel>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/administration"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/socio-economic-status"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/economy"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/dynasties"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/law"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/government"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/politics"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/population"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/peace"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/war"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/families"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/authority"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/patronage"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/poverty"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/property"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/slavery"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/wealth"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/military"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/media"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/secular"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/internet"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/hospitality"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/courts"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/imprisionment"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/trials"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/fame"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/law">
@@ -11000,6 +11028,7 @@
 	<skos:prefLabel xml:lang="en">Government Occupations</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/occupations"/>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/archivists"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/caesars"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/emperors"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/civil-servants"/>
@@ -11007,8 +11036,27 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/shahs"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/viziers"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/comes"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/curators"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/municipal-office-holders"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/castrenses"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/consuls"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/dukes"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/empresses"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/vindices"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/apocrisarii"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/archiatroi"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/urban-prefects"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/chamberlains"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/imperial-secretaries"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/judge"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/kings"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/tribunes"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/queens"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/sacellarii"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/protectores"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/magistrate"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/imperial-messengers"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/logothetai"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/marzban"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/comes">
@@ -11037,6 +11085,7 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Dreams</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/personal-events"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/mental-and-emotional-states"/>
 	<skos:related rdf:resource="http://syriaca.org/taxonomy/visions"/>
 </rdf:Description>
 
@@ -11060,6 +11109,7 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Providence</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/theological-concepts"/>
+	<skos:related rdf:resource="http://syriaca.org/taxonomy/foreknowledge"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/freedom-of-speech">
@@ -11097,7 +11147,7 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Spirituality</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/religion"/>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/People"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/people"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/spiritual-states"/>
 </rdf:Description>
 
@@ -11135,15 +11185,14 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Peace</skos:prefLabel>
-	<skos:altLabel xml:lang="en">Inner Peace</skos:altLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/spiritual-states"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/society"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/war">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">War</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/events"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/society"/>
 	<skos:related rdf:resource="http://syriaca.org/taxonomy/military"/>
 </rdf:Description>
 
@@ -11173,6 +11222,7 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Nobles</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/socio-economic-status"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/hypatissae"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/sacrifices">
@@ -11244,6 +11294,7 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Martyrdom</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/religious-practices"/>
+	<skos:related rdf:resource="http://syriaca.org/taxonomy/martyrs"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/incense">
@@ -11281,10 +11332,12 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Family Roles</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/People"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/people"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/parents"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/children"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/widows"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/spouses"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/orphans"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/passions">
@@ -11340,7 +11393,7 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Identity</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/People"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/people"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/self-references"/>
 </rdf:Description>
 
@@ -11348,7 +11401,10 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Sexuality</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/People"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/people"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/virginity"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/sex"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/chastity"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/persecution">
@@ -11385,7 +11441,8 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Mental and Emotional States</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/People"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/people"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/dreams"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/passions"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/shame"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/laughter"/>
@@ -11394,6 +11451,11 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/suffering"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/senses"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/mourning"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/zeal"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/insanity"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/affective-piety"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/doubt"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/thoughts"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/spiritual-states">
@@ -11401,7 +11463,6 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Spiritual States</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/spirituality"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/peace"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/holiness"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/purity"/>
 </rdf:Description>
@@ -11410,6 +11471,7 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Holiness</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Sanctity</skos:altLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/spiritual-states"/>
 </rdf:Description>
 
@@ -11436,23 +11498,6 @@
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/angels"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/spirits"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/demons"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://syriaca.org/taxonomy/People">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
-	<skos:prefLabel xml:lang="en">People</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/beings"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/ethnicity"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/gender"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/spirituality"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/family-roles"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/identity"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/sexuality"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/mental-and-emotional-states"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/dress"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/groups"/>
-	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/biological-functions"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/mission">
@@ -11483,14 +11528,6 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Microcosm</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/theological-concepts"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://syriaca.org/taxonomy/curators">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:scopeNote xml:lang="en">Used for officials in government administration who oversaw financial matters.</skos:scopeNote>
-	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
-	<skos:prefLabel xml:lang="en">Curators</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/exile">
@@ -11532,6 +11569,7 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Martyrs</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/religious-roles-christian"/>
+	<skos:related rdf:resource="http://syriaca.org/taxonomy/martyrdom"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/laity">
@@ -11560,20 +11598,21 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Poverty</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/society"/>
+	<skos:related rdf:resource="http://syriaca.org/taxonomy/poor"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/property">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Property</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/society"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/economy"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/slavery">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Slavery</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/society"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/economy"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/trade">
@@ -11603,6 +11642,7 @@
 	<skos:prefLabel xml:lang="en">Poor</skos:prefLabel>
 	<skos:altLabel xml:lang="en">Lower Social Group</skos:altLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/socio-economic-status"/>
+	<skos:related rdf:resource="http://syriaca.org/taxonomy/poverty"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/deposition-of-clergy">
@@ -11725,7 +11765,7 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Dress</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/People"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/physical-traits"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/crosses">
@@ -11848,7 +11888,7 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Groups</skos:prefLabel>
 	<skos:editorialNote xml:lang="en">I am wondering if each of the narrow should simply be personGrp URIs</skos:editorialNote>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/People"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/people"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/greek-fathers"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/persian-martyrs"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/cappadocians"/>
@@ -11997,6 +12037,7 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Officers</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/military-occupations"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/generals-roman"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/soldiers">
@@ -12433,9 +12474,10 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Biological Functions</skos:prefLabel>
-	<skos:broader rdf:resource="http://syriaca.org/taxonomy/People"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/people"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/birth"/>
 	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/menstruation"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/sex"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://syriaca.org/taxonomy/menstruation">
@@ -12688,6 +12730,849 @@
 	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
 	<skos:prefLabel xml:lang="en">Water</skos:prefLabel>
 	<skos:broader rdf:resource="http://syriaca.org/taxonomy/objects"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/qualifier-relationship-collection">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<skos:prefLabel xml:lang="en">Qualifier Relationships Collection</skos:prefLabel>
+	<skos:member rdf:resource="http://syriaca.org/taxonomy/acknowledged-family-relationship"/>
+	<skos:member rdf:resource="http://syriaca.org/taxonomy/adopted-family-relationship"/>
+	<skos:member rdf:resource="http://syriaca.org/taxonomy/alleged-relationship"/>
+	<skos:member rdf:resource="http://syriaca.org/taxonomy/claimed-family-relationship"/>
+	<skos:member rdf:resource="http://syriaca.org/taxonomy/foster-family-relationship"/>
+	<skos:member rdf:resource="http://syriaca.org/taxonomy/half-family-relationship"/>
+	<skos:member rdf:resource="http://syriaca.org/taxonomy/in-law-family-relationship"/>
+	<skos:member rdf:resource="http://syriaca.org/taxonomy/maternal-family-relationship"/>
+	<skos:member rdf:resource="http://syriaca.org/taxonomy/paternal-family-relationship"/>
+	<skos:member rdf:resource="http://syriaca.org/taxonomy/step-family-relationship"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/occupations-collection">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<skos:prefLabel xml:lang="en">Occupations Collection</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/fields-of-study-collection">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<skos:prefLabel xml:lang="en">Fields of Study Collection</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/languages-collection">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<skos:prefLabel xml:lang="en">Languages Collection</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/socioeconomic-statuses-collection">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<skos:prefLabel xml:lang="en">Socioeconomic Statuses Collection</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/ethnic-labels-collection">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<skos:prefLabel xml:lang="en">Ethnic Labels Collection</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/physical-traits-collection">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<skos:prefLabel xml:lang="en">Physical Traits Collection</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/mental-states-collection">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<skos:prefLabel xml:lang="en">Mental States Collection</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/spiritual-states-collection">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<skos:prefLabel xml:lang="en">Spiritual States Collection</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/nuns-as-monks">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used to indicate women who dress as men in a monastic context so as to pursue the monastic experience of men.</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Nuns as Monks</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Transvestite Nuns</skos:altLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/monastics"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/gender"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/chalcedonianism">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Chalcedonianism</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/systems-of-thought"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/communion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used to describe individuals or parties being in communion with one another; i.e. taking the eucharist together.</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Communion</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Fellowship</skos:altLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/religion"/>
+	<skos:related rdf:resource="http://syriaca.org/taxonomy/commune-together"/>
+	<skos:related rdf:resource="http://syriaca.org/taxonomy/eucharist"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/hermitages">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used for the dwelling places of hermits/anchorites; can be a cave, built environment, etc.</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Hermitages</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Monastic Cells</skos:altLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/designated-spaces"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/chorepiscopoi">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used for rural bishops with authority over a geographic range that did not include a metropolis or large settlement.</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Chorepiscopoi</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Chorbishops</skos:altLabel>
+	<skos:altLabel xml:lang="en">Rural Bishops</skos:altLabel>
+	<skos:altLabel xml:lang="la">Chorepiscopi</skos:altLabel>
+	<skos:hiddenLabel xml:lang="en">Chorepiscopos</skos:hiddenLabel>
+	<skos:hiddenLabel xml:lang="la">Chorepiscopus</skos:hiddenLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/bishops"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/periodeutai">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used for priests to whom a bishop had delegated the authority to oversee rural clergy.</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Periodeutai</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Periodiote</skos:altLabel>
+	<skos:hiddenLabel xml:lang="en">Periodeutes</skos:hiddenLabel>
+	<skos:hiddenLabel xml:lang="en">Periodiota</skos:hiddenLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/priests"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/generals-roman">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Generals (Roman/Byzantine)</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Stratelatai</skos:altLabel>
+	<skos:altLabel xml:lang="la">Magistri Militum</skos:altLabel>
+	<skos:hiddenLabel xml:lang="la">Magister Militum</skos:hiddenLabel>
+	<skos:hiddenLabel xml:lang="en">Stratelates</skos:hiddenLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/officers"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/council-of-carthage-251">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Council of Carthage (251)</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/church-councils"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/council-of-laodicea-364">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Council of Laodicea (364)</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/church-councils"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/sex">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Sex</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/sexuality"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/biological-functions"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/worship">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Worship</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/religious-practices"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/religious-conflict">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Religious Conflict</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/religion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/hospitality">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Hospitality</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/society"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/adultery">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Adultery</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/personal-events"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/castrenses">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used to describe certain court officials, the term originally referred to the quartermaster of a camp, "castrum."</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Castrenses</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/ecclesiastical-administrators">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Ecclesiastical Administrators</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/religious-vocations-christian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/consuls">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Consuls</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/dukes">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Dukes</skos:prefLabel>
+	<skos:altLabel xml:lang="la">Duces</skos:altLabel>
+	<skos:hiddenLabel xml:lang="la">Dux</skos:hiddenLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/empresses">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Empresses</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/ethiopians">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Ethiopians</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/freed-persons">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used for formerly enslaved persons who attained their freedom.</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Freed Persons</skos:prefLabel>
+	<skos:hiddenLabel xml:lang="en">Freedman</skos:hiddenLabel>
+	<skos:hiddenLabel xml:lang="en">Freedmen</skos:hiddenLabel>
+	<skos:hiddenLabel xml:lang="en">Freedwoman</skos:hiddenLabel>
+	<skos:hiddenLabel xml:lang="en">Freedwomen</skos:hiddenLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/socio-economic-status"/>
+	<skos:related rdf:resource="http://syriaca.org/taxonomy/freed-slave-of"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/vindices">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used for a Roman tax official</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Vindices</skos:prefLabel>
+	<skos:hiddenLabel xml:lang="en">Vindex</skos:hiddenLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/apocrisarii">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used for persons holding this high diplomatic office in the imperial administration</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Apocrisarii</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/archdeacons">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used for the head deacon of a church or bishopric</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Archdeacons</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Head Deacon</skos:altLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/deacons"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/archiatroi">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used for the chief physician to the emperor</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Archiatroi</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Chief Physician</skos:altLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/physicians"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/betrothal">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Betrothal</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Engagement</skos:altLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/personal-events"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/chancellors">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used for "doorkeepers" in imperial or other elite households; often a position of considerable influence.</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Chancellors</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Doorkeepers</skos:altLabel>
+	<skos:altLabel xml:lang="la">Cancellarii</skos:altLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/occupations"/>
+	<skos:related rdf:resource="http://syriaca.org/taxonomy/porters"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/urban-prefects">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Urban Prefects</skos:prefLabel>
+	<skos:altLabel xml:lang="la">Praefecti Urbi</skos:altLabel>
+	<skos:hiddenLabel xml:lang="la">Praefectus Urbi</skos:hiddenLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/synkelloi">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used for a close advisor to a Christian bishop.</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Synkelloi</skos:prefLabel>
+	<skos:altLabel xml:lang="la">Syncelli</skos:altLabel>
+	<skos:hiddenLabel xml:lang="en">Synkellos</skos:hiddenLabel>
+	<skos:hiddenLabel xml:lang="la">Syncellus</skos:hiddenLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/religious-vocations-christian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/suicide">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Suicide</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/personal-events"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/spices">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Spices</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/food"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/urtaye-language">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Urtaye Language</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/languages"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/brigand-chasers">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Brigand Chasers</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/cellarer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used for anyone in charge of the cellar; esp. but not exclusively in a monastic setting.</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Cellarer</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/ekklesiekdikoi">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used for members of a body of priests who acted as advisors to their bishop.</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Ekklesiekdikoi</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/priests"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/hypatissae">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Hypatissae</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/nobles"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/chamberlains">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used for the person in charge of the running of the imperial household.</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Chamberlains</skos:prefLabel>
+	<skos:altLabel xml:lang="la">Praepositi</skos:altLabel>
+	<skos:altLabel xml:lang="la">Praepositi Sacri Cubiculi</skos:altLabel>
+	<skos:hiddenLabel xml:lang="la">Praepositus</skos:hiddenLabel>
+	<skos:hiddenLabel xml:lang="la">Praepositus Sacri Cubiculi</skos:hiddenLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/imperial-secretaries">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Imperial Secretaries</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/judge">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Judge</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/kings">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Kings</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/shepherds">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Shepherds</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/tribunes">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Tribunes</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/queens">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Queens</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/salvation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Salvation</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/theological-concepts"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/demon-possession">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Demon Possession</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/theological-concepts"/>
+	<skos:related rdf:resource="http://syriaca.org/taxonomy/demons"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/pride">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Pride</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethics"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/greed">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Greed</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethics"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/foreknowledge">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Foreknowledge</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/theological-concepts"/>
+	<skos:related rdf:resource="http://syriaca.org/taxonomy/providence"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/migration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Migration</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/events"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/pastoral-care">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Pastoral Care</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/religion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/poets">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Poets</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/occupations"/>
+	<skos:related rdf:resource="http://syriaca.org/taxonomy/poetry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/vicarii">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Vicarii</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Deputies</skos:altLabel>
+	<skos:altLabel xml:lang="en">Agents</skos:altLabel>
+	<skos:hiddenLabel xml:lang="la">Vicarius</skos:hiddenLabel>
+	<skos:hiddenLabel xml:lang="en">Deputy</skos:hiddenLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/nurses">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Nurses</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/usury">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Usury</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethics"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/zeal">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Zeal</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/mental-and-emotional-states"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/spouses">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Spouses</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/family-roles"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/blasphemy">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Blasphemy</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethics"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/embezzlement">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Embezzlement</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethics"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/insanity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Insanity</skos:prefLabel>
+	<skos:hiddenLabel xml:lang="en">Madness</skos:hiddenLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/mental-and-emotional-states"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/affective-piety">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Affective Piety</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/theological-concepts"/>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/mental-and-emotional-states"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/child-dedication">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Child Dedication</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/religious-practices"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/doubt">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Doubt</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/mental-and-emotional-states"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/orphans">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Orphans</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/family-roles"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/thoughts">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used for troubling thoughts that lead one's mind away from God; esp. in an ascetic or monastic context.</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Thoughts</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Logismoi</skos:altLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/mental-and-emotional-states"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/courts">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used for institutions that possess judicial power and render judgements regarding civil and criminal matters.</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Courts</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/society"/>
+	<skos:related rdf:resource="http://syriaca.org/taxonomy/trials"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/physical-traits">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Physical Traits</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/people"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/dress"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/blindness"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/barrenness"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/blindness">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Blindness</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/physical-traits"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/hair">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Hair</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/body-parts"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/barrenness">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Barrenness</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/physical-traits"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/people">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">People</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/beings"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/gender"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/spirituality"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/family-roles"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/identity"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/sexuality"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/mental-and-emotional-states"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/groups"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/biological-functions"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/physical-traits"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/labor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Labor</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Work</skos:altLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/economy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/sacellarii">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Sacellarii</skos:prefLabel>
+	<skos:hiddenLabel xml:lang="en">Sacellarius</skos:hiddenLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/protectores">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Protectores</skos:prefLabel>
+	<skos:altLabel xml:lang="la">Protectores</skos:altLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/magistrate">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Magistrate</skos:prefLabel>
+	<skos:editorialNote xml:lang="en">So far, we only have one use of this term in JofE, Life of Abraham and Maro. The nature of the office is unclear, but I think it is a local/civic office. The Syriac term is ܫܠܝܬܐ; see https://sedra.bethmardutho.org/lexeme/get/3219.</skos:editorialNote>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/imperial-messengers">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Imperial Messengers</skos:prefLabel>
+	<skos:altLabel xml:lang="la">Magistriani</skos:altLabel>
+	<skos:altLabel xml:lang="la">Agentes in rebus</skos:altLabel>
+	<skos:altLabel xml:lang="en">Magistrians</skos:altLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/guardians">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used for those acting as guardians or regents of another.</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Guardians</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Curators</skos:altLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/logothetai">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Logothetai</skos:prefLabel>
+	<skos:hiddenLabel xml:lang="en">Logothete</skos:hiddenLabel>
+	<skos:hiddenLabel xml:lang="en">Logothetes</skos:hiddenLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/marzban">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used for Persian military commanders holding this title.</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Marzban</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/government-occupations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/imprisionment">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Imprisionment</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/society"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/ethnicities">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Ethnicities</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/people"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/arabs"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/assyrians"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/avars"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/chaldeans"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/copts"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/ghassanids"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/goths"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/huns"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/indians"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/jews"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/khazars"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/kurds"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/lakhmids"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/macedonians"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/mongols"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/nabateans"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/ninevites"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/persians"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/sabians"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/slavs"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/sogdians"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/turks"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/uighurs"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/armenians"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/ethiopians"/>
+	<skos:narrower rdf:resource="http://syriaca.org/taxonomy/syriacs"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/syriacs">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Syriacs</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Syrian</skos:altLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethnicities"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/divine-judgment">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Divine Judgment</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Divine Punishment</skos:altLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/theological-concepts"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/trials">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used for proceedings in which judgment is rendered; esp. in a legal or ecclesiastical setting.</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Trials</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Judgment</skos:altLabel>
+	<skos:altLabel xml:lang="en">Legal Proceedings</skos:altLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/society"/>
+	<skos:related rdf:resource="http://syriaca.org/taxonomy/courts"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/oppression">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Oppression</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Abuse of Power</skos:altLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/ethics"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/chastity">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Chastity</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Abstinence</skos:altLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/sexuality"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/polemic-genre">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Polemic (genre)</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/genres"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/heterodoxy">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used to indicate circumstances where a historical person or group deemed a set of theological ideas, one or more groups, or one or more individuals to be incompatible with their own beliefs and practices. Use of this concept should not be construed an affirmation or denial of any particular theology.</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Heterodoxy</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Heresy</skos:altLabel>
+	<skos:hiddenLabel xml:lang="en">Heretics</skos:hiddenLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/theological-concepts"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/fame">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Fame</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/society"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/arson">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Arson</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/events"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/sophists">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Sophists</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/philosophers"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/probation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used for probationary periods such as a period of testing before being admitted to the monastic life.</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Probation</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/events"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/rebuke">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used for verbal or written interactions in which one person denounces another and calls them to some kind of reform or repentance.</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Rebuke</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/events"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://syriaca.org/taxonomy/insults">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:scopeNote xml:lang="en">Used for verbal or written interactions in which one person insults another.</skos:scopeNote>
+	<skos:inScheme rdf:resource="http://syriaca.org/taxonomy/syriac-taxonomy"/>
+	<skos:prefLabel xml:lang="en">Insults</skos:prefLabel>
+	<skos:broader rdf:resource="http://syriaca.org/taxonomy/events"/>
 </rdf:Description>
 
 </rdf:RDF>
