@@ -3,7 +3,7 @@
     
     <!-- 
     Pro: Alignment between @xml:id and @n
-    Con: The @n would not be useful for numbering paragraphs for citation purposes.-->
+    Con: The @n would not be useful for numbering paragraphs for print citations.-->
     <div xml:id="section-1" n="1">
         <div xml:id="section-1.1" n="1.1">
             <ab xml:id="section-1.1.1" n="1.1.1">Lorem ipsum</ab>
@@ -27,7 +27,7 @@
     
     
     <!-- 
-    Pro: The @n would be useful for numbering paragraphs for citation purposes.
+    Pro: The @n would be useful for numbering paragraphs for citation in print, but not links.
     Con: Lack of alignment between @xml:id and @n-->
     <div xml:id="section-1" n="1">
         <div xml:id="section-1.1" n="1.1">
@@ -52,7 +52,7 @@
     
     
     <!-- 
-    Pro: Alignment between @xml:id and @n, and @n useful for numbering and citation.
+    Pro: Alignment between @xml:id and @n, and @n useful for numbering and all citation types.
     Con: Lack of alignment between @xml:id on ab and @xml:id on div.-->
     <div xml:id="section-1" n="1">
         <div xml:id="section-1.1" n="1.1">
