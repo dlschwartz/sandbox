@@ -27,6 +27,30 @@
         </div>
     </div>
     
+    <!-- Best of both worlds? Or just too much?-->
+    <div type="work" xml:id="work">
+        <div xml:id="section-1" n="1">
+            <div xml:id="section-1.1" n="1.1">
+                <ab xml:id="section-1.1.1-1" n="1.1.1-1">Lorem ipsum</ab>
+                <ab xml:id="section-1.1.2-2" n="1.1.2-2">Lorem ipsum</ab>
+                <ab xml:id="section-1.1.3-3" n="1.1.3-3">Lorem ipsum</ab>
+                <ab xml:id="section-1.1.4-4" n="1.1.4-4">Lorem ipsum</ab>
+            </div>
+            <div xml:id="section-1.2" n="1.2">
+                <ab xml:id="section-1.2.1-5" n="1.2.1-5">Lorem ipsum</ab>
+                <ab xml:id="section-1.2.2-6" n="1.2.2-6">Lorem ipsum</ab>
+                <ab xml:id="section-1.2.3-7" n="1.2.3-7">Lorem ipsum</ab>
+                <ab xml:id="section-1.2.4-8" n="1.2.4-8">Lorem ipsum</ab>
+            </div>
+            <div xml:id="section-1.3" n="1.3">
+                <ab xml:id="section-1.3.1-9" n="1.3.1-9">Lorem ipsum</ab>
+                <ab xml:id="section-1.3.2-10" n="1.3.210">Lorem ipsum</ab>
+                <ab xml:id="section-1.3.3-11" n="1.3.3-11">Lorem ipsum</ab>
+                <ab xml:id="section-1.3.4-121" n="1.3.4-12">Lorem ipsum</ab>
+            </div>
+        </div>
+    </div>
+    
     
     <!-- 
     Pro: The @n would be useful for numbering paragraphs for citation in print, but not links.
